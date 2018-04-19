@@ -18,8 +18,12 @@ html, body {
 
 .page {
     &__wrapper {
-        height: 100%;
-        background-image: linear-gradient(to bottom, #56727c 0%, #27333A 100%);
+        min-height: 100%;
+        background-color: #48616f;
+        background-image: url('%=static=%general/main_bg.jpg');
+        background-position: top left;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
     }
 
     &__main {

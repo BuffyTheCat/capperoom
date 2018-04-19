@@ -93,6 +93,6 @@
     transition: background .3s;
 
     &:hover {
-        background: linear-gradient(rgba(255, 204, 0, 1) 0%, rgba(252, 142, 0, 1) 100%);
+        background-image: linear-gradient(rgba(255, 204, 0, 1) 0%, rgba(252, 142, 0, 1) 100%);
     }
 }
