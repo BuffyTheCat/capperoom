@@ -1,2 +1,98 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+.search {
+    display: flex;
+    padding: rem(15);
+    height: 100%;
+
+    background-color: $grey_light;
+
+    &__input {
+        display: none;
+    }
+
+    &__button {
+        width: rem(35);
+        height: rem(35);
+        padding: 0;
+        margin-top: auto;
+
+        outline: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        background-image: url('%=static=%general/search.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.title {
+    position: relative;
+
+    margin: 0;
+    padding-bottom: rem(40);
+    font-family: 'Helvetica Neue';
+    font-size: rem(48);
+    font-weight: 100;
+    font-style: italic;
+    color: $white;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+
+        height: 1px;
+        width: 400px;
+
+        background-color: rgba(0, 0, 0, 0.2);
+        transform: translateX(-50%);
+    }
+}
+
+.text {
+    margin: 0;
+
+    font-family: 'Helvetica Neue';
+    font-size: rem(18);
+    font-weight: 100;
+    color: $pastel_blue;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.button {
+    display: flex;
+
+    &:not(a) {
+        display: block;
+    }
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: rem(45);
+    padding: rem(10) rem(35);
+
+    font-family: 'Helvetica Neue';
+    font-size: rem(18);
+    font-weight: 100;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: rem(2);
+    box-shadow: 0 rem(3) rem(3) 0 rgba(0, 6, 26, 0.1);
+    background-image: linear-gradient(rgba(0, 192, 255, 1) 0%, rgba(22, 170, 255, 1) 100%);
+    outline: none;
+    border:none;
+    transition: background .3s;
+
+    &:hover {
+        background: linear-gradient(rgba(255, 204, 0, 1) 0%, rgba(252, 142, 0, 1) 100%);
+    }
+}

@@ -1,5 +1,7 @@
 let data = {
     header: {
-        mix: 'container'
+        defaults: {
+            mix: 'container'
+        }
     }
 };
