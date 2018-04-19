@@ -26,6 +26,11 @@ html, body {
         background-repeat: no-repeat;
     }
 
+    &__top-container {
+        height: rem(1065);
+        background-color: #DDDDDD;
+    }
+
     &__main {
         padding-top: rem(80);
 

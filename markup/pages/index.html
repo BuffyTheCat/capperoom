@@ -14,10 +14,17 @@
 
             {{> header/header header.defaults}}
 
-            <div class="page__main container">
-                <h2 class="title">Онлайн рейтинг спортивных аналитиков</h2>
-                <p class="text">Автоматический возврат средств на баланс в случае неверного прогноза</p>
+            <div class="page__main">
+                <h2 class="title container">Онлайн рейтинг спортивных аналитиков</h2>
+                <p class="text container">Автоматический возврат средств на баланс в случае неверного прогноза</p>
                 {{> competition/competition competition.main}}
+                {{> categories/categories categories.main}}
+                <section class="page__top-container">
+                    <div class="page__top-content container">
+                        {{> top/top top.free}}
+                        {{> top/top top.commercial}}
+                    </div>
+                </section>
             </div>
 
             <div class="page__buffer"></div>
