@@ -19,7 +19,7 @@
         width: calc(14.28% - 20px);
         margin: 0 rem(10);
         margin-bottom: rem(20);
-        padding: rem(45) rem(10);
+        padding: 0 rem(10);
 
         background-color: rgba(10, 8, 26, 0.3);
         border-radius: 5px;
@@ -31,12 +31,16 @@
         }
 
         &:hover .categories__item-name{
-            color: #ffba00;
+            color: $orange;
+        }
+
+        &:hover .categories__item-icon {
+            fill: orange;
         }
     }
 
     &__item-icon {
-        margin-bottom: rem(30);
+        fill: $white;
     }
 
     &__item-name {

@@ -1,1 +1,5 @@
-var data = {top: {}}
+let data = {
+    top: {
+        forecastCard: fullData => fullData.forecastCard
+    }
+};

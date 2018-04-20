@@ -1,0 +1,269 @@
+.forecastCard {
+    display: flex;
+    width: 100%;
+    height: rem(150);
+
+
+    border-radius: rem(2);
+    overflow: hidden;
+    box-shadow: 0px 3px 3px 0px rgba(0, 6, 26, 0.1);
+    transition: border .3s;
+    border: rem(2) solid transparent;
+
+    &:hover {
+        border: rem(2) solid $orange;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: rem(15);
+    }
+
+    &__sport-league {
+        display: flex;
+        flex-direction: column;
+        width: rem(70);
+        padding: rem(25) rem(20);
+        margin-right: rem(2);
+
+        background-color: $white;
+    }
+
+    &__sport-icon {
+        margin-bottom: rem(20);
+    }
+
+    &__sport-icon,
+    &__league-icon {
+        fill: $ashgrey;
+        cursor: pointer;
+
+        transition: fill .3s;
+    }
+
+    &__sport-icon:hover,
+    &__league-icon:hover {
+        fill: $orange;
+    }
+
+    &__match-details {
+        display: flex;
+        width: rem(364);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: rem(25) rem(30);
+        margin-right: rem(2);
+        padding-right: rem(5);
+
+        background-color: $white;
+    }
+
+    &__comand {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        margin: 0;
+        font-family: 'Helvetica Neue';
+        font-size: rem(24);
+        font-weight: 100;
+        color: $grey;
+        text-align: left;
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
+        }
+
+        &:last-of-type {
+            margin-bottom: rem(20);
+        }
+
+        img {
+            display: block;
+            margin-right: rem(10);
+            width: rem(40);
+            height: rem(30);
+        }
+    }
+
+    &__time {
+        width: 100%;
+        display: flex;
+
+        p {
+            margin: 0;
+            margin-right: rem(15);
+            font-family: 'Helvetica Neue';
+            font-size: rem(14);
+            font-weight: 300;
+            font-style: italic;
+            color: $manatee;
+        }
+
+        span {
+            font-family: 'Helvetica Neue';
+            font-size: rem(14);
+            font-weight: 300;
+            font-style: italic;
+            color: $vivid;
+
+            &:not(:last-of-type) {
+                margin-right: rem(10);
+            }
+        }
+    }
+
+    &__coefficient {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: rem(121);
+        margin-right: rem(2);
+        padding: rem(23);
+
+        background-color: $white;
+
+        p {
+            font-family: 'Helvetica Neue';
+            font-size: rem(40);
+            font-weight: 100;
+            color: $grey;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        width: rem(422);
+        margin-right: rem(2);
+        padding: rem(25) rem(30);
+
+        background-color: $white;
+
+        p {
+            margin: 0;
+            margin-bottom: rem(20);
+            font-family: 'HelveticaNeueCyr';
+            font-size: rem(18);
+            font-weight: 100;
+            color: $grey;
+            text-align: left;
+        }
+    }
+
+    &__name {
+        margin: 0;
+        margin-bottom: rem(20);
+
+        font-family: 'Helvetica Neue';
+        font-size: rem(24);
+        font-weight: 100;
+        color: $blue;
+        text-align: left;
+        text-decoration: none;
+
+        transition: color .3s;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    &__more {
+        margin: 0;
+        font-family: 'HelveticaNeueCyr';
+        font-size: rem(14);
+        font-weight: 300;
+        font-style: italic;
+        color: $manatee;
+        text-align: left;
+    }
+
+    &__consonants {
+        display: flex;
+        align-items: center;
+        flex-grow: 999;
+        flex-direction: column;
+        padding: rem(30);
+
+        background-color: $white;
+
+        dl {
+            margin: 0;
+            display: inline-flex;
+            flex-grow: 999;
+
+            dt,
+            dd {
+                margin: 0;
+
+                font-family: 'HelveticaNeueCyr';
+                font-size: rem(14);
+                font-weight: 300;
+                color: $electricblue;
+                text-align: left;
+
+                transition: color .3s;
+            }
+
+            dt {
+                width: 80%;
+            }
+
+            dd {
+                width: 20%
+            }
+        }
+    }
+
+    &__like,
+    &__dislike,
+    &__comment {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        cursor: pointer;
+
+        a {
+            display: block;
+            margin-right: rem(10);
+        }
+    }
+
+    &__like {
+        margin-bottom: rem(15);
+    }
+
+    &__dislike {
+        margin-bottom: rem(17);
+    }
+
+    &__like:hover,
+    &__dislike:hover,
+    &__comment:hover {
+        & dt,
+        & dd {
+            color: $orange;
+        }
+        & svg {
+            fill: $orange;
+        }
+    }
+
+    &__like-icon,
+    &__dislike-icon {
+        fill: #16aaff;
+
+        transition: fill .3s;
+    }
+
+    &__comment-icon {
+        fill: $lavandargrey;
+
+        transition: fill .3s;
+    }
+
+    &__dislike-icon {
+        transform: rotate(180deg);
+    }
+}

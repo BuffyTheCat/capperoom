@@ -26,9 +26,24 @@ html, body {
         background-repeat: no-repeat;
     }
 
-    &__top-container {
-        height: rem(1065);
-        background-color: #DDDDDD;
+    &__top {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: rem(130);
+            left: 0;
+
+            height: rem(1065);
+            width: 100%;
+            background-color: #DDDDDD;
+        }
+    }
+    &__top-content {
+        position: relative;
+
+        z-index: 3;
     }
 
     &__main {

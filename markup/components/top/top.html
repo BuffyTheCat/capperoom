@@ -1,1 +1,15 @@
-<div class="top"></div>
+<section class="top">
+    <div class="top__heading">
+        <h3>Топ бесплатных прогнозов:</h3>
+        <select name="sorting" id="">
+            <option value="">По согласным</option>
+            <option value="">По рейтингу</option>
+        </select>
+        <a href="javascript:void(0);" class="button">Все бесплатные прогнозы</a>
+    </div>
+    <div class="top__content">
+        {{> forecastCard/forecastCard}}
+        {{> forecastCard/forecastCard}}
+        {{> forecastCard/forecastCard}}
+    </div>
+</section>
