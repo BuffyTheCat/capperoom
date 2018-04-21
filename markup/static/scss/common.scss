@@ -16,18 +16,61 @@ html, body {
     margin: 0 auto;
 }
 
+body {
+    background-color: #48616f;
+    background-image: url('%=static=%general/main_bg.jpg');
+    background-position: top left;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
 .page {
     &__wrapper {
         min-height: 100%;
-        background-color: #48616f;
-        background-image: url('%=static=%general/main_bg.jpg');
-        background-position: top left;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
+    }
+    
+    &__bunner {
+        display: flex;
+        margin-bottom: rem(100);
+        @extend .container;
+        
+        img {
+            width: rem(305);
+            height: rem(235);
+            margin-right: rem(80);
+        }
+        
+        h2,
+        h3 {
+            margin: 0;
+            margin-bottom: rem(35);
+            font-family: 'Helvetica Neue';
+            font-size: rem(48);
+            font-weight: 100;
+            color: $white;
+            text-align: left;
+        }
+        
+        p {
+            margin: 0;
+            font-family: 'Helvetica Neue';
+            font-size: rem(18);
+            font-weight: 100;
+            font-style: italic;
+            color: $white;
+            text-align: left;
+            line-height: 1.6;
+        }
+        
+        .just-wrap {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__top {
         position: relative;
+        margin-bottom: rem(100);
 
         &::after {
             position: absolute;
@@ -44,6 +87,8 @@ html, body {
         position: relative;
 
         z-index: 3;
+        
+        @extend .container;
     }
 
     &__main {
@@ -57,4 +102,27 @@ html, body {
             margin-bottom: rem(90);
         }
     }
+}
+
+.mCSB_3_scrollbar,
+.mCSB_draggerRail {
+    width: 20px!important;
+    background-color: #ffffff!important;
+}
+
+
+.mCSB_dragger {
+    width: 10px!important;
+    background-color: #b4b4b4!important;
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+}
+
+.mCSB_dragger_bar {
+    width: 100%!important;
+    background-color: #b4b4b4!important;
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 20px!important;
 }

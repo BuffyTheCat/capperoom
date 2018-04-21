@@ -20,19 +20,38 @@
                 {{> competition/competition competition.main}}
                 {{> categories/categories categories.main}}
                 <section class="page__top">
-                    <div class="page__top-content container">
+                    <div class="page__top-content">
                         {{> top/top}}
+                        <section class="top">
+                            <div class="top__heading">
+                                <h3>Топ бесплатных прогнозов:</h3>
+                                <select name="sorting" id="">
+                                    <option value="">По согласным</option>
+                                    <option value="">По рейтингу</option>
+                                </select>
+                                <a href="javascript:void(0);" class="button">Все бесплатные прогнозы</a>
+                            </div>
+                            <div class="top__content">
+                                {{> forecastCard/forecastCard forecastCard.commercial}}
+                                {{> forecastCard/forecastCard forecastCard.commercial}}
+                                {{> expressCard/expressCard expressCard.commercial}}
+                            </div>
+                        </section>
+
                     </div>
                 </section>
             </div>
-
-            <div class="page__buffer"></div>
+            <div class="page__bunner">
+                <img src="%=static=%img/general/bunner.png" alt="">
+                <div class="just-wrap">
+                    <h2>Экономьте 75% на покупке</h2>
+                    <p>Приобретая подписки на месяц, вы можете покупать прогнозы со значительной скидкой или вовсе бесплатно. В зависимости от выбранной вами подписки условия разнятся. Ознакомиться подробнее с условиями подписок, тарифами и сроками их действия вы можете перейдя в одноименный раздел в меню "Информация" или в подвале сайта</p>
+                </div>
+            </div>
 
         </section>
 
-        <footer class="page__footer">
-            {{> footer/footer}}
-        </footer>
+         {{> footer/footer}}
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>

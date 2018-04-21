@@ -47,11 +47,14 @@
             outline: none;
             cursor: pointer;
         }
+    }
+    
+    &__button {
+        width: rem(280);
 
-        .button {
-            width: rem(280);
-
-            font-size: rem(18);
-        }
+        font-size: rem(18);
+        
+        @extend .button;
+        @extend .button_blue;
     }
 }

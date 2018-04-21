@@ -16,11 +16,18 @@ module.exports = {
         "workflow": "concat",
         "bundler": "webpack",
         "lint": true,
-        "useBabel": false,
+        "useBabel": true,
         "removeConsoleLog": true,
         "webpack": {
             "useHMR": false,
-            "providePlugin": {}
+            "providePlugin": {
+                'jQuery': 'jquery',
+                'window.jQuery': 'jquery',
+                'jquery': 'jquery',
+                'window.jquery': 'jquery',
+                '$': 'jquery',
+                'window.$': 'jquery'
+            }
         },
         "jsPathsToConcatBeforeModulesJs": [],
         "lintJsCodeBeforeModules": false,

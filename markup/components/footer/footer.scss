@@ -1,0 +1,97 @@
+.footer {
+    display: flex;
+    @extend .container;
+    
+    &__nav {
+        position: relative;
+        
+        height: rem(60);
+        padding-top: rem(5);
+        
+        font-family: 'Helvetica Neue';
+        font-size: rem(18);
+        color: #72ccff;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: center;
+        
+        transition: color .3s;
+        
+        &:not(:last-of-type) {
+            margin-right: rem(35);
+        }
+        
+        &:nth-of-type(3) {
+            margin-right: rem(65);
+        }
+        
+        &:hover {
+            color: $orange;
+            
+            &::after {
+                opacity: 1;
+            }
+        }
+        
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            
+            width: 100%;
+            height: rem(5);
+            background-color: $orange;
+            opacity: 0;
+            
+            transition: opacity .3s;
+        }
+    }
+    
+    &__social {
+        &:last-of-type {
+            margin-right: rem(15);
+        }
+        
+        &:not(:last-of-type) {
+            margin-right: rem(20);
+        }
+    }
+    
+    &__text {
+        margin: 0;
+        margin-right: auto;
+        font-family: 'Helvetica Neue';
+        font-size: rem(18);
+        font-weight: 100;
+        font-style: italic;
+        color: $manatee;
+        text-align: left;
+    }
+    
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            margin: 0;
+            margin-bottom: rem(10);
+            font-family: 'Helvetica Neue';
+            font-size: rem(18);
+            font-weight: 200;
+            font-style: italic;
+            color: $white;
+            text-align: left;
+        }
+        
+        span {
+            width: 100%;
+            font-family: 'Helvetica Neue';
+            font-size: rem(12);
+            font-weight: 200;
+            font-style: italic;
+            color: $black;
+            text-align: right;
+        }
+    }
+}
