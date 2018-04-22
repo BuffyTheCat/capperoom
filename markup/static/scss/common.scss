@@ -107,7 +107,7 @@ body {
 .mCSB_3_scrollbar,
 .mCSB_draggerRail {
     width: 20px!important;
-    background-color: #ffffff!important;
+    background-color: transparent!important;
 }
 
 
@@ -121,6 +121,11 @@ body {
 .mCSB_dragger_bar {
     width: 100%!important;
     background-color: #b4b4b4!important;
+}
+
+.mCSB_draggerContainer,
+.mCSB_scrollTools{
+    width: 20px!important;
 }
 
 .mCSB_inside > .mCSB_container {

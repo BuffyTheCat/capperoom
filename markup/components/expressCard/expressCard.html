@@ -1,58 +1,60 @@
 <article class="expressCard {{modifier}}">
-    <div class="expressCard__express">
-        <p class="expressCard__count">
-            Экспресс из <span>5</span> ставок
-        </p>
-        <div class="expressCard__sport">
-            {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-            {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-            {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-            {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-            {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
+   <div class="expressCard__content">
+        <div class="expressCard__express">
+            <p class="expressCard__count">
+                Экспресс из <span>5</span> ставок
+            </p>
+            <div class="expressCard__sport">
+                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
+            </div>
+            <div class="forecastCard__time">
+                <p>28 апреля в 3:00 по Москве</p>
+                <span>LIFE</span>
+                <span>- 72:51:06</span>
+            </div>
         </div>
-        <div class="forecastCard__time">
-            <p>28 апреля в 3:00 по Москве</p>
-            <span>LIFE</span>
-            <span>- 72:51:06</span>
+        <div class="expressCard__coefficient">
+            <p>1.7</p>
         </div>
-    </div>
-    <div class="expressCard__coefficient">
-        <p>1.7</p>
-    </div>
-    <div class="expressCard__info">
-        <a href="javascript:void(0);" class="expressCard__name">Оптимус прайм</a>
-        <p class="expressCard__result">Форма 2 (-6)</p>
-        <a href="javascript:void(0);" class="expressCard__buy"><p>В корзину: <span>900</span> руб</p></a>
-        <a href="javascript:void(0);" class="expressCard__more">Смотреть подробнее</a>
-        <p class="expressCard__desc">По подписке дешевле</p>
-    </div>
-    <div class="expressCard__consonants">
-        <div class="expressCard__like">
-            <a href="javascript:void(0);">
-                {{Icon iconName='like' className='expressCard__like-icon' iconWidth='22' iconHeight='25'}}
-            </a>
-            <dl>
-                <dt>Согласных:</dt>
-                <dd>1024</dd>
-            </dl>
+        <div class="expressCard__info">
+            <a href="javascript:void(0);" class="expressCard__name js-open" data-src=".analist">Оптимус прайм {{> diagramm/diagramm}}</a>
+            <p class="expressCard__result">Форма 2 (-6)</p>
+            <a href="javascript:void(0);" class="expressCard__buy"><p>В корзину: <span>900</span> руб</p></a>
+            <a href="javascript:void(0);" class="expressCard__more">Смотреть подробнее</a>
+            <p class="expressCard__desc">По подписке дешевле</p>
         </div>
-        <div class="expressCard__dislike">
-            <a href="javascript:void(0);">
-                {{Icon iconName='like' className='expressCard__dislike-icon' iconWidth='22' iconHeight='25'}}
-            </a>
-            <dl>
-                <dt>Не согласны:</dt>
-                <dd>273</dd>
-            </dl>
+        <div class="expressCard__consonants">
+            <div class="expressCard__like">
+                <a href="javascript:void(0);">
+                    {{Icon iconName='like' className='expressCard__like-icon' iconWidth='22' iconHeight='25'}}
+                </a>
+                <dl>
+                    <dt>Согласных:</dt>
+                    <dd>1024</dd>
+                </dl>
+            </div>
+            <div class="expressCard__dislike">
+                <a href="javascript:void(0);">
+                    {{Icon iconName='like' className='expressCard__dislike-icon' iconWidth='22' iconHeight='25'}}
+                </a>
+                <dl>
+                    <dt>Не согласны:</dt>
+                    <dd>273</dd>
+                </dl>
+            </div>
+            <div class="expressCard__comment">
+                <a href="javascript:void(0);">
+                    {{Icon iconName='review' className='expressCard__comment-icon' iconWidth='22' iconHeight='19'}}
+                </a>
+                <dl>
+                    <dt>Комментариев</dt>
+                    <dd>98</dd>
+                </dl>
+            </div>
         </div>
-        <div class="expressCard__comment">
-            <a href="javascript:void(0);">
-                {{Icon iconName='review' className='expressCard__comment-icon' iconWidth='22' iconHeight='19'}}
-            </a>
-            <dl>
-                <dt>Комментариев</dt>
-                <dd>98</dd>
-            </dl>
-        </div>
-    </div>
+   </div>
 </article>

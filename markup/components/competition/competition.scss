@@ -49,13 +49,15 @@
             text-align: left;
             line-height: 20px;
         }
+    }
+    
+    &__button {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
 
-        .button {
-            width: 100%;
-
-            &:not(:last-of-type) {
-                margin-bottom: rem(10);
-            }
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
         }
     }
 
@@ -192,6 +194,16 @@
 
             &:not(:last-of-type) {
                 margin-bottom: rem(5);
+            }
+        }
+        
+        .diagramm {
+            margin-left: rem(25);
+            
+            p {
+                font-size: rem(24);
+                font-weight: 200;
+                color: $ashgrey;
             }
         }
     }

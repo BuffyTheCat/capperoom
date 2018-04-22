@@ -19,4 +19,176 @@
         <p>c 2009г © ООО "Капперум"</p>
         <span>Сайт разработан Samborsky.ru </span>
     </div>
+    
+    <section class="popup regestration js-popup">
+        <h3 class="popup__title">Регистрация</h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <div class="popup__content">
+            <form action="">
+                <input class="popup__input" type="email" placeholder="E-mail">
+                <input class="popup__input" type="text" placeholder="Никнейм">
+                <input class="popup__input" type="password" placeholder="Придумайте пароль">
+                <input class="popup__input" type="password" placeholder="Повторите пароль">
+                <button class="popup__button" type="submit">Зарегестрироваться</button>
+            </form>
+            <p class="popup__sent">Регистрация прошла успешно! К вам на e-mail отправлено сообщение с подтверждением регистрации пройдите по ссылки в указанном письме для верификации</p>
+        </div>
+    </section>
+    <section class="popup login js-popup">
+        <h3 class="popup__title">Регистрация</h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <div class="popup__content">
+            <input class="popup__input" type="email" placeholder="E-mail">
+            <input class="popup__input" type="password" placeholder="Пароль">
+            <a class="popup__link" href="javascript:void(0);">Забыли пароль</a>
+            <button class="popup__button" type="submit">Войти</button>
+            <a class="popup__link popup__link_big" href="javascript:void(0);">Регестрация</a>
+        </div>
+    </section>
+    <section class="popup prize js-popup">
+        <h3 class="popup__title">Приз за лучшую аналитику по результатам февраля 2018</h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <div class="popup__content">
+            <div class="prize__visual">
+                <img src="%=static=%img/general/prize.jpg" alt="" class="prize__view">
+                <div class="prize__gallery">
+                    <a href="javascript:void(0);">
+                        <img src="%=static=%img/general/prize.jpg" alt="">
+                    </a>
+                    <a  class="active" href="javascript:void(0);">
+                        <img src="%=static=%img/general/prize.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0);">
+                        <img src="%=static=%img/general/prize.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0);">
+                        <img src="%=static=%img/general/prize.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0);">
+                        <img src="%=static=%img/general/prize.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="prize__desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores reiciendis voluptatum dicta, officia soluta modi maxime, alias ipsam architecto provident quam sapiente aperiam ullam, itaque accusamus saepe quasi molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores reiciendis voluptatum dicta, officia soluta modi maxime, alias ipsam architecto provident quam sapiente aperiam ullam, itaque accusamus saepe quasi molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores reiciendis voluptatum dicta, officia soluta modi maxime, alias ipsam architecto provident quam sapiente aperiam ullam, itaque accusamus saepe quasi molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores reiciendis voluptatum dicta, officia soluta modi maxime, alias ipsam architecto provident quam sapiente aperiam ullam, itaque accusamus saepe quasi molestias.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusamus quam quisquam natus optio laudantium aliquid ea atque, magni expedita et minus sint, distinctio ducimus quibusdam possimus eligendi voluptatem quidem!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora deleniti facere maiores voluptatibus possimus eaque, ipsum atque earum, sed aut molestias quaerat nulla recusandae. Unde fuga, libero atque architecto veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores reiciendis voluptatum dicta, officia soluta modi maxime, alias ipsam architecto provident quam sapiente aperiam ullam, itaque accusamus saepe quasi molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maiores reiciendis voluptatum dicta, officia soluta modi maxime, alias ipsam architecto provident quam sapiente aperiam ullam, itaque accusamus saepe quasi molestias.</p>
+            </div>
+        </div>
+    </section>
+    <section class="popup analist js-popup">
+        <h3 class="popup__title">Карточка аналитика</h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <div class="popup__content">
+            <section class="analist__card">
+                <img src="%=static=%img/general/analist.jpg" alt="" class="analist__avatar">
+                <div class="analist__info">
+                    <div class="analist__name">
+                        <h3>Лорд Воландеморт</h3>
+                        <label class="favorites">
+                            <input class="favorites__checkbox" name="favorites__checkbox"  type="checkbox">
+                            <span class="favorites__custom"></span>
+                        </label>
+                        <dl>
+                            <dt>ID:</dt>
+                            <dd>0004456</dd>
+                        </dl>
+                    </div>
+                    <div class="analist__rating">
+                        <p class="analist__text">Рейтинг по:</p>
+                        <select class="analist__sort" name="analist__sort" id="">
+                            <option value="all">Всем видам спорта</option>
+                            <option value="football">Футбол</option>
+                        </select>
+                        {{> diagramm/diagramm}}
+                        <p class="analist__text"><span>12</span>-ый из <span>15999</span></p>
+                        <p class="analist__average"><a href="javascript:void(0);">i</a>СрК: <span>2.5</span></p>
+                    </div>
+                    <p class="analist__date">
+                        Регистрация: <span>23.06.2017</span>
+                    </p>
+                </div>
+            </section>
+            <section class="analist__forecasts">
+                <div class="analist__forecasts-heading">
+                    <p>История прогнозов</p>
+                    <select name="sorting" id="">
+                        <option value="">Сортировать по дате</option>
+                        <option value="">Сортировать по настроению</option>
+                    </select>
+                </div>
+                <div class="analist__forecasts-list">
+                    {{> forecast/forecast}}
+                    <article class="forecast forecast_true">
+                        <div class="forecast__content">
+                            <div class="forecast__result">
+                               <p class="forecast__status">
+                                   {{Icon iconName='box' className='forecast__status-icon' iconWidth='25' iconHeight='25'}}
+                                   Ожидаем
+                               </p>
+                                <span>Свой прогноз</span>
+                            </div>
+                            <div class="forecast__main">
+                               <div class="forecast__sport">
+                                   {{Icon iconName='box' className='forecast__icon' iconWidth='30' iconHeight='30'}}
+                               </div>
+                                <div class="forecast__match">
+                                    <p class="forecast__comands">
+                                        <span>Чикаго Булс</span> - <span>Манчестер Юнайтед</span>
+                                    </p>
+                                    <div class="forecast__time">
+                                        <p>28 апреля в 3:00 по Москве</p>
+                                        <span>LIFE</span>
+                                        <span>- 72:51:06</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecast__score">
+                                <dl>
+                                    <dt>Прогноз:</dt>
+                                    <dd> П1-5 (1,7)</dd>
+                                </dl>
+                                <span>Бесплатный</span>
+                            </div>
+                       </div>
+                    </article>
+                    <article class="forecast forecast_false">
+                        <div class="forecast__content">
+                            <div class="forecast__result">
+                               <p class="forecast__status">
+                                   {{Icon iconName='box' className='forecast__status-icon' iconWidth='25' iconHeight='25'}}
+                                   Ожидаем
+                               </p>
+                                <span>Свой прогноз</span>
+                            </div>
+                            <div class="forecast__main">
+                               <div class="forecast__sport">
+                                   {{Icon iconName='box' className='forecast__icon' iconWidth='30' iconHeight='30'}}
+                               </div>
+                                <div class="forecast__match">
+                                    <p class="forecast__comands">
+                                        <span>Чикаго Булс</span> - <span>Манчестер Юнайтед</span>
+                                    </p>
+                                    <div class="forecast__time">
+                                        <p>28 апреля в 3:00 по Москве</p>
+                                        <span>LIFE</span>
+                                        <span>- 72:51:06</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecast__score">
+                                <dl>
+                                    <dt>Прогноз:</dt>
+                                    <dd> П1-5 (1,7)</dd>
+                                </dl>
+                                <span>Бесплатный</span>
+                            </div>
+                       </div>
+                    </article>
+                    {{> forecast/forecast}}
+                </div>
+            </section>
+        </div>
+    </section>
+    <div class="overlay"></div>
 </footer>
