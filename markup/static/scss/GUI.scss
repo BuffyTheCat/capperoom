@@ -9,7 +9,67 @@
     background-color: $grey_light;
 
     &__input {
-        display: none;
+        width: 0;
+        
+        font-family: 'Helvetica Neue';
+        font-size: rem(18);
+        color: $grey;
+        font-style: italic;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: left;
+        
+        background-color: transparent;
+        border: none;
+        outline: none;
+        
+        transition: width .8s;
+        
+        &::-webkit-input-placeholder {
+            font-family: 'Helvetica Neue';
+            font-size: rem(18);
+            color: $grey;
+            font-style: italic;
+            font-weight: 400;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        &::-moz-placeholder {
+            font-family: 'Helvetica Neue';
+            font-size: rem(18);
+            color: $grey;
+            font-style: italic;
+            font-weight: 400;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        &:-moz-placeholderr {
+            font-family: 'Helvetica Neue';
+            font-size: rem(18);
+            color: $grey;
+            font-style: italic;
+            font-weight: 400;
+            text-decoration: none;
+            text-align: left;
+        }
+        
+        &:-ms-input-placeholde {
+            font-family: 'Helvetica Neue';
+            font-size: rem(18);
+            color: $grey;
+            font-style: italic;
+            font-weight: 400;
+            text-decoration: none;
+            text-align: left;
+        }
+        
+        &.active {
+            padding: rem(15);
+            margin-right: rem(15);
+            width: rem(600);
+        }
     }
 
     &__button {
@@ -25,6 +85,43 @@
         background-image: url('%=static=%general/search.png');
         background-size: contain;
         background-repeat: no-repeat;
+    }
+}
+
+.hamburger {
+    position: relative;
+    
+    display: none;
+    width: rem(40);
+    height: rem(35);
+    margin-right: auto;
+    margin-left: rem(30);
+    
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+    span {
+        position: absolute;
+        left: 0;
+        
+        height: rem(3);
+        width: 100%;
+        
+        background-color: $grey;
+        
+        &:nth-of-type(1) {
+            top: 0;
+        }
+        
+        &:nth-of-type(2) {
+            top: calc(50% - 1px);
+        }
+        
+        &:nth-of-type(3) {
+            bottom: 0;
+        }
     }
 }
 
