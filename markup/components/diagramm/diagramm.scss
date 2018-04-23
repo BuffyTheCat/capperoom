@@ -1,7 +1,7 @@
 .diagramm {
     display: inline-flex;
     align-items: center;
-    
+
     p {
         margin: 0;
         margin-right: rem(10);
@@ -10,9 +10,20 @@
         color: $orange;
         font-weight: 400;
     }
-    
-    img {
-        width: rem(20);
-        height: rem(20);
+
+    &__circle {
+        width: rem(28);
+        height: rem(28);
     }
+
+    &_mini {
+        .diagramm__circle {
+            width: rem(22);
+            height: rem(22);
+        }
+    }
+}
+
+.timer {
+    display: none!important;
 }
