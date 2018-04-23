@@ -28,18 +28,30 @@
             text-align: left;
         }
 
-        select {
-            @extend .select;
-            height: rem(45);
-            width: rem(350);
+        .select2-selection,
+        .select2-container {
+            height: rem(45)!important;
+            width: rem(330)!important
+        }
+
+        .select2-selection__arrow {
+            height: rem(45)!important;
+        }
+
+        .select2-container {
+            margin-right: 20px!important;
+        }
+
+        .select2-selection__rendered {
+            height: 100%!important;
         }
     }
-    
+
     &__button {
         width: rem(280);
 
         font-size: rem(18);
-        
+
         @extend .button;
         @extend .button_blue;
     }
