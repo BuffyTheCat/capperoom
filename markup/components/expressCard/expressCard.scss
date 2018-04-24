@@ -2,7 +2,7 @@
     transition: border .3s;
     border: rem(2) solid transparent;
     border-radius: rem(2);
-    
+
     &__content {
         display: flex;
         width: 100%;
@@ -11,9 +11,9 @@
         border-radius: rem(2);
         overflow: hidden;
         box-shadow: 0px 3px 3px 0px rgba(0, 6, 26, 0.1);
-        
+
     }
-    
+
     &:hover {
         border: rem(2) solid $orange;
     }
@@ -21,24 +21,24 @@
     &:not(:last-of-type) {
         margin-bottom: rem(15);
     }
-    
+
     &_commercial {
         & .expressCard__desc {
             display: block;
         }
-        
+
         & .expressCard__result {
             display: none;
         }
-        
+
         & .expressCard__buy {
             display: flex;
         }
-        
+
         & .expressCard__more {
             display: none;
         }
-        
+
         & .expressCard__name {
             margin-bottom: rem(10);
         }
@@ -70,12 +70,12 @@
     &__league-icon:hover {
         fill: $orange;
     }
-    
+
     &__express {
         padding: rem(25) rem(20);
         margin-right: rem(2);
         width: rem(436);
-        
+
         background-color: $white;
     }
 
@@ -100,16 +100,19 @@
         color: $grey;
         text-align: left;
     }
-    
+
     &__sport {
+		display: flex;
         margin-bottom: rem(10);
-        
+
         & svg {
             margin: 0;
-            
-            &:not(:last-of-type) {
-                margin-right: rem(10);
-            }
+        }
+    }
+
+    &__tooltip {
+        &:not(:last-of-type) {
+            margin-right: rem(10);
         }
     }
 
@@ -168,7 +171,7 @@
 
         background-color: $white;
     }
-    
+
     &__result {
         margin: 0;
         margin-bottom: rem(20);
@@ -178,7 +181,7 @@
         color: $grey;
         text-align: left;
     }
-    
+
     &__buy {
         display: none;
         margin-bottom: rem(10);
@@ -186,7 +189,7 @@
         width: rem(225);
         @extend .button;
         @extend .button_orange;
-        
+
         & p {
             margin: 0;
         }
@@ -208,10 +211,10 @@
         &:hover {
             color: $orange;
         }
-        
+
         .diagramm {
             margin-left: rem(25);
-            
+
             p {
                 font-size: rem(24);
             }
@@ -228,7 +231,7 @@
         color: $manatee;
         text-align: left;
     }
-    
+
     &__desc {
         display: none;
     }

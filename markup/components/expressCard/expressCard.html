@@ -5,11 +5,26 @@
                 Экспресс из <span>5</span> ставок
             </p>
             <div class="expressCard__sport">
-                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
-                {{Icon iconName='box' className='expressCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                <div class="expressCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                    {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                    {{> tooltip/tooltip tooltip.sport}}
+                </div>
+                <div class="expressCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                    {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                    {{> tooltip/tooltip tooltip.sport}}
+                </div>
+                <div class="expressCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                    {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                    {{> tooltip/tooltip tooltip.sport}}
+                </div>
+                <div class="expressCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                    {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                    {{> tooltip/tooltip tooltip.sport}}
+                </div>
+                <div class="expressCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                    {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                    {{> tooltip/tooltip tooltip.sport}}
+                </div>
             </div>
             <div class="forecastCard__time">
                 <p>28 апреля в 3:00 по Москве</p>

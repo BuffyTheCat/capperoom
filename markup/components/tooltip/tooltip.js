@@ -3,5 +3,5 @@ $('.tooltipstered').tooltipster({
     delay: 200,
     theme: ['tooltip_blue'],
     side: 'top',
-    trigger: 'click'
+    trigger: 'hover'
 });
