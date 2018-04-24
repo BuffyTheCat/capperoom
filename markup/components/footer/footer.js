@@ -39,3 +39,39 @@ $('.analist__forecasts-list').mCustomScrollbar({
     axis: 'y'
 });
 
+function getSrc() {
+    let srcImage = $('.prize__gallery').find('.slick-current').find('img').attr('src');
+    $('.prize__view').attr('src', srcImage);
+}
+
+function slickNext() {
+    $('.slick-next').on('click', function () {
+        getSrc();
+    });
+}
+
+function slickPrev() {
+    $('.slick-prev').on('click', function () {
+        getSrc();
+    });
+}
+
+$('.competition__prize').on('click', function () {
+    $('.prize__gallery').slick('refresh');
+    getSrc();
+    slickNext();
+    slickPrev();
+});
+
+$('.prize__gallery').slick({
+    slidesToScroll: 1,
+    infinite: true,
+    slidesToShow: 3,
+    centerMode: true,
+    variableWidth: true
+});
+
+$('.analist__select').select2({
+    minimumResultsForSearch: Infinity,
+    dropdownCssClass: 'dropdown_blue'
+});

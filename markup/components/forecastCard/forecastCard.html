@@ -1,8 +1,14 @@
 <article class="forecastCard {{modifier}}">
    <div class="forecastCard__content">
         <div class="forecastCard__sport-league">
-            {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
-            {{Icon iconName='league' className='forecastCard__league-icon' iconWidth='30' iconHeight='30'}}
+            <div class="forecastCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
+                {{> tooltip/tooltip tooltip.sport}}
+            </div>
+            <div class="forecastCard__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                {{Icon iconName='league' className='forecastCard__league-icon' iconWidth='30' iconHeight='30'}}
+                {{> tooltip/tooltip tooltip.league}}
+            </div>
         </div>
         <div class="forecastCard__match-details">
             <p class="forecastCard__comand">

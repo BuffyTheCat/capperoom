@@ -1,0 +1,46 @@
+.tooltip {
+    display: none;
+
+    &_blue {
+        p {
+            margin: 0;
+
+            font-family: $helvetica;
+            font-size: rem(18);
+            font-weight: 100;
+            color: $white;
+            text-align: center;
+        }
+
+        .tooltipster-box {
+            background-color: #45bbff;
+            border: none;
+        }
+
+        .tooltipster-content {
+            padding: rem(10) rem(25);
+        }
+
+        .tooltipster-arrow-border {
+            border-top-color: #45bbff!important;
+        }
+
+        .tooltipster-arrow-background {
+            border-top-color: #45bbff!important;
+        }
+
+
+    }
+
+
+}
+
+.tooltip_blue.tooltipster-bottom {
+    .tooltipster-arrow-border {
+        border-bottom-color: #45bbff!important;
+    }
+
+    .tooltipster-arrow-background {
+        border-bottom-color: #45bbff!important;
+    }
+}

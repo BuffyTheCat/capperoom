@@ -56,13 +56,13 @@
                         <img src="%=static=%img/general/prize.jpg" alt="">
                     </a>
                     <a  class="active" href="javascript:void(0);">
-                        <img src="%=static=%img/general/prize.jpg" alt="">
+                        <img src="%=static=%img/general/prize2.jpg" alt="">
                     </a>
                     <a href="javascript:void(0);">
                         <img src="%=static=%img/general/prize.jpg" alt="">
                     </a>
                     <a href="javascript:void(0);">
-                        <img src="%=static=%img/general/prize.jpg" alt="">
+                        <img src="%=static=%img/general/prize2.jpg" alt="">
                     </a>
                     <a href="javascript:void(0);">
                         <img src="%=static=%img/general/prize.jpg" alt="">
@@ -96,10 +96,12 @@
                     </div>
                     <div class="analist__rating">
                         <p class="analist__text">Рейтинг по:</p>
-                        <select class="analist__sort" name="analist__sort" id="">
-                            <option value="all">Всем видам спорта</option>
-                            <option value="football">Футбол</option>
-                        </select>
+                        <div class="analist__sort">
+                            <select class="analist__select"  name="analist__sort" id="">
+                                <option value="all">Всем видам спорта</option>
+                                <option value="football">Футбол</option>
+                            </select>
+                        </div>
                         {{> diagramm/diagramm diagramm.orangemini}}
                         <p class="analist__text"><span>12</span>-ый из <span>15999</span></p>
                         <p class="analist__average"><a href="javascript:void(0);">i</a>СрК: <span>2.5</span></p>
@@ -112,7 +114,7 @@
             <section class="analist__forecasts">
                 <div class="analist__forecasts-heading">
                     <p>История прогнозов</p>
-                    <select name="sorting" id="">
+                    <select class="select" name="sorting" id="">
                         <option value="">Сортировать по дате</option>
                         <option value="">Сортировать по настроению</option>
                     </select>
