@@ -56,11 +56,21 @@ function slickPrev() {
     });
 }
 
+function slickGoTo() {
+    $('.slick-slide').on('click', function () {
+        let index = $(this).attr('data-slick-index');
+        console.log(index);
+        $('.prize__gallery').slick('slickGoTo', index, false);
+        getSrc();
+    });
+}
+
 $('.competition__prize').on('click', function () {
     $('.prize__gallery').slick('refresh');
     getSrc();
     slickNext();
     slickPrev();
+    slickGoTo();
 });
 
 $('.prize__gallery').slick({
