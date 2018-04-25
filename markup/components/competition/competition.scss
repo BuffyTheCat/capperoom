@@ -50,7 +50,7 @@
             line-height: 20px;
         }
     }
-    
+
     &__button {
         @extend .button;
         @extend .button_blue;
@@ -120,7 +120,7 @@
             font-family: 'Helvetica Neue';
             font-size: 18px;
             font-weight: 100;
-            color: $blue;
+            color: #979797;
             text-align: left;
         }
         dd {
@@ -134,10 +134,16 @@
         border-left: rem(1) solid #3F515D;
         border-right: rem(1) solid #3F515D;
 
+        transition: filter .3s;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        &:hover {
+            filter: brightness(110%);
         }
     }
 
@@ -184,6 +190,7 @@
             &:first-of-type {
                 dt {
                     color: rgba(79, 79, 79, 1);
+                    font-weight: 300;
                 }
 
                 dd {
@@ -195,11 +202,18 @@
             &:not(:last-of-type) {
                 margin-bottom: rem(5);
             }
+
+            &:last-of-type {
+                dt,
+                dd {
+                    color: #979797;
+                }
+            }
         }
-        
+
         .diagramm {
             margin-left: rem(25);
-            
+
             p {
                 font-size: rem(24);
                 font-weight: 200;

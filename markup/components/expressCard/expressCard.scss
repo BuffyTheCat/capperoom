@@ -42,6 +42,32 @@
         & .expressCard__name {
             margin-bottom: rem(10);
         }
+
+        & .expressCard__like-icon,
+        & .expressCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .expressCard__like:hover .expressCard__like-icon,
+        & .expressCard__dislike:hover .expressCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .expressCard__comment:hover .expressCard__comment-icon {
+            fill: #c8c8c8;
+        }
+
+        & .expressCard__like,
+        & .expressCard__dislike,
+        & .expressCard__like:hover,
+        & .expressCard__dislike:hover,
+        & .expressCard__comment:hover,
+        & .expressCard__comment {
+            dt,
+            dd {
+                color: rgba(79, 79, 79, 1);
+            }
+        }
     }
 
     &__sport-league {
@@ -72,6 +98,8 @@
     }
 
     &__express {
+        display: flex;
+        flex-direction: column;
         padding: rem(25) rem(20);
         margin-right: rem(2);
         width: rem(436);
@@ -96,14 +124,14 @@
         margin-bottom: rem(10);
         font-family: 'Helvetica Neue';
         font-size: rem(24);
-        font-weight: 100;
-        color: $grey;
+        font-weight: 300;
+        color: rgba(79, 79, 79, 1);
         text-align: left;
     }
 
     &__sport {
 		display: flex;
-        margin-bottom: rem(10);
+        margin-bottom: auto;
 
         & svg {
             margin: 0;
@@ -165,6 +193,7 @@
     &__info {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: rem(422);
         margin-right: rem(2);
         padding: rem(25) rem(30);
@@ -174,7 +203,7 @@
 
     &__result {
         margin: 0;
-        margin-bottom: rem(20);
+
         font-family: 'HelveticaNeueCyr';
         font-size: rem(18);
         font-weight: 100;
@@ -197,7 +226,6 @@
 
     &__name {
         margin: 0;
-        margin-bottom: rem(20);
 
         font-family: 'Helvetica Neue';
         font-size: rem(24);
@@ -323,5 +351,16 @@
 
     &__dislike-icon {
         transform: rotate(180deg);
+    }
+
+    &__comment {
+        dl {
+            dt,
+            dd {
+                font-weight: 300!important;
+                font-style: italic!important;
+                color: $manatee!important;
+            }
+        }
     }
 }

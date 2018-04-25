@@ -44,6 +44,8 @@
     }
 
     &__item-name {
+        margin: 0;
+        margin-bottom: rem(15);
         font-family: 'Helvetica Neue';
         font-size: rem(18);
         font-weight: 100;

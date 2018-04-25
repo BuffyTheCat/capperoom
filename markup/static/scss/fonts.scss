@@ -24,6 +24,14 @@
 
 @font-face {
 	font-family: 'Helvetica Neue';
+	src: url('../fonts/subset-HelveticaNeue-Light.woff2') format('woff2'),
+		url('../fonts/subset-HelveticaNeue-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
 	src: url('../fonts/HelveticaNeueCyr-Thin.woff2') format('woff2'),
 		url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff');
 	font-weight: 100;

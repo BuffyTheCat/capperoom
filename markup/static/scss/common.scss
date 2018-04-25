@@ -28,18 +28,18 @@ body {
     &__wrapper {
         min-height: 100%;
     }
-    
+
     &__bunner {
         display: flex;
         margin-bottom: rem(100);
         @extend .container;
-        
+
         img {
             width: rem(305);
             height: rem(235);
             margin-right: rem(80);
         }
-        
+
         h2,
         h3 {
             margin: 0;
@@ -50,7 +50,7 @@ body {
             color: $white;
             text-align: left;
         }
-        
+
         p {
             margin: 0;
             font-family: 'Helvetica Neue';
@@ -61,7 +61,7 @@ body {
             text-align: left;
             line-height: 1.6;
         }
-        
+
         .just-wrap {
             display: flex;
             flex-direction: column;
@@ -87,7 +87,7 @@ body {
         position: relative;
 
         z-index: 3;
-        
+
         @extend .container;
     }
 
@@ -121,6 +121,11 @@ body {
 .mCSB_dragger_bar {
     width: 100%!important;
     background-color: #b4b4b4!important;
+    border-radius: 0!important;
+
+    &:hover {
+        background-color: $orange!important;
+    }
 }
 
 .mCSB_draggerContainer,

@@ -2,7 +2,7 @@
     transition: border .3s;
     border: rem(2) solid transparent;
     border-radius: rem(3);
-    
+
     &__content {
         display: flex;
         width: 100%;
@@ -11,9 +11,9 @@
         border-radius: rem(2);
         overflow: hidden;
         box-shadow: 0px 3px 3px 0px rgba(0, 6, 26, 0.1);
-        
+
     }
-    
+
 
     &:hover {
         border: rem(2) solid $orange;
@@ -22,26 +22,52 @@
     &:not(:last-of-type) {
         margin-bottom: rem(15);
     }
-    
+
     &_commercial {
         & .forecastCard__desc {
             display: block;
         }
-        
+
         & .forecastCard__result {
             display: none;
         }
-        
+
         & .forecastCard__buy {
             display: flex;
         }
-        
+
         & .forecastCard__more {
             display: none;
         }
-        
+
         & .forecastCard__name {
             margin-bottom: rem(10);
+        }
+
+        & .forecastCard__like-icon,
+        & .forecastCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .forecastCard__like:hover .forecastCard__like-icon,
+        & .forecastCard__dislike:hover .forecastCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .forecastCard__comment:hover .forecastCard__comment-icon {
+            fill: #c8c8c8;
+        }
+
+        & .forecastCard__like,
+        & .forecastCard__dislike,
+        & .forecastCard__like:hover,
+        & .forecastCard__dislike:hover,
+        & .forecastCard__comment:hover,
+        & .forecastCard__comment {
+            dt,
+            dd {
+                color: rgba(79, 79, 79, 1);
+            }
         }
     }
 
@@ -90,11 +116,11 @@
         flex-shrink: 0;
         margin: 0;
         margin-bottom: rem(10);
-        
+
         font-family: 'Helvetica Neue';
         font-size: rem(24);
-        font-weight: 100;
-        color: $grey;
+        font-weight: 300;
+        color: rgba(79, 79, 79, 1);
         text-align: left;
 
         img {
@@ -102,6 +128,10 @@
             margin-right: rem(10);
             width: rem(40);
             height: rem(30);
+        }
+
+        &:last-of-type {
+            margin-bottom: auto;
         }
     }
 
@@ -154,23 +184,23 @@
     &__info {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: rem(422);
         margin-right: rem(2);
         padding: rem(25) rem(30);
 
         background-color: $white;
     }
-    
+
     &__result {
         margin: 0;
-        margin-bottom: rem(20);
         font-family: 'HelveticaNeueCyr';
         font-size: rem(18);
         font-weight: 100;
         color: $grey;
         text-align: left;
     }
-    
+
     &__buy {
         display: none;
         margin-bottom: rem(10);
@@ -178,7 +208,7 @@
         width: rem(225);
         @extend .button;
         @extend .button_orange;
-        
+
         & p {
             margin: 0;
         }
@@ -186,7 +216,6 @@
 
     &__name {
         margin: 0;
-        margin-bottom: rem(20);
 
         font-family: 'Helvetica Neue';
         font-size: rem(24);
@@ -200,10 +229,10 @@
         &:hover {
             color: $orange;
         }
-        
+
         .diagramm {
             margin-left: rem(25);
-            
+
             p {
                 font-size: rem(24);
             }
@@ -220,7 +249,7 @@
         color: $manatee;
         text-align: left;
     }
-    
+
     &__desc {
         display: none;
     }
@@ -308,6 +337,17 @@
         fill: $lavandargrey;
 
         transition: fill .3s;
+    }
+
+    &__comment {
+        dl {
+            dt,
+            dd {
+                font-weight: 300!important;
+                font-style: italic!important;
+                color: $manatee!important;
+            }
+        }
     }
 
     &__dislike-icon {

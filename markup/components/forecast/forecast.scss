@@ -2,7 +2,7 @@
     transition: border .3s;
     border: rem(2) solid transparent;
     border-radius: rem(3);
-    
+
     &__content {
         display: flex;
         width: 100%;
@@ -13,7 +13,7 @@
         border-radius: rem(2);
         overflow: hidden;
         box-shadow: 0px 3px 3px 0px rgba(0, 6, 26, 0.1);
-        
+
     }
 
     &:hover {
@@ -23,7 +23,7 @@
     &:not(:last-of-type) {
         margin-bottom: rem(6);
     }
-    
+
     &__result {
         display: flex;
         flex-direction: column;
@@ -32,7 +32,7 @@
         padding-right: rem(10);
         background-color: $white;
         margin-right: rem(2);
-        
+
         span {
             padding-left: rem(35);
             font-family: $helvetica;
@@ -42,23 +42,23 @@
             font-style: italic;
         }
     }
-    
+
     &__status {
         display: flex;
         align-items: center;
         margin: 0;
         margin-bottom: rem(10);
-        
+
         font-family: $helvetica;
-        font-weight: 200;
-        color: $grey;
+        font-weight: 300;
+        color: rgba(79, 79, 79, 1);
         font-size: rem(18);
-        
+
         svg {
             margin-right: rem(10);
         }
     }
-    
+
     &__main {
         display: flex;
         width: rem(445);
@@ -66,7 +66,7 @@
         background-color: $white;
         margin-right: rem(2);
     }
-    
+
     &__sport {
         display: flex;
         flex-direction: column;
@@ -75,27 +75,35 @@
         height: 100%;
         padding-right: rem(20);
         margin-right: rem(20);
-            
+
         border-right: rem(1) solid #cbcbcb;
+
+        svg {
+            fill: $ashgrey;
+        }
     }
-    
+
     &__match {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
     }
-    
+
     &__comands {
+        display: inline-flex;
+        align-items: center;
+        height: rem(30);
         margin: 0;
         margin-bottom: rem(10);
-        
+        padding-top: rem(5);
+
         font-family: $helvetica;
         font-size: rem(18);
-        font-weight: 100;
-        color: $grey;
+        font-weight: 300;
+        color: rgba(79, 79, 79, 1);
         text-align: left;
     }
-    
+
     &__time {
         display: flex;
 
@@ -121,7 +129,7 @@
             }
         }
     }
-    
+
     &__score {
         display: flex;
         flex-direction: column;
@@ -129,26 +137,28 @@
         padding: rem(20);
         background-color: $white;
         flex-grow: 999;
-        
+
         dl {
             display: flex;
+            align-items: center;
+            height: rem(25);
             margin: 0;
             margin-bottom: rem(10);
-            
+
             dt,
             dd {
                 margin: 0;
                 font-family: $helvetica;
                 font-size: rem(18);
-                font-weight: 200;
-                color: $grey;
+                font-weight: 300;
+                color: rgba(79, 79, 79, 1);
             }
-            
+
             dd {
                 margin-left: rem(10);
             }
         }
-        
+
         span {
             font-family: $helvetica;
             font-weight: 200;
@@ -157,13 +167,13 @@
             font-style: italic;
         }
     }
-    
+
     &_true {
         .forecast__result {
             background-color: #ffba00;
         }
     }
-    
+
     &_false {
         .forecast__result {
             background-color: #dcdcdc;

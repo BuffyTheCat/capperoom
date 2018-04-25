@@ -1,65 +1,65 @@
 .header {
     position: relative;
-        
+
     display: flex;
     align-items: center;
     height: rem(100);
     padding: rem(20);
     padding-top: 0;
-    
+
     background-color: $white;
     border-radius: 0 0 rem(5) rem(5);
     box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.1);
-    
+
     &::after {
         position: absolute;
         content: '';
         top: 0;
         left: rem(147);
-        
+
         width: rem(45);
         height: 100%;
-        
+
         transform: skewX(-20deg);
         background-color: $orange;
     }
-    
+
     &__logo {
         display: flex;
-        margin-right: rem(50);
+        margin-right: rem(80);
         padding-left: rem(20);
         padding-top: rem(20);
-        
+
         text-decoration: none;
-        
+
         img {
             width: rem(46);
             height: rem(67);
             margin-right: rem(10);
         }
     }
-    
+
     &__logo-name {
         position: relative;
-            
+
         display: flex;
         flex-direction: column;
-        
+
         z-index: 3;
-        
+
         p {
             margin: 0;
             font-family: 'magneto';
             font-size: rem(36);
             color: $grey;
-            
+
             span {
                 font-family: 'magneto';
                 font-size: rem(36);
                 color: $white;
             }
         }
-        
+
         span {
                 font-family: 'Helvetica Neue';
                 font-size: rem(12);
@@ -68,26 +68,26 @@
                 font-weight: 400;
             }
     }
-    
+
     &__nav {
         display: flex;
         align-items: center;
         flex-grow: 3;
         margin-right: auto;
         height: 100%;
-        
-        
+
+
     }
-    
+
     &__link {
         position: relative;
-        
+
         height: 100%;
-        
+
         &:not(:last-of-type) {
-            margin-right: rem(20);
+            margin-right: rem(50);
         }
-        
+
         &>a {
             position: relative;
 
@@ -96,27 +96,26 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            padding-left: rem(30);
-            
+
             font-family: 'Helvetica Neue';
             font-size: rem(18);
             color: $grey;
             font-style: italic;
-            font-weight: 200;
+            font-weight: 300;
             text-decoration: none;
             text-align: center;
-            
+
             transform: color .3s;
-            
+
             &::before {
                     position: absolute;
                     content: '';
                     top: 0;
                     left: 0;
-                    
+
                     width: 100%;
                     height: rem(85);
-                    
+
                     background-color: $white;
                     border-top: rem(5) solid $orange;
                     opacity: 0;
@@ -125,50 +124,49 @@
                     z-index: -2;
             }
         }
-        
+
         &:hover {
-            
+
             &>a {
-                
-                padding-left: rem(30);
+
                 align-items: flex-start;
-                
+
                 color: $orange;
-                
+
                 z-index: 5;
-                
+
                 &::before {
                     opacity: 1;
-                    width: rem(285);
                 }
-                
-                
+
+
             }
-            
+
             .header__sublinks {
                 display: flex;
             }
         }
-    } 
-    
+    }
+
     &__sublinks {
         position: absolute;
-        
-        top: rem(85);
+
+        top: rem(100);
         left: 0;
-        
+
         display: none;
         flex-direction: column;
-        width: rem(285);
-        max-height: rem(365);
+        width: rem(305);
+        max-height: rem(395);
         overflow-y: auto;
-        
+        padding-bottom: rem(15);
+
         background-color: $white;
         z-index: 4;
-        
+
         a {
             position: relative;
-            
+
             display: flex;
             align-items: center;
             min-height: rem(40);
@@ -177,7 +175,7 @@
             padding-top: rem(5);
             padding-bottom: rem(5);
             padding-right: rem(15);
-            
+
             font-family: 'Helvetica Neue';
             font-size: rem(18);
             color: $grey;
@@ -185,39 +183,39 @@
             font-weight: 200;
             text-decoration: none;
             text-align: left;
-            
+
             span {
                 margin-left: auto;
             }
-            
+
             &:hover {
                 background-color: $orange;
                 color: $black;
-                    
+
                 &::before {
                     background-color: $black;
                 }
             }
-            
+
             &::before {
                 position: absolute;
                 content: '';
                 left: rem(27);
                 top: calc(50% - 1.5px);
-                
+
                 width: rem(3);
                 height: rem(3);
-                
+
                 border-radius: 50%;
                 background-color: $grey;
             }
         }
-        
+
         &:hover {
             display: flex;
         }
     }
-    
+
     &__hotlink {
         background-color: #e1e1e1;
     }
