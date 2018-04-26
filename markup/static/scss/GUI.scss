@@ -4,7 +4,7 @@
 .search {
     display: flex;
     padding: rem(15);
-    height: 100%;
+    height: calc(100% - 20px);
 
     background-color: $grey_light;
 
@@ -95,7 +95,6 @@
     width: rem(40);
     height: rem(35);
     margin-right: auto;
-    margin-left: rem(30);
 
     background-color: transparent;
     outline: none;
@@ -978,5 +977,97 @@
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
+    }
+}
+
+.basket-table {
+    position: fixed;
+
+    top: rem(198);
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    padding: rem(10);
+    padding-right: 0;
+    padding-top: rem(20);
+
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: rem(5) 0 0 rem(5);
+    box-shadow: 0 rem(3) rem(3) 0 rgba(0, 6, 26, 0.1);
+
+    &__title {
+        margin: 0;
+        margin-bottom: rem(15);
+        padding-left: rem(10);
+
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 300;
+        color: rgba(79, 79, 79, 1);
+        text-align: left;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: rem(15);
+        margin-bottom: rem(10);
+        width: rem(90);
+
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: rem(3) 0 0 rem(3);
+        box-shadow: 0 rem(3) rem(3) 0 rgba(0, 6, 26, 0.1);
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: rem(5);
+
+        font-family: $helvetica;
+        font-size: rem(12);
+        font-weight: 300;
+        color: rgba(180, 180, 180, 1);
+        text-align: left;
+    }
+
+    &__count,
+    &__total {
+        margin: 0;
+        font-family: $helvetica;
+        font-size: rem(16);
+        font-weight: 300;
+        color: rgba(10, 92, 154, 1);
+        text-align: left;
+    }
+
+    &__count {
+        margin-bottom: rem(15);
+    }
+
+    &__link {
+        position: relative;
+
+        @extend .button;
+        @extend .button_orange;
+
+        height: rem(25);
+
+        text-align: left;
+
+        border-radius: rem(3) 0 0 rem(3);
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: rem(8);
+            left: rem(10);
+
+            height: rem(14);
+            width: rem(18);
+            background-image: url('%=static=%general/arrow_double_white.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }

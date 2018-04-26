@@ -5,37 +5,23 @@
     align-items: center;
     height: rem(100);
     padding: rem(20);
+    padding-bottom: 0;
     padding-top: 0;
 
     background-color: $white;
     border-radius: 0 0 rem(5) rem(5);
     box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.1);
 
-    &::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: rem(147);
-
-        width: rem(45);
-        height: 100%;
-
-        transform: skewX(-20deg);
-        background-color: $orange;
-    }
-
     &__logo {
         display: flex;
         margin-right: rem(80);
         padding-left: rem(20);
-        padding-top: rem(20);
 
         text-decoration: none;
 
         img {
-            width: rem(46);
-            height: rem(67);
-            margin-right: rem(10);
+            width: rem(272);
+            height: 100%;
         }
     }
 
@@ -83,6 +69,7 @@
         position: relative;
 
         height: 100%;
+        padding-bottom: rem(7);
 
         &:not(:last-of-type) {
             margin-right: rem(50);
@@ -218,5 +205,9 @@
 
     &__hotlink {
         background-color: #e1e1e1;
+    }
+
+    &__search {
+        margin-bottom: rem(20);
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>true</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="true" fill-rule="nonzero">
+            <circle id="Oval" fill="#515050" cx="12.5" cy="12.5" r="12.5"></circle>
+            <path d="M7.5,12.8 L10.6,16.5 L17.9,6.7 C18.131561,6.36575554 18.4987445,6.15064664 18.9035329,6.11209536 C19.3083213,6.07354408 19.7095085,6.21547482 20,6.5 C20.3008159,6.75973333 20.4818362,7.13155476 20.50074,7.52853619 C20.5196439,7.92551762 20.3747742,8.31285762 20.1,8.6 L11.8,19.6 C11.5402667,19.9008159 11.1684452,20.0818362 10.7714638,20.10074 C10.3744824,20.1196439 9.98714238,19.9747742 9.7,19.7 L5.5,15 C5.06402664,14.6543747 4.85692586,14.0946474 4.96293574,13.5484867 C5.06894563,13.002326 5.4704053,12.5607203 6.00402135,12.4032925 C6.53763741,12.2458647 7.11451129,12.3988416 7.5,12.8 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

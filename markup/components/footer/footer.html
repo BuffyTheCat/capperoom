@@ -125,8 +125,8 @@
                         <div class="forecast__content">
                             <div class="forecast__result">
                                <p class="forecast__status">
-                                   {{Icon iconName='box' className='forecast__status-icon' iconWidth='25' iconHeight='25'}}
-                                   Ожидаем
+                                   {{Icon iconName='true' className='forecast__status-icon' iconWidth='25' iconHeight='25'}}
+                                   Верно
                                </p>
                                 <span>Свой прогноз</span>
                             </div>
@@ -158,8 +158,8 @@
                         <div class="forecast__content">
                             <div class="forecast__result">
                                <p class="forecast__status">
-                                   {{Icon iconName='box' className='forecast__status-icon' iconWidth='25' iconHeight='25'}}
-                                   Ожидаем
+                                   {{Icon iconName='false' className='forecast__status-icon' iconWidth='25' iconHeight='25'}}
+                                   Ошибся
                                </p>
                                 <span>Свой прогноз</span>
                             </div>
@@ -192,5 +192,15 @@
             </section>
         </div>
     </section>
+    <div class="basket-table">
+        <p class="basket-table__title">Корзина</p>
+        <div class="basket-table__info">
+            <p class="basket-table__desc">прогнозов:</p>
+            <p class="basket-table__count"><span>7</span> шт</p>
+            <p class="basket-table__desc">сумма:</p>
+            <p class="basket-table__total"><span>14200</span>р</p>
+        </div>
+        <a href="javascript:void(0);" class="basket-table__link"></a>
+    </div>
     <div class="overlay"></div>
 </footer>

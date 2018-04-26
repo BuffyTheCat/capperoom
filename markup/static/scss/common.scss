@@ -3,6 +3,20 @@
 html, body {
     height: 100%;
     box-sizing: border-box;
+
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar {
+    	width: rem(7);
+    	background-color: #f0f0f0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+    	background-color: rgba(0, 192, 255, 1);
+    }
+
+    &::-webkit-scrollbar-track {
+    	background-color: #f0f0f0;
+    }
 }
 
 *,
