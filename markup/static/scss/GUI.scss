@@ -271,7 +271,7 @@
 
             &::before,
             &::after {
-                background-color: $orange;
+                background-color: $orangeDark;
             }
         }
     }
@@ -586,7 +586,7 @@
 
                     width: 100%;
                     height: rem(5);
-                    background-color: $orange;
+                    background-color: $orangeDark;
                 }
             }
         }
@@ -603,7 +603,7 @@
             transition: background .3s;
 
             &:hover {
-                background: $orange!important;
+                background: $orangeDark!important;
             }
         }
 
@@ -880,7 +880,7 @@
             transition: background-color .3s;
 
             &:hover {
-                background-color: $orange;
+                background-color: $orangeDark;
             }
 
         }
@@ -995,6 +995,8 @@
     background-color: rgba(240, 240, 240, 1);
     border-radius: rem(5) 0 0 rem(5);
     box-shadow: 0 rem(3) rem(3) 0 rgba(0, 6, 26, 0.1);
+    
+    z-index: 5;
 
     &__title {
         margin: 0;

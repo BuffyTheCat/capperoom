@@ -1,8 +1,13 @@
 .footer {
-    display: flex;
-    align-items: flex-start;
-    @extend .container;
     
+    background-color: $darkblue;
+    
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        padding-top: rem(35);
+        @extend .container;
+    }
     &__nav {
         position: relative;
         
@@ -27,7 +32,7 @@
         }
         
         &:hover {
-            color: $orange;
+            color: $orangeDark;
             
             &::after {
                 opacity: 1;
@@ -42,7 +47,7 @@
             
             width: 100%;
             height: rem(5);
-            background-color: $orange;
+            background-color: $orangeDark;
             opacity: 0;
             
             transition: opacity .3s;
@@ -106,28 +111,8 @@
         
         transition: fill .3s;
         
-        &_fb {
-            &:hover {
-                fill: #8b9dc3;
-            }
-        }
-        
-        &_vk {
-            &:hover {
-                fill: #4c75a3;
-            }
-        }
-        
-        &_ok {
-            &:hover {
-                fill: #ed812b;
-            }
-        }
-        
-        &_insta {
-            &:hover {
-                fill: #f56040;
-            }
+        &:hover {
+            fill: $white;
         }
     }
 }

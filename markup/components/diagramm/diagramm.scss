@@ -1,12 +1,12 @@
 .diagramm {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-end;
 
     p {
         margin: 0;
         font-family: $helvetica;
         font-size: rem(18);
-        color: $orange;
+        color: $orangeDark;
         font-weight: 500;
     }
 
