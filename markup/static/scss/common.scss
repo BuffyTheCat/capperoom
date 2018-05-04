@@ -43,6 +43,11 @@ body {
         min-height: 100%;
     }
 
+    &__catalogue {
+        padding-top: rem(60);
+        @extend .container;
+    }
+
     &__bunner {
         display: flex;
         margin-bottom: rem(100);

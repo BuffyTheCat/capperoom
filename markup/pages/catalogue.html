@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <section class="page__wrapper">
+
+            <!-- Include your modules here -->
+
+            {{> header/header header.defaults}}
+
+            <div class="page__catalogue catalogue">
+                <aside class="catalogue__filter">
+                    <h3 class="catalogue__title">Фильтр</h3>
+                    <div class="catalogue__section">
+                        <label class="radio">
+                            <input name="time" type="radio" checked/>
+                            <p class="radio__text">Предстоящие</p>
+                        </label>
+                        <label class="radio">
+                            <input name="time" type="radio"/>
+                            <p class="radio__text">Life - идут сейчас</p>
+                        </label>
+                        <label class="radio">
+                            <input name="time" type="radio"/>
+                            <p class="radio__text">Архив</p>
+                        </label>
+                    </div>
+                    <div class="catalogue__section">
+                        <label class="checkbox">
+                            <input name="pay" type="checkbox" checked/>
+                            <p class="checkbox__text">Платные</p>
+                        </label>
+                        <label class="checkbox">
+                            <input name="pay" type="checkbox" checked/>
+                            <p class="checkbox__text">Бесплатные</p>
+                        </label>
+                    </div>
+                    <div class="catalogue__section">
+                        <p class="catalogue__subtitle">Коэффициент</p>
+                        <div class="catalogue__input">
+                            <input type="number">
+                        </div>
+                        <div class="catalogue__input">
+                            <input type="number">
+                        </div>
+                    </div>
+                </aside>
+                <div class="catalogue__content">
+                    <h3 class="catalogue__title">Предстоящие матчи</h3>
+                </div>
+            </div>
+
+        </section>
+
+         {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
