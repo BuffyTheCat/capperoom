@@ -15,7 +15,7 @@
     }
 
     &:hover {
-        border: rem(2) solid $orange;
+        border: rem(2) solid $orangeDark;
     }
 
     &:not(:last-of-type) {
@@ -68,6 +68,17 @@
                 color: rgba(79, 79, 79, 1);
             }
         }
+        
+        & .expressCard__comment {
+            dl {
+                dt,
+                dd {
+                    font-weight: 300!important;
+                    font-style: italic!important;
+                    color: $manatee!important;
+                }
+            }
+        }
     }
 
     &__sport-league {
@@ -94,7 +105,7 @@
 
     &__sport-icon:hover,
     &__league-icon:hover {
-        fill: $orange;
+        fill: $orangeDark;
     }
 
     &__express {
@@ -237,7 +248,7 @@
         transition: color .3s;
 
         &:hover {
-            color: $orange;
+            color: $orangeDark;
         }
 
         .diagramm {
@@ -329,10 +340,10 @@
     &__comment:hover {
         & dt,
         & dd {
-            color: $orange;
+            color: $orangeDark;
         }
         & svg {
-            fill: $orange;
+            fill: $orangeDark;
         }
     }
 
@@ -351,16 +362,5 @@
 
     &__dislike-icon {
         transform: rotate(180deg);
-    }
-
-    &__comment {
-        dl {
-            dt,
-            dd {
-                font-weight: 300!important;
-                font-style: italic!important;
-                color: $manatee!important;
-            }
-        }
     }
 }

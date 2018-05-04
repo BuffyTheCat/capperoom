@@ -49,9 +49,12 @@ body {
     }
 
     &__bunner {
+        position: relative;
         display: flex;
         margin-bottom: rem(100);
         @extend .container;
+        
+        z-index: 4;
 
         img {
             width: rem(305);
@@ -91,7 +94,7 @@ body {
         position: relative;
         margin-bottom: rem(100);
 
-        &::after {
+        &::before {
             position: absolute;
             content: '';
             top: rem(130);
@@ -100,6 +103,17 @@ body {
             height: rem(1065);
             width: 100%;
             background-color: #DDDDDD;
+        }
+        
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: rem(-435);
+            left: 0;
+
+            height: rem(534);
+            width: 100%;
+            background-color: $darkblue;
         }
     }
     &__top-content {
