@@ -204,6 +204,19 @@
     &_orange {
         background-image: linear-gradient(rgba(255, 204, 0, 1) 0%, rgba(252, 142, 0, 1) 100%);
     }
+
+    &_opacity {
+        background-color: rgba($white, .3);
+
+        font-family: $helvetica;
+        color: rgba(10, 31, 43, 1);
+
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: $white;
+        }
+    }
 }
 
 .popup {
@@ -1005,7 +1018,7 @@
     background-color: rgba(240, 240, 240, 1);
     border-radius: rem(5) 0 0 rem(5);
     box-shadow: 0 rem(3) rem(3) 0 rgba(0, 6, 26, 0.1);
-    
+
     z-index: 5;
 
     &__title {
@@ -1274,6 +1287,7 @@
 
             width: rem(113);
             height: rem(40);
+            padding-left: rem(51);
 
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
@@ -1283,6 +1297,20 @@
 
         &:first-of-type {
             margin-right: auto;
+
+            &::before {
+                position: absolute;
+                content: 'от';
+                left: rem(15);
+                top: 50%;
+
+                font-family: $helvetica;
+                font-size: rem(16);
+                font-weight: 100;
+                color: rgba($white, .5);
+
+                transform: translateY(-50%);
+            }
 
             &::after {
                 position: absolute;
@@ -1297,5 +1325,139 @@
                 transform: translateY(-50%);
             }
         }
+
+        &:last-of-type {
+            &::before {
+                position: absolute;
+                content: 'до';
+                left: rem(15);
+                top: 50%;
+
+                font-family: $helvetica;
+                font-size: rem(16);
+                font-weight: 100;
+                color: rgba($white, .5);
+
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+	&__ratio {
+		display: flex;
+	    width: 100%;
+		margin-bottom: rem(40);
+	}
+
+    &__sport {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .checkbox {
+            position: relative;
+
+            &__button {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 50%;
+
+                width: rem(13);
+                height: rem(10);
+
+                background-image: url('%=static=%general/triangle_white.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                outline: none;
+
+                transform: translateY(-50%);
+            }
+
+            &.opened {
+                .checkbox__button {
+                    transform: rotate(180deg);
+                }
+
+                & + .catalogue__sport-details {
+                    display: flex;
+                }
+
+            }
+        }
+    }
+
+    &__sport-details {
+        display: none;
+        max-height: rem(345);
+        flex-direction: column;
+        padding: rem(25) 0;
+        padding-top: rem(20);
+
+        overflow: hidden;
+
+        .mCSB_scrollTools {
+            left: 10px!important;
+            right: auto!important;
+
+            width: 10px!important;
+
+            background-color: rgba(255, 255, 255, .3)!important;
+            border-radius: 2px!important;
+        }
+
+        .mCSB_inside > .mCSB_container {
+            margin-left: 30px!important;
+            margin-right: 0!important;
+            padding-top: 4px!important;
+        }
+
+        .mCSB_dragger {
+            margin-left: 0!important;
+            margin-right: 0!important;
+        }
+
+        .mCSB_dragger_bar {
+            background-color: rgba(255, 255, 255, 1)!important;
+            border-radius: 2px!important;
+        }
+    }
+
+    &__all-sport {
+        @extend .button;
+        @extend .button_opacity;
+
+        height: rem(40);
+        width: 100%;
+        padding-left: rem(25);
+        padding-right: rem(25);
+        margin-top: rem(25);
+        margin-bottom: rem(20);
+    }
+
+    &__all-remove,
+    &__all-add {
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 300;
+        color: rgba($white, .5);
+        text-align: left;
+
+        transition: color .3s;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__all-remove {
+        margin-bottom: rem(10);
+    }
+
+    &__all-add {
+        margin-bottom: rem(30);
     }
 }

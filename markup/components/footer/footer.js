@@ -85,3 +85,12 @@ $('.analist__select').select2({
     minimumResultsForSearch: Infinity,
     dropdownCssClass: 'dropdown_blue'
 });
+
+$('.catalogue__sport-details').mCustomScrollbar({
+    axis: 'y',
+    setLeft: 0
+});
+
+$('.catalogue__sport .checkbox__button').on('click', function () {
+    $(this).closest('.checkbox').toggleClass('opened');
+});
