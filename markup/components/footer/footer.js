@@ -1,4 +1,12 @@
-
+$('.forecastDetail__track').on('click', function () {
+    $(this).toggleClass('active');
+});
+$('.forecastDetail__agree').on('click', function () {
+    $(this).toggleClass('active');
+});
+$('.forecastDetail__disagree').on('click', function () {
+    $(this).toggleClass('active');
+});
 
 function initScrollHandler() {
     let position = $(window).scrollTop();
@@ -36,6 +44,10 @@ $('.prize__desc').mCustomScrollbar({
 });
 
 $('.analist__forecasts-list').mCustomScrollbar({
+    axis: 'y'
+});
+
+$('.multiple .popup__content').mCustomScrollbar({
     axis: 'y'
 });
 

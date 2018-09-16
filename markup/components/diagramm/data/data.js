@@ -8,6 +8,9 @@ let data = {
         },
         orangemini: {
             modifier: 'diagramm_orange diagramm_mini ',
+        },
+        orangebig: {
+            modifier: 'diagramm_orange diagramm_big ',
         }
     }
 };

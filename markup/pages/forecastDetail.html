@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <section class="page__wrapper">
+            {{> header/header header.defaults}}
+            <div class="page__forecastDetail forecastDetail">
+                <div class="forecastDetail__heading">
+                    <div class="forecastDetail__info">
+                        <p class="forecastDetail__number">Экспресс прогдноз №<span>9245</span></p>
+                        <p class="forecastDetail__time">23.04.2018 в 20:45 по Москве <span class="forecastDetail__count">через - <span>72:05:41</span></span></p>
+                    </div>
+                    <div class="forecastDetail__analist">
+                        <p>от</p>
+                        <img src="%=static=%img/general/analist.jpg" alt="">
+                        <a class="js-open" data-src=".analist" href="javascript:void(0);">Оптимус прайм</a>
+                        {{> diagramm/diagramm diagramm.orange}}
+                    </div>
+                </div>
+                <div class="forecastDetail__forecast">
+                    <div class="forecastDetail__sport-league">
+                        <div class="forecastDetail__wrap">
+                            <div class="forecastDetail__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                                {{Icon iconName='box' className='forecastDetail__sport-icon' iconWidth='30' iconHeight='30'}}
+                                {{> tooltip/tooltip tooltip.sport}}
+                            </div>
+                            <div class="forecastDetail__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                                {{Icon iconName='league' className='forecastDetail__league-icon' iconWidth='30' iconHeight='30'}}
+                                {{> tooltip/tooltip tooltip.league}}
+                            </div>
+                        </div>
+                        <div class="forecastDetail__wrap">
+                            <div class="forecastDetail__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                                {{Icon iconName='box' className='forecastDetail__sport-icon' iconWidth='30' iconHeight='30'}}
+                                {{> tooltip/tooltip tooltip.sport}}
+                            </div>
+                            <div class="forecastDetail__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                                {{Icon iconName='league' className='forecastDetail__league-icon' iconWidth='30' iconHeight='30'}}
+                                {{> tooltip/tooltip tooltip.league}}
+                            </div>
+                        </div>
+                        <div class="forecastDetail__wrap">
+                            <div class="forecastDetail__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                                {{Icon iconName='box' className='forecastDetail__sport-icon' iconWidth='30' iconHeight='30'}}
+                                {{> tooltip/tooltip tooltip.sport}}
+                            </div>
+                            <div class="forecastDetail__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                                {{Icon iconName='league' className='forecastDetail__league-icon' iconWidth='30' iconHeight='30'}}
+                                {{> tooltip/tooltip tooltip.league}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecastDetail__match-details">
+                        <div class="forecastDetail__wrap">
+                            <p class="forecastDetail__comand">
+                                <img src="%=static=%img/general/flag.png" alt="">
+                                Чикаго Булс
+                            </p>
+                            <p class="forecastDetail__comand">
+                                <img src="%=static=%img/general/flag.png" alt="">
+                                Чикаго Булс
+                            </p>
+                        </div>
+                        <div class="forecastDetail__wrap">
+                            <p class="forecastDetail__comand">
+                                <img src="%=static=%img/general/flag.png" alt="">
+                                Чикаго Булс
+                            </p>
+                            <p class="forecastDetail__comand">
+                                <img src="%=static=%img/general/flag.png" alt="">
+                                Чикаго Булс
+                            </p>
+                        </div>
+                        <div class="forecastDetail__wrap">
+                            <p class="forecastDetail__comand">
+                                <img src="%=static=%img/general/flag.png" alt="">
+                                Чикаго Булс
+                            </p>
+                            <p class="forecastDetail__comand">
+                                <img src="%=static=%img/general/flag.png" alt="">
+                                Чикаго Булс
+                            </p>
+                        </div>
+                    </div>
+                    <div class="forecastDetail__result">
+                        <div class="forecastDetail__wrap">
+                            <dl>
+                                <dt>Победит и не пропустит:</dt>
+                                <dd>Нет</dd>
+                            </dl>
+                            <p class="forecastDetail__result-coefficient">2.1</p>
+                        </div>
+                        <div class="forecastDetail__wrap">
+                            <dl>
+                                <dt>Ничья в 1ом из таймов:</dt>
+                                <dd>Да</dd>
+                            </dl>
+                            <p class="forecastDetail__result-coefficient">2.5</p>
+                        </div>
+                        <div class="forecastDetail__wrap">
+                            <dl>
+                                <dt>Фора 2:</dt>
+                                <dd>+3.5</dd>
+                            </dl>
+                            <p class="forecastDetail__result-coefficient">1.6</p>
+                        </div>
+                    </div>
+                    <div class="forecastDetail__coefficient">
+                        <p>7.15</p>
+                    </div>
+                </div>
+                <div class="forecastDetail__additional">
+                    <div class="forecastDetail__additional-content">
+                        <div class="forecastDetail__additional-buttons">
+                            <a href="javascript:void(0);" class="forecastDetail__track">Отслеживать</a>
+                            <a href="javascript:void(0);" class="forecastDetail__bet">Сделать ставку</a>
+                        </div>
+                        <div class="forecastDetail__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off... cia deserunt ... mollit ani... id... est... laborum...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off... cia deserunt ... mollit ani... id... est... laborum... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil recusandae tempora dolore, magnam, reiciendis doloribus. Officiis voluptatibus dolorum nihil aperiam amet consequatur aliquid, veritatis. Officia et nostrum dolorum harum veritatis!</p>
+                            {{> readMore/readMore}}
+                        </div>
+                        <div class="forecastDetail__additional-buttons">
+                            <a href="javascript:void(0);" class="forecastDetail__agree">{{Icon iconName='like' className='forecastDetail__like-icon' iconWidth='22' iconHeight='25'}} я Согласен! <span>1042</span></a>
+                            <a href="javascript:void(0);" class="forecastDetail__disagree">{{Icon iconName='like' className='forecastDetail__dislike-icon' iconWidth='22' iconHeight='25'}} я Не согласен!<span>273</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+         {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

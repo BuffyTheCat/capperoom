@@ -45,6 +45,13 @@ body {
 
     &__catalogue {
         padding-top: rem(60);
+        padding-bottom: rem(150);
+        @extend .container;
+    }
+
+    &__forecastDetail {
+        padding-top: rem(40);
+        padding-bottom: rem(150);
         @extend .container;
     }
 
@@ -53,7 +60,7 @@ body {
         display: flex;
         margin-bottom: rem(100);
         @extend .container;
-        
+
         z-index: 4;
 
         img {
@@ -104,7 +111,7 @@ body {
             width: 100%;
             background-color: #DDDDDD;
         }
-        
+
         &::after {
             position: absolute;
             content: '';

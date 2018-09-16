@@ -2,7 +2,7 @@ $('.header__sublinks').mCustomScrollbar({
     axis: 'y'
 });
 
-$('.search__button').on('click', function () {
+$('.header__search .search__button').on('click', function () {
     $('.header__link').hide();
     $('.hamburger').show();
     $('.search__input').show();

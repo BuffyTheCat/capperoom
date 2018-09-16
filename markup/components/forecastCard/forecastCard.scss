@@ -21,6 +21,19 @@
 
     &:not(:last-of-type) {
         margin-bottom: rem(15);
+
+        &.forecastCard_multiple {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__inner-coefficient {
+        display: none;
+        margin: 0;
+        color: #4f4f4f;
+        font-family: $helvetica;
+        font-size: rem(24);
+        font-weight: 400;
     }
 
     &_commercial {
@@ -69,14 +82,14 @@
                 color: rgba(79, 79, 79, 1);
             }
         }
-        
+
         & .forecastCard__comment {
             dl {
                 dt,
                 dd {
-                    font-weight: 300;
-                    font-style: italic;
-                    color: $manatee;
+                    font-weight: 300!important;
+                    font-style: italic!important;
+                    color: $manatee!important;
                 }
             }
         }
@@ -222,6 +235,7 @@
 
         & p {
             margin: 0;
+            white-space: nowrap;
         }
     }
 
@@ -352,5 +366,104 @@
 
     &__dislike-icon {
         transform: rotate(180deg);
+    }
+
+    &_mini {
+        .forecastCard__consonants {
+            dt {
+                display: none;
+            }
+        }
+
+        .forecastCard__coefficient {
+            display: none;
+        }
+
+        .forecastCard__inner-coefficient {
+            display: block;
+        }
+
+        .forecastCard__more,
+        .forecastCard__desc {
+            display: none;
+        }
+
+        .forecastCard__buy,
+        .forecastCard__name {
+            margin-bottom: 0;
+        }
+    }
+
+    &_multiple  {
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: calc(100% + 2px);
+            right: rem(-3);
+            bottom: rem(-5);
+            border-radius: rem(2);
+            background-color: $white;
+            z-index: -1;
+            box-shadow: 0 3px 3px rgba(0, 6, 26, 0.1);
+            background-color: #f0f0f0;
+            border: rem(2) solid transparent;
+            transition: border .3s;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            right: rem(-6);
+            bottom: rem(-10);
+            border-radius: rem(2);
+            background-color: $white;
+            z-index: -2;
+            box-shadow: 0 3px 3px rgba(0, 6, 26, 0.1);
+            background-color: #f0f0f0;
+            border: rem(2) solid transparent;
+            transition: border .3s;
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                border: rem(2) solid $orangeDark;
+                border-radius: rem(3);
+                border-top: rem(2) solid transparent;
+            }
+            &::before {
+                right: rem(-5);
+                bottom: rem(-6);
+                width: calc(100% + 4px);
+            }
+
+            &::after {
+                width: calc(100% + 3px);
+                right: rem(-8);
+                bottom: rem(-10);
+            }
+        }
+    }
+
+    &__consonants {
+        .forecastCard__comment {
+            dt,
+            dd {
+                color: #c8c8c8;
+            }
+
+            &:hover {
+                dt,
+                dd {
+                    color: $orangeDark;
+                }
+            }
+        }
     }
 }

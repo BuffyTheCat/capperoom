@@ -1,4 +1,4 @@
-<article class="forecastCard {{modifier}}">
+<article data-src="{{popup}}"  class="forecastCard {{modifier}} {{jsOpen}}">
    <div class="forecastCard__content">
         <div class="forecastCard__sport-league">
             <div class="forecastCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
@@ -30,7 +30,8 @@
         </div>
         <div class="forecastCard__info">
             <a href="javascript:void(0);" class="forecastCard__name js-open" data-src=".analist">Оптимус прайм {{> diagramm/diagramm diagramm.orange}}</a>
-            <p class="forecastCard__result">Форма 2 (-6)</p>
+            <p class="forecastCard__inner-coefficient">Коэффициент:  <span>1.7</span></p>
+            <p class="forecastCard__result">Фора 2 (-6)</p>
             <a href="javascript:void(0);" class="forecastCard__buy"><p>В корзину: <span>900</span> руб</p></a>
             <a href="javascript:void(0);" class="forecastCard__more">Смотреть подробнее</a>
             <p class="forecastCard__desc">По подписке дешевле</p>

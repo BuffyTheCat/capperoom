@@ -10,8 +10,6 @@
 
         <section class="page__wrapper">
 
-            <!-- Include your modules here -->
-
             {{> header/header header.defaults}}
 
             <div class="page__catalogue catalogue">
@@ -217,6 +215,29 @@
                 </aside>
                 <div class="catalogue__content">
                     <h3 class="catalogue__title">Предстоящие матчи</h3>
+                    <div class="catalogue__result">
+                        <div class="catalogue__sort">
+                            <div class="catalogue__search search">
+                                <input type="text" class="search__input" placeholder="Поиск по названиям команд">
+                                <button type="button" class="search__button"></button>
+                            </div>
+                            <p>Cортировать:</p>
+                            <select class="select" name="sorting" id="">
+                                <option value="">по Аналитикам</option>
+                                <option value="">По чему-либо</option>
+                            </select>
+                        </div>
+                        <div class="catalogue__list">
+                            {{> forecastCard/forecastCard forecastCard.minimultiple}}
+                            {{> forecastCard/forecastCard forecastCard.minicommercial}}
+                            {{> expressCard/expressCard expressCard.mini}}
+                            {{> forecastCard/forecastCard forecastCard.minimultiple}}
+                            {{> forecastCard/forecastCard forecastCard.mini}}
+                            {{> expressCard/expressCard expressCard.mini}}
+                            {{> forecastCard/forecastCard forecastCard.mini}}
+                        </div>
+                    </div>
+                    <button class="catalogue__load" type="button" name="button">Показать еще <span>10</span> вариантов</button>
                 </div>
             </div>
 

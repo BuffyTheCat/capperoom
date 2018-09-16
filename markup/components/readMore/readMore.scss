@@ -1,0 +1,21 @@
+.readMore {
+    position: relative;
+    padding-right: rem(25);
+    color: #0a5c9a;
+    font-family: $helvetica;
+    font-size: rem(14);
+    font-weight: 300;
+
+    &::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 50%;
+        width: rem(13);
+        height: rem(10);
+        background-image: url('%=static=%general/arrow_blue.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+}

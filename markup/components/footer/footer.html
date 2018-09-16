@@ -194,6 +194,16 @@
             </section>
         </div>
     </section>
+    <section class="popup multiple js-popup">
+        <h3 class="popup__title">Прогнозы от аналитика: <span>Лорд Воландеморт</span></h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <div class="popup__content">
+            {{> forecastCard/forecastCard forecastCard.mini}}
+            {{> expressCard/expressCard expressCard.mini}}
+            {{> forecastCard/forecastCard forecastCard.mini}}
+            {{> expressCard/expressCard expressCard.mini}}
+        </div>
+    </section>
     <div class="basket-table">
         <p class="basket-table__title">Корзина</p>
         <div class="basket-table__info">
