@@ -10,7 +10,7 @@
         position: absolute;
         content: '';
         right: 0;
-        top: 50%;
+        top: calc(50% + 2px);
         width: rem(13);
         height: rem(10);
         background-image: url('%=static=%general/arrow_blue.png');

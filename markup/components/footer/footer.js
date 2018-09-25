@@ -29,10 +29,13 @@ function closePopUp() {
 
 function openPopUp() {
     initScrollHandler();
-    let popup = $(this).data('src');
-    $(popup).addClass('opened');
-    $('.overlay').addClass('active');
-
+    if (!$(this).parent().hasClass('js-open')) {
+        let popup = $(this).data('src');
+        console.log($(this));
+        $(popup).addClass('opened');
+        $('.overlay').addClass('active');
+    }
+    return false;
 }
 
 $('.js-open').on('click', openPopUp);

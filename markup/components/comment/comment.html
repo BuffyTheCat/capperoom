@@ -1,0 +1,31 @@
+<section class="comment {{modifier}}">
+    <a data-src=".analist" href="javascript:void(0);" class="comment__avatar js-open">
+        <img src="%=static=%img/general/analist.jpg" alt="">
+    </a>
+    <div class="comment__body">
+        <div class="comment__heading">
+            <a data-src=".analist" href="javascript:void(0);" class="comment__name js-open">Роман Самборский</a>
+            <div class="comment__status">
+                <p class="comment__agree">
+                    {{Icon iconName='like' className='comment__like-icon' iconWidth='22' iconHeight='25'}}
+                    Согласен
+                </p>
+                <p class="comment__disagree">
+                    {{Icon iconName='like' className='comment__dislike-icon' iconWidth='22' iconHeight='25'}}
+                    Несогласен
+                </p>
+                <p class="comment__nostatus">
+                    Не голосовал
+                </p>
+            </div>
+            {{> diagramm/diagramm diagramm.orangebig}}
+            <p class="comment__analist-rating"><span>943</span>-ой из <span>14599</span></p>
+            <p class="comment__time"><span>11:45</span>  -  <span>23.05.2018</span></p>
+        </div>
+        <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos illum quibusdam sapiente pariatur voluptates nostrum reprehenderit? Fugiat soluta necessitatibus ea quisquam obcaecati, incidunt ab ipsam, velit possimus quaerat, cumque dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos illum quibusdam sapiente pariatur voluptates nostrum reprehenderit? Fugiat soluta necessitatibus ea quisquam obcaecati, incidunt ab ipsam, velit possimus quaerat, cumque dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos illum quibusdam sapiente pariatur voluptates nostrum reprehenderit? Fugiat soluta necessitatibus ea quisquam obcaecati, incidunt ab ipsam, velit possimus quaerat, cumque dolor.</p>
+        <div class="comment__footer">
+            <a href="javascript:void(0);" class="comment__read-next">Читать далее</a>
+            {{> like/like}}
+        </div>
+    </div>
+</section>

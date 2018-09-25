@@ -1,0 +1,41 @@
+.like {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    color: #000f47;
+    font-family: $helvetica;
+    font-size: rem(14);
+    font-weight: 300;
+    line-height: 1;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color .3s;
+
+    svg {
+        transition: fill .3s;
+        margin-right: rem(8);
+        fill: #000f47;
+    }
+
+    &:hover {
+        color:  #ffba00;
+
+        svg {
+            fill: #ffba00;
+        }
+    }
+
+    &:active {
+        position: relative;
+        top: rem(1);
+    }
+
+    &.active {
+        color:  #ffba00;
+
+        svg {
+            fill: #ffba00;
+        }
+    }
+}

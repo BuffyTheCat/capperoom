@@ -130,8 +130,29 @@
                             <a href="javascript:void(0);" class="forecastDetail__disagree">{{Icon iconName='like' className='forecastDetail__dislike-icon' iconWidth='22' iconHeight='25'}} я Не согласен!<span>273</span></a>
                         </div>
                     </div>
-
                 </div>
+                <div class="forecastDetail__comments">
+                    <div class="forecastDetail__comments-header">
+                        <p class="forecastDetail__comments-title">Комментарии к прогнозу <span>(422)</span>:</p>
+                        <select class="select" name="sorting" id="">
+                            <option value="">По согласным</option>
+                            <option value="">По рейтингу</option>
+                        </select>
+                        <a href="javascript:void(0);" class="forecastDetail__comments-sort">Показать все виды спорта</a>
+                    </div>
+                    <div class="forecastDetail__comments-list">
+                        {{> comment/comment comment.agree}}
+                        {{> comment/comment comment.disagree}}
+                        {{> comment/comment comment.nostatus}}
+                        {{> comment/comment comment.agree}}
+                        {{> comment/comment comment.disagree}}
+                        {{> comment/comment comment.nostatus}}
+                        {{> comment/comment comment.agree}}
+                        {{> comment/comment comment.disagree}}
+                        {{> comment/comment comment.nostatus}}
+                    </div>
+                </div>
+                <button class="forecastDetail__load" type="button" name="button">Показать еще <span>10</span> вариантов</button>
             </div>
 
         </section>

@@ -174,7 +174,6 @@
 
     justify-content: center;
     align-items: center;
-    height: rem(45);
     padding: rem(15) rem(35);
 
     font-family: 'Helvetica Neue';
@@ -183,6 +182,7 @@
     color: $white;
     text-align: center;
     text-decoration: none;
+	white-space: nowrap;
 
     border-radius: rem(2);
     box-shadow: 0 rem(3) rem(3) 0 rgba(0, 6, 26, 0.1);
@@ -1589,7 +1589,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: rem(50);
+		padding: 0 rem(20);
+        padding-bottom: rem(50);
     }
 
     &__info {
@@ -1854,7 +1855,8 @@
         justify-content: space-between;
         width: calc(100% - 40px);
         margin: 0 auto;
-        margin-top: rem(-193);
+        margin-bottom: rem(60);
+        margin-top: rem(-198);
         box-shadow: 0 rem(3) rem(3) rgba(0, 6, 26, 0.1);
         border-radius: rem(3);
         background-color: #f0f0f0;
@@ -1943,5 +1945,85 @@
 
     &__dislike-icon {
         transform: rotate(180deg)  scale(-1, 1);
+    }
+
+    &__comments {
+        margin-bottom: rem(50);
+    }
+
+    &__comments-header {
+        display: flex;
+        align-items: center;
+        padding: 0 rem(25);
+        padding-bottom: rem(25);
+        border-bottom: rem(1) solid $white;
+
+        .select2-container {
+            width: rem(280)!important;
+            height: rem(40)!important;
+            margin-right: rem(20);
+
+            .select2-selection--single {
+                height: 100%!important;
+            }
+
+            .select2-selection__rendered {
+                color: $white!important;
+            }
+
+            .select2-selection__arrow {
+                top: 8px!important;
+
+                &::after {
+                    background-image: url('%=static=%general/arrow_white.png');
+                }
+            }
+        }
+    }
+
+    &__comments-title {
+        margin: 0;
+        margin-right: auto;
+
+        font-family: $helvetica;
+        font-size: rem(30);
+        font-weight: 100;
+        font-style: italic;
+        color: $white;
+        text-align: left;
+
+        span {
+            opacity: .5;
+        }
+    }
+
+    &__comments-sort {
+        @extend .button;
+        @extend .button_opacity;
+
+        height: rem(40);
+        width: rem(280);
+        padding-left: rem(25);
+        padding-right: rem(25);
+    }
+
+    &__comments-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: rem(50);
+
+		.comment:not(:last-of-type) {
+			margin-bottom: rem(10);
+		}
+    }
+
+    &__load {
+        @extend .button;
+        @extend .button_blue;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        height: rem(85);
+        font-size: rem(24);
     }
 }
