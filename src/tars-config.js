@@ -52,7 +52,7 @@ module.exports = {
     },
     "minifyHtml": false,
     "generateStaticPath": true,
-    "buildPath": "./builds/",
+    "buildPath": "../builds/",
     "useBuildVersioning": true,
     "useArchiver": true,
     "ulimit": 4096,
