@@ -142,6 +142,31 @@ body {
             margin-bottom: rem(90);
         }
     }
+
+	&__analistRating {
+		.analistList__heading {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.analistList__search {
+			order: 4;
+			width: 100%;
+			margin-top: 1.25rem;
+		}
+
+        .analistList .select2-container:nth-of-type(1) {
+            margin-right: rem(30);
+        }
+
+        .analistList__total {
+            margin-right: auto;
+        }
+
+        .analistList__card-remove {
+            display: none;
+        }
+	}
 }
 
 .mCSB_3_scrollbar,

@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <section class="page__wrapper">
+            {{> header/header header.defaults}}
+
+            <div class="page__analistRating analistRating">
+                <h2 class="analistRating__title">Рейтинг аналитиков</h2>
+                <div class="analistRating__filter">
+                    <label class="analistRating__filter-item active">
+                        <input type="radio" name="abalisrRatingFilter" value="all">
+                        <p>за все время</p>
+                    </label>
+                    <label class="analistRating__filter-item">
+                        <input type="radio" name="abalisrRatingFilter" value="year">
+                        <p>по годам</p>
+                    </label>
+                    <label class="analistRating__filter-item">
+                        <input type="radio" name="abalisrRatingFilter" value="mouth">
+                        <p>по месяцам</p>
+                    </label>
+                    <label class="analistRating__filter-item">
+                        <input type="radio" name="abalisrRatingFilter" value="week">
+                        <p>по неделям</p>
+                    </label>
+                </div>
+                {{> analistList/analistList}}
+                <button class="analistRating__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
+            </div>
+        </section>
+
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
