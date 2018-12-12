@@ -1986,7 +1986,7 @@
             }
 
             .select2-selection__arrow {
-                top: 8px!important;
+                top: 0!important;
 
                 &::after {
                     background-image: url('%=static=%general/arrow_white.png');
@@ -2040,6 +2040,95 @@
         height: rem(85);
         font-size: rem(24);
     }
+
+    &__buy {
+        @extend .button;
+        @extend .button_orange;
+        flex-direction: column;
+        height: 100%;
+        width: rem(215);
+
+        span {
+            color: #282828;
+            font-family: $helvetica;
+            font-size: rem(18);
+            font-weight: 300;
+        }
+    }
+
+    &__buy-desc {
+        width: rem(615);
+        padding-top: rem(15);
+        margin: 0;
+        color: #777;
+        font-size: rem(14);
+
+        a {
+            color: #0a5c9a;
+            font-family: $helvetica;
+            font-size: rem(14);
+            font-weight: 300;
+        }
+    }
+
+    &:not(.forecastDetail_paid) {
+        .forecastDetail__agree,
+        .forecastDetail__disagree {
+            color: #969696;
+            font-family: "Helvetica Neue";
+            font-size: 1.125rem;
+            font-weight: 300;
+            box-shadow: 0 3px 3px rgba(0,6,26,.1);
+            border-radius: 2px;
+            background-color: #fff;
+            background-image: none;
+        }
+
+        .forecastDetail__like-icon,
+        .forecastDetail__dislike-icon {
+             fill: #b4b4b4;
+         }
+
+         .forecastDetail__comments-header {
+             border-bottom: none;
+         }
+
+         .forecastDetail__track,
+         .forecastDetail__bet,
+         .forecastDetail__desc,
+         .forecastDetail__comments-title,
+         .forecastDetail__comments-sort,
+         .forecastDetail__comments-header .select2,
+         .forecastDetail__comments-list,
+         .forecastDetail__load {
+             display: none;
+         }
+    }
+
+    &__buy-title {
+        margin: 0;
+        font-family:$helvetica;
+        color: #fff;
+        font-style: italic;
+        font-size: 1.5rem;
+        letter-spacing: 1.2px;
+
+        span {
+            color: #9eb7bd;
+        }
+    }
+
+
+
+    &_paid {
+        .forecastDetail__buy,
+        .forecastDetail__buy-desc,
+        .forecastDetail__buy-title {
+            display: none;
+        }
+    }
+
+
 }
 
 

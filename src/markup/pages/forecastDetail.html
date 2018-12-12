@@ -10,7 +10,7 @@
 
         <section class="page__wrapper">
             {{> header/header header.defaults}}
-            <div class="page__forecastDetail forecastDetail">
+            <div class="page__forecastDetail forecastDetail forecastDetail_paid">
                 <div class="forecastDetail__heading">
                     <div class="forecastDetail__info">
                         <p class="forecastDetail__number">Экспресс прогдноз №<span>9245</span></p>
@@ -120,11 +120,16 @@
                         <div class="forecastDetail__additional-buttons">
                             <a href="javascript:void(0);" class="forecastDetail__track">Отслеживать</a>
                             <a href="javascript:void(0);" class="forecastDetail__bet">Сделать ставку</a>
+                            <a href="javascript:void(0);" class="forecastDetail__buy">в Корзину <br> <span>900 руб.</span></a>
                         </div>
                         <div class="forecastDetail__desc">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off... cia deserunt ... mollit ani... id... est... laborum...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off... cia deserunt ... mollit ani... id... est... laborum... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil recusandae tempora dolore, magnam, reiciendis doloribus. Officiis voluptatibus dolorum nihil aperiam amet consequatur aliquid, veritatis. Officia et nostrum dolorum harum veritatis!</p>
                             {{> readMore/readMore}}
                         </div>
+                        <p class="forecastDetail__buy-desc">
+                            Данный прогноз платный, а значит Вы не можете читать анатацию, комментарии, прогнозы, а также голосовать “За” или “Против”. Для покупки необходимо добавить его в корзину, затем <a href="javascript:void(0);">открыть Корзину</a> и
+                            оплатить выбранные вами прогнозы.
+                        </p>
                         <div class="forecastDetail__additional-buttons">
                             <a href="javascript:void(0);" class="forecastDetail__agree">{{Icon iconName='like' className='forecastDetail__like-icon' iconWidth='22' iconHeight='25'}} я Согласен! <span>1042</span></a>
                             <a href="javascript:void(0);" class="forecastDetail__disagree">{{Icon iconName='like' className='forecastDetail__dislike-icon' iconWidth='22' iconHeight='25'}} я Не согласен!<span>273</span></a>
@@ -133,6 +138,7 @@
                 </div>
                 <div class="forecastDetail__comments">
                     <div class="forecastDetail__comments-header">
+                        <p class="forecastDetail__buy-title">Комментариев к прогнозу: 422 шт. <span>(скрыты пока прогноз не куплен)</span></p>
                         <p class="forecastDetail__comments-title">Комментарии к прогнозу <span>(422)</span>:</p>
                         <select class="select" name="sorting" id="">
                             <option value="">По согласным</option>
