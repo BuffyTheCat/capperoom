@@ -1,11 +1,12 @@
 .diagramm {
     display: inline-flex;
     align-items: flex-end;
+    cursor: pointer;
 
     p {
         margin: 0;
         font-family: $helvetica;
-        font-size: rem(18);
+        font-size: rem(24);
         color: #ffba00;
         font-weight: 500;
     }

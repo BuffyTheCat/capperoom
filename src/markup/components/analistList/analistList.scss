@@ -99,6 +99,12 @@
             display: flex;
         }
 
+        &-content {
+            width: 100%;
+            box-shadow: 0 3px 3px rgba(0,6,26,.1);
+            background-color: #e5e5e6;
+        }
+
         &-analist {
             width: rem(385);
             margin-right: rem(2);
@@ -162,6 +168,86 @@
         font-weight: 400;
         font-style: italic;
     }
+
+    &__card-rate,
+    &__card-rating {
+        display: flex;
+    }
+
+    &__card-rate {
+        flex-direction: column;
+        justify-content: space-between;
+        width: rem(205);
+        margin-right: rem(2);
+        padding: rem(20);
+        background-color: #fff;
+    }
+
+    &__card-forecasts,
+    &__card-rating {
+        p {
+            margin: 0;
+            margin-right: rem(10);
+            color: #4f4f4f;
+            font-family: $helvetica;
+            font-size: rem(24);
+            font-weight: 400;
+        }
+    }
+
+    &__card-ratio {
+        margin: 0;
+        color: #b5b5b5;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    &__card-forecasts {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 3;
+        padding: rem(20);
+        background-color: #fff;
+
+        p {
+            margin-right: rem(20)
+        }
+    }
+
+    &__tooltip {
+        &:not(:last-of-type) {
+            margin-right: rem(20);
+        }
+
+        &:hover {
+            .analistList__sport-icon {
+                fill: #fc8e00
+            }
+            .analistList__tooltip-count {
+                color: #fc8e00;
+            }
+        }
+    }
+
+    &__sport-icon {
+        fill: #969696;
+        cursor: pointer;
+        transition: fill .3s;
+    }
+
+    p.analistList__tooltip-count {
+        margin: 0;
+        color: #b5b5b5;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        text-align: center;
+        transition: color .3s;
+    }
+
+
 
     .select2-container {
         height: rem(45)!important;

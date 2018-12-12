@@ -54,6 +54,10 @@ $('.multiple .popup__content').mCustomScrollbar({
     axis: 'y'
 });
 
+$('.rating .popup__content').mCustomScrollbar({
+    axis: 'y'
+});
+
 function getSrc() {
     let srcImage = $('.prize__gallery').find('.slick-current').find('img').attr('src');
     $('.prize__view').attr('src', srcImage);
