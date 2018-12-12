@@ -159,4 +159,3 @@ Bugs and feature-request here: [issues](https://github.com/tars/tars/issues/new)
 
 [downloads-image]: http://img.shields.io/npm/dm/tars-cli.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/tars-cli
-# capperoom

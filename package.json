@@ -5,9 +5,8 @@
   "main": "gulpfile.js",
   "directories": {},
   "dependencies": {
-    "jquery": "^3.3.1",
-    "babel-preset-es2015": "^6.24.1",
-    "malihu-custom-scrollbar-plugin": "^3.1.5"
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1"
