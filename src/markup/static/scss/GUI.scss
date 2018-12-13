@@ -2277,6 +2277,7 @@
             background-color: #1e2933;
 
             .personalArea__item-title,
+            .personalArea__item-title p,
             .personalArea__item-title .diagramm p,
             .personalArea__item-title span {
                 color: #ffba00;
@@ -2284,6 +2285,10 @@
 
             .personalArea__item-desc {
                 color: #fff;
+            }
+
+            .personalArea__item-title svg .border {
+                stroke: #7f7f7f;
             }
         }
 
@@ -2302,16 +2307,48 @@
             align-items: center;
             margin: 0;
             margin-bottom: rem(10);
+            font-size: rem(30);
+            font-family: $helvetica;
+            letter-spacing: 1.5px;
+            font-weight: 300;
             letter-spacing: 1.5px;
             color: #fff;
 
             p {
                 margin: 0;
+                color: #fff;
             }
 
             span {
-
+                font-family: $helvetica;
+				margin-left: rem(10);
+			    color: #afccc8;
+                letter-spacing: 1.5px;
+				transition: color .3s;
             }
         }
+
+        .diagramm p {
+            color: #afccc8;
+            font-family: $helvetica;
+            font-size: rem(30);
+            font-weight: 300;
+            transition: color .3s;
+        }
+
+        &-desc {
+            margin: 0;
+            font-family: $helvetica;
+            opacity: .8;
+            color: #000;
+            font-size: rem(18);
+            font-weight: 400;
+            transition: color .3s;
+        }
+    }
+
+    .diagramm svg .border {
+        stroke: #334344;
+        transition: stroke .3s;
     }
 }
