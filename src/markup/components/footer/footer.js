@@ -58,6 +58,16 @@ $('.rating .popup__content').mCustomScrollbar({
     axis: 'y'
 });
 
+let development = {
+    name: 'разработчик Святослав Журавлев',
+    contacts: 'buffythecat@yandex.ru',
+    true: 'Теперь и ты знаешь что Саша болячка'
+};
+
+let разработка = development.name;
+let контакты = development.contacts;
+let александр = development.true;
+
 function getSrc() {
     let srcImage = $('.prize__gallery').find('.slick-current').find('img').attr('src');
     $('.prize__view').attr('src', srcImage);

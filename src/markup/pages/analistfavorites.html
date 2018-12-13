@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <div class="page__analistfavorites analistfavorites">
+                <h2 class="analistfavorites__title">Избранные аналитики <span>39 человек</span></h2>
+                {{> analistList/analistList}}
+
+                <button class="analistfavorites__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
+            </div>
+        </main>
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

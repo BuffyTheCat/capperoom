@@ -2608,3 +2608,29 @@
         height: 100%;
     }
 }
+
+.analistfavorites {
+	@extend .container;
+    display: flex;
+    flex-direction: column;
+    padding-top: rem(65);
+    padding-bottom: rem(115);
+
+	&__title  {
+        @extend .section-name;
+        margin-bottom: rem(65);
+    }
+
+    .analistList__total,
+    .analistList__sort {
+        display: none;
+    }
+
+    &__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
+}
