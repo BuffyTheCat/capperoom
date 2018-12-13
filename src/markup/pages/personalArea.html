@@ -7,19 +7,85 @@
 
     <body class="page">
         %=symbols=%
-
-        <section class="page__wrapper">
-
-            <!-- Include your modules here -->
-
-            <div class="page__buffer"></div>
-
-        </section>
-
-        <footer class="page__footer">
-            {{> footer/footer}}
-        </footer>
-
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <div class="page__personalArea personalArea">
+                <div class="personalArea__content">
+                    <a href="javascript:void(0);" class="personalArea__item">
+                            <img class="personalArea__item-icon" src="static/img/general/pocent.png" alt="">
+                            <div class="personalArea__item-content">
+                                <div class="personalArea__item-title">
+                                        <p>Рейтинг</p> <span>- {{> diagramm/diagramm diagramm.grey}}</span>
+                                </div>
+                                <p class="personalArea__item-desc">вы <span>9001</span> из <span>15999</span> в рейтинге аналитиков</p>
+                            </div>
+                        </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/glass.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Отслеживаемые прогнозы <span> - 7</span>
+                            </p>
+                            <p class="personalArea__item-desc">избранные прогнозы на предстоящие события</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/money.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Баланс <span>- 12500 руб</span>
+                            </p>
+                            <p class="personalArea__item-desc">состояние счета, пополнение, история</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/cart.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Корзина прогнозов <span>- 3 на 2100 руб</span>
+                            </p>
+                            <p class="personalArea__item-desc">прогнозы отобранные для покупки</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/docs.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Подписка <span>- Silver</span>
+                            </p>
+                            <p class="personalArea__item-desc">текущая подписка, продление, смена</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/paket.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Купленные прогнозы <span>- 21</span>
+                            </p>
+                            <p class="personalArea__item-desc">список купленных прогнозов</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/stars.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Избранные аналитики</p>
+                            <p class="personalArea__item-desc">список аналитиков отобранный вами</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/lampa.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Мои прогнозы <span>- 75</span>
+                            </p>
+                            <p class="personalArea__item-desc">созданные вами прогнозы</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="personalArea__item">
+                        <img class="personalArea__item-icon" src="static/img/general/rules.png" alt="">
+                        <div class="personalArea__item-content">
+                            <p class="personalArea__item-title">Данные и настройки</p>
+                            <p class="personalArea__item-desc">фотография, ник, контакты, пароли</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        {{> footer/footer}}
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>
 

@@ -7,10 +7,8 @@
 
     <body class="page">
         %=symbols=%
-
-        <section class="page__wrapper">
-            {{> header/header header.defaults}}
-
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
             <div class="page__main">
                 <h2 class="title container">Онлайн рейтинг спортивных аналитиков</h2>
                 <p class="text container">Автоматический возврат средств на баланс в случае неверного прогноза</p>
@@ -46,8 +44,7 @@
                 </div>
             </div>
 
-        </section>
-
+        </main>
          {{> footer/footer}}
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>

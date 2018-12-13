@@ -2248,3 +2248,70 @@
         margin-bottom: rem(25);
     }
 }
+
+.personalArea {
+	@extend .container;
+    padding-top: rem(60);
+    padding-bottom: rem(260);
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% + 40px);
+        margin-left: rem(-20);
+        margin-right: rem(-20);
+    }
+
+    &__item {
+        display: flex;
+        text-decoration: none;
+        padding: rem(35) rem(40);
+        width: calc(50% - 40px);
+        margin: 0 rem(20);
+        align-items: center;
+        margin-bottom: rem(15);
+        border-radius: 10px;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: #1e2933;
+
+            .personalArea__item-title,
+            .personalArea__item-title .diagramm p,
+            .personalArea__item-title span {
+                color: #ffba00;
+            }
+
+            .personalArea__item-desc {
+                color: #fff;
+            }
+        }
+
+        &-icon {
+            margin-right: rem(30);
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-title {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0;
+            margin-bottom: rem(10);
+            letter-spacing: 1.5px;
+            color: #fff;
+
+            p {
+                margin: 0;
+            }
+
+            span {
+
+            }
+        }
+    }
+}

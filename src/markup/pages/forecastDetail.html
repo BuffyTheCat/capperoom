@@ -7,9 +7,8 @@
 
     <body class="page">
         %=symbols=%
-
-        <section class="page__wrapper">
-            {{> header/header header.defaults}}
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
             <div class="page__forecastDetail forecastDetail forecastDetail_paid">
                 <div class="forecastDetail__heading">
                     <div class="forecastDetail__info">
@@ -161,7 +160,7 @@
                 <button class="forecastDetail__load" type="button" name="button">Показать еще <span>10</span> вариантов</button>
             </div>
 
-        </section>
+        </main>
 
          {{> footer/footer}}
 

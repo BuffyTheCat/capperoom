@@ -3,6 +3,8 @@
 html, body {
     height: 100%;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
 
     &::-webkit-scrollbar,
     &::-webkit-scrollbar {
@@ -39,10 +41,10 @@ body {
 }
 
 .page {
+
     &__wrapper {
         min-height: 100%;
     }
-
     &__catalogue {
         padding-top: rem(60);
         padding-bottom: rem(150);

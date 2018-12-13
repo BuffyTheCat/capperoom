@@ -7,10 +7,8 @@
 
     <body class="page">
         %=symbols=%
-
-        <section class="page__wrapper">
-            {{> header/header header.defaults}}
-
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
             <div class="page__analistRating analistRating">
                 <h2 class="analistRating__title">Рейтинг аналитиков</h2>
                 <div class="analistRating__filter">
@@ -34,8 +32,7 @@
                 {{> analistList/analistList}}
                 <button class="analistRating__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
             </div>
-        </section>
-
+        </main>
         {{> footer/footer}}
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
