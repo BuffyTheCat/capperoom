@@ -118,3 +118,8 @@ $('.analistRating__filter-item').on('click', function () {
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
 });
+
+$('.personalData__changepass').on('click', function () {
+    $(this).toggleClass('personalData__changepass_opened');
+    $(this).next('.personalData__pass-form').toggleClass('opened');
+});

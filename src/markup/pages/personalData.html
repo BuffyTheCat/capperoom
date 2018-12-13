@@ -7,18 +7,69 @@
 
     <body class="page">
         %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="page__personalData personalData">
+                <div class="personalData__heading">
+                    <h1 class="personalData__title">
+                        Ваши личные данные
+                    </h1>
+                    <p class="personalData__id">id: <span>00016515</span>
+                    </p>
+                    <p class="personalData__date">от <span>23.06.2016</span>
+                    </p>
+                </div>
+                <div class="personalData__content">
+                    <div class="personalData__card">
+                        <div class="personalData__avatar">
+                            <img src="static/img/general/analist.jpg" alt="">
+                            <label class="personalData__load load">
+                                <input type="file" name="" value="">
+                                <button class="load__button" type="button" name="button">Сменить фото</button>
+                            </label>
+                        </div>
+                        <div class="personalData__info">
+                            <div class="personalData__info-item">
+                                <p class="personalData__text">Никнейм</p>
+                                <input type="text" class="personalData__input">
+                                <p class="personalData__tip">Обязательно для заполнения
+                                    <br>Виден всем</p>
+                            </div>
+                            <div class="personalData__info-item">
+                                <p class="personalData__text">Телефон</p>
+                                <input type="number" class="personalData__input">
+                                <p class="personalData__tip">Обязательно для заполнения
+                                    <br>Скрыт от всех</p>
+                            </div>
+                            <div class="personalData__info-item">
+                                <p class="personalData__text">E-mail</p>
+                                <input type="email" class="personalData__input">
+                                <p class="personalData__tip">Обязательно для заполнения
+                                    <br>Скрыт от всех</p>
+                            </div>
+                            <div class="personalData__info-item">
+                                <p class="personalData__text">ФИО</p>
+                                <input type="text" class="personalData__input" placeholder="Наслучай утери пароля ">
+                                <p class="personalData__tip">Не обязательно заполнять
+                                    <br>Скрыт от всех</p>
+                            </div>
+                        </div>
+                        <button class="personalData__save" type="button" name="button">Сохранить внесенные изменения</button>
+                    </div>
+                    <aside class="personalData__pass">
+                        <a href="javascript:void(0);" class="personalData__changepass">Сменить пароль</a>
+                        <form class="personalData__pass-form">
+                            <input type="password" class="personalData__pass-input" placeholder="Введите текущий пароль">
+                            <input type="password" class="personalData__pass-input" placeholder="Введите новый пароль">
+                            <input type="password" class="personalData__pass-input" placeholder="Повторите новый пароль">
+                            <button class="personalData__pass-btn" type="submit" name="button">Сохранить пароль</button>
+                        </form>
+                    </aside>
+                </div>
+            </section>
+        </main>
 
-        <section class="page__wrapper">
-
-            <!-- Include your modules here -->
-
-            <div class="page__buffer"></div>
-
-        </section>
-
-        <footer class="page__footer">
-            {{> footer/footer}}
-        </footer>
+        {{> footer/footer}}
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>
