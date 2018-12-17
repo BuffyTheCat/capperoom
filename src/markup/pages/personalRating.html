@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="page__personalRating personalRating">
+                <div class="personalRating__heading">
+                    <h1 class="personalRating__title">Расчет вашего рейтинга</h1>
+                    <div class="personalRating__heading-controls">
+                        <select class="select_white" name="sorting" id="">
+                            <option value="">за Все время</option>
+                            <option value="">за Последнюю неделю</option>
+                            <option value="">за Последний месяц</option>
+                            <option value="">за Год</option>
+                        </select>
+                        <select class="select_white" name="sorting" id="">
+                            <option value="">по видам спорта</option>
+                            <option value="">по аналитикам</option>
+                        </select>
+                        <a class="personalRating__button" href="javascript:void(0);">Как расчитывается рейтинг?</a>
+                        <a class="personalRating__button" href="javascript:void(0);">Зачем нужно колечко рейтинга?</a>
+                        <a class="personalRating__button" href="javascript:void(0);">Зачем нужен средний коэффициент?</a>
+                    </div>
+                    <div class="personalRating__infographics">
+                        <div class="personalRating__correct-prediction">
+                            <p class="personalRating__infographics-percent">1942 <span>%</span></p>
+                            <div class="personalRating__infographics-scale"></div>
+                            <p class="personalRating__infographics-desc">добыли баллов за верные прогнозы</p>
+                        </div>
+                        <div class="personalRating__correct-like">
+                            <p class="personalRating__infographics-percent">205 <span>%</span></p>
+                            <div class="personalRating__infographics-scale"></div>
+                            <p class="personalRating__infographics-desc">добыли баллов за верные лайки и дизлайки</p>
+                        </div>
+                        <div class="personalRating__incorrect-prediction">
+                            <p class="personalRating__infographics-percent">- 1374 <span>%</span></p>
+                            <div class="personalRating__infographics-scale"></div>
+                            <p class="personalRating__infographics-desc">потеряли баллов за ошибочные прогнозы</p>
+                        </div>
+                        <div class="personalRating__incorrect-like">
+                            <p class="personalRating__infographics-percent">- 96 <span>%</span></p>
+                            <div class="personalRating__infographics-scale"></div>
+                            <p class="personalRating__infographics-desc">потеряли баллов за ошибочные лайки и дизлайки</p>
+                        </div>
+                        <div class="personalRating__total">
+                            <p class="personalRating__total-percent">380%</p>
+                            <p class="personalRating__infographics-desc">ваш рейтинг аналитика <span class="personalRating__currect">346</span>-ой из <span class="personalRating__all">15999</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="personalRating__content">
+                    {{> forecastCard/forecastCard forecastCard.paid}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
+                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
+                </div>
+                <button class="personalRating__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
+            </section>
+
+        </main>
+
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

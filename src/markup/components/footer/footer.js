@@ -31,7 +31,7 @@ function openPopUp() {
     initScrollHandler();
     if (!$(this).parent().hasClass('js-open')) {
         let popup = $(this).data('src');
-        console.log($(this));
+        $('.popup').removeClass('opened');
         $(popup).addClass('opened');
         $('.overlay').addClass('active');
     }

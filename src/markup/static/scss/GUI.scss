@@ -155,7 +155,6 @@
 }
 
 .section-name {
-    padding: 0 rem(20);
     margin: 0;
     color: #ffff;
     font-family: $helvetica;
@@ -1035,9 +1034,11 @@
         height: 100%!important;
     }
 
-    .select2-selection {
-        width: rem(300)!important;
-    }
+	.analist__forecasts-heading {
+		.select2-selection {
+	        width: rem(300)!important;
+	    }
+	}
 }
 
 .dropdown_blue {
@@ -2197,6 +2198,7 @@
     &__title  {
         @extend .section-name;
         margin-bottom: rem(10);
+		padding: 0 rem(20);
     }
 
     &__filter {
@@ -2291,12 +2293,23 @@
     }
 
     p.rating__formula {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         margin-bottom: 2.1875rem;
         font-style: italic;
         color: #b4b4b4;
         font-size: 1rem;
+        white-space: pre;
+
+        span {
+            font-style: normal;
+        }
+    }
+
+    .rating__formula {
+        img {
+            margin-right: rem(50);
+        }
     }
 
     .popup__content p:not(:last-of-type) {
@@ -2663,6 +2676,7 @@
         display: flex;
         align-items: center;
         margin-bottom: rem(58);
+		padding: 0 rem(20);
     }
 
 	&__title  {
@@ -2700,5 +2714,85 @@
         width: 100%;
         height: rem(85);
         font-size: rem(24);
+    }
+}
+
+.personalRating {
+	@extend .container;
+    padding-top: rem(66);
+    padding-bottom: rem(150);
+
+    &__heading {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: rem(58);
+		padding: 0 rem(20);
+    }
+
+	&__title  {
+        @extend .section-name;
+        width: 100%;
+        margin-bottom: rem(5);
+    }
+
+    &__sort {
+        margin: 0;
+        margin-right: rem(20);
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 400;
+        letter-spacing: 0.9px;
+    }
+
+    .select2-container {
+        width: 100%!important;
+        height: rem(45)!important;
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10)
+        }
+
+        &:last-of-type {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+		margin-bottom: rem(20);
+        padding: rem(20);
+        box-shadow: 0 rem(3) rem(3) rgba(0, 6, 26, 0.1);
+        border-radius: rem(5);
+        background-color: #f0f0f0;
+    }
+
+	&__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
+
+    &__heading-controls {
+        width: rem(353);
+        display: flex;
+        flex-direction: column;
+        padding-top: rem(31);
+        margin-right: rem(100);
+    }
+
+    &__button {
+        @extend .button;
+        @extend .button_opacity;
+        width: 100%;
+        padding: rem(15) rem(25);
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
+        }
     }
 }
