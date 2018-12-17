@@ -115,6 +115,11 @@ $('.analist__select').select2({
     dropdownCssClass: 'dropdown_blue'
 });
 
+$('.select_white').select2({
+    minimumResultsForSearch: Infinity,
+    containerCssClass: 'dropdown_white'
+});
+
 $('.catalogue__sport-details').mCustomScrollbar({
     axis: 'y',
     setLeft: 0

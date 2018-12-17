@@ -21,6 +21,21 @@ let data = {
             modifier: 'forecastCard_mini forecastCard_commercial',
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
+        },
+        paid: {
+            modifier: 'forecastCard_paid',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
+        paidtrue: {
+            modifier: 'forecastCard_paid forecastCard_paid_true',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
+        paidfalse: {
+            modifier: 'forecastCard_paid forecastCard_paid_false',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
         }
     }
 };

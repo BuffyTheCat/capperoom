@@ -466,4 +466,111 @@
             }
         }
     }
+
+    &__result-match {
+        display: none;
+        flex-direction: column;
+        width: rem(185);
+        padding: rem(20);
+        padding-right: rem(10);
+        background-color: $white;
+        margin-right: rem(2);
+
+        span {
+            padding-left: rem(35);
+            font-family: $helvetica;
+            font-weight: 200;
+            color: $ashgrey;
+            font-size: rem(14);
+            font-style: italic;
+        }
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: rem(10);
+        width: 190px;
+
+        font-family: $helvetica;
+        font-weight: 300;
+        color: rgba(79, 79, 79, 1);
+        font-size: rem(24);
+
+        svg {
+            margin-right: rem(10);
+        }
+    }
+
+    &__money {
+        display: none;
+        margin: 0;
+        font-style: italic;
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+
+    &_paid {
+        .forecastCard__more {
+            display: none;
+        }
+        .forecastCard__result-match,
+        .forecastCard__money {
+            display: flex;
+        }
+
+        .forecastCard__like,
+        .forecastCard__dislike,
+        .forecastCard__comment {
+            dt {
+                display: none;
+            }
+        }
+
+        .forecastCard__content {
+            height: auto;
+        }
+
+        &_true {
+            .forecastCard__result-match {
+                background-color: #ffba00;
+            }
+
+            .forecastCard__like-icon,
+            .forecastCard__dislike-icon {
+                fill: #969696;
+            }
+
+            .forecastCard__like,
+            .forecastCard__dislike,
+            .forecastCard__comment {
+                dd {
+                    color: #969696;
+                }
+            }
+        }
+
+        &_false {
+            .forecastCard__result-match {
+                background-color: #dcdcdc;
+            }
+
+            .forecastCard__like-icon,
+            .forecastCard__dislike-icon {
+                fill: #969696;
+            }
+
+            .forecastCard__like,
+            .forecastCard__dislike,
+            .forecastCard__comment {
+                dd {
+                    color: #969696;
+                }
+            }
+        }
+    }
 }

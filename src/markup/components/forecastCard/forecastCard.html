@@ -1,5 +1,11 @@
 <article data-src="{{popup}}"  class="forecastCard {{modifier}} {{jsOpen}}">
    <div class="forecastCard__content">
+       <div class="forecastCard__result-match">
+          <p class="forecastCard__status">
+              {{Icon iconName='wait' className='forecastCard__status-icon' iconWidth='25' iconHeight='25'}}
+              Ожидаем
+          </p>
+       </div>
         <div class="forecastCard__sport-league">
             <div class="forecastCard__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
                 {{Icon iconName='box' className='forecastCard__sport-icon' iconWidth='30' iconHeight='30'}}
@@ -34,6 +40,7 @@
             <p class="forecastCard__result">Фора 2 (-6)</p>
             <a href="javascript:void(0);" class="forecastCard__buy"><p>В корзину: <span>900</span> руб</p></a>
             <a href="javascript:void(0);" class="forecastCard__more">Смотреть подробнее</a>
+            <p class="forecastCard__money">920 руб</p>
             <p class="forecastCard__desc">По подписке дешевле</p>
         </div>
         <div class="forecastCard__consonants">

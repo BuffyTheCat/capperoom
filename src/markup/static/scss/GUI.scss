@@ -462,6 +462,25 @@
     height: 100%!important;
 }
 
+.dropdown_white.select2-selection  {
+    border: rem(1) solid rgba(255, 255, 255, 0.5);
+
+    .select2-selection__rendered {
+        color: #ffffff!important;
+        font-family: $helvetica;
+        font-size: rem(18)!important;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.9px;
+    }
+
+    .select2-selection__arrow {
+        &::after {
+            background-image: url('%=static=%general/arrow_white.png');
+        }
+    }
+}
+
 .input {
     padding: rem(15);
 
@@ -2627,6 +2646,55 @@
     }
 
     &__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
+}
+
+.purchasedForecasts {
+	@extend .container;
+    padding-top: rem(56);
+    padding-bottom: rem(150);
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(58);
+    }
+
+	&__title  {
+        @extend .section-name;
+        margin-right: auto;
+    }
+
+    &__sort {
+        margin: 0;
+        margin-right: rem(20);
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 400;
+        letter-spacing: 0.9px;
+    }
+
+    .select2-container {
+        width: rem(280)!important;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+		margin-bottom: rem(20);
+        padding: rem(20);
+        box-shadow: 0 rem(3) rem(3) rgba(0, 6, 26, 0.1);
+        border-radius: rem(5);
+        background-color: #f0f0f0;
+    }
+
+	&__load {
         @extend .button;
         @extend .button_blue;
         width: 100%;

@@ -7,19 +7,33 @@
 
     <body class="page">
         %=symbols=%
-
-        <section class="page__wrapper">
-
-            <!-- Include your modules here -->
-
-            <div class="page__buffer"></div>
-
-        </section>
-
-        <footer class="page__footer">
-            {{> footer/footer}}
-        </footer>
-
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="page__purchasedForecasts purchasedForecasts">
+                <div class="purchasedForecasts__heading">
+                    <h1 class="purchasedForecasts__title">Купленные прогнозы</h1>
+                    <p class="purchasedForecasts__sort">Сортировать</p>
+                    <select class="select_white" name="sorting" id="">
+                        <option value="">по дате публикации</option>
+                        <option value="">по алфавиту</option>
+                        <option value="">по интуиции</option>
+                    </select>
+                </div>
+                <div class="purchasedForecasts__content">
+                    {{> forecastCard/forecastCard forecastCard.paid}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
+                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
+                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
+                </div>
+                <button class="purchasedForecasts__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
+            </section>
+        </main>
+        {{> footer/footer}}
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>
 
