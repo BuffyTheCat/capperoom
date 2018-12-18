@@ -175,3 +175,15 @@ function infographics() {
 }
 
 infographics();
+
+$('.balance-add__tab').on('click', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('.balance-add__forms').find('.balance-add__form').removeClass('active').eq($(this).index()).addClass('active');
+});
+
+$('.balance-withdraw__tab').on('click', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('.balance-withdraw__forms').find('.balance-withdraw__form').removeClass('active').eq($(this).index()).addClass('active');
+});

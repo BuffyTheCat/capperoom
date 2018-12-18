@@ -234,6 +234,169 @@
             </p>
         </div>
     </section>
+    <section class="popup balance-add js-popup">
+        <h3 class="popup__title">Пополнить балас с:</h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <div class="popup__content">
+            <div class="balance-add__forms">
+                <div class="balance-add__tabs">
+                    <label for="" class="balance-add__tab active">
+                        <input type="radio" name="balance-add" value="card">
+                        <p>VISA или MasterCard</p>
+                    </label>
+                    <label for="" class="balance-add__tab">
+                        <input type="radio" name="balance-add" value="qiwi">
+                        <p>QIWI кошелек</p>
+                    </label>
+                    <label for="" class="balance-add__tab">
+                        <input type="radio" name="balance-add" value="yandex">
+                        <p>ЯНДЕКС кошелек</p>
+                    </label>
+                </div>
+                <form class="balance-add__form active balance-add__card" action="">
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Номер карты</p>
+                        <input name="balance-add" type="number" class="balance-add__cardnum" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Срок действия</p>
+                        <input name="balance-add" type="number" class="balance-add__time" placeholder="00 / 00">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Владелец</p>
+                        <input name="balance-add" type="text" class="balance-add__owner" placeholder="IVANOV  ALEKSANDR">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">CSV код</p>
+                        <input name="balance-add" type="text" class="balance-add__code" placeholder="000">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Пополнить на</p>
+                        <input name="balance-add" type="text" class="balance-add__summ" placeholder="9 999">
+                        <p class="balance-add__text">рублей</p>
+                    </div>
+                </form>
+                <form class="balance-add__form balance-add__qiwi" action="">
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Номер карты 2</p>
+                        <input name="balance-add" type="number" class="balance-add__cardnum" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Срок действия</p>
+                        <input name="balance-add" type="number" class="balance-add__time" placeholder="00 / 00">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Владелец</p>
+                        <input name="balance-add" type="text" class="balance-add__owner" placeholder="IVANOV  ALEKSANDR">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">CSV код</p>
+                        <input name="balance-add" type="text" class="balance-add__code" placeholder="000">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Пополнить на</p>
+                        <input name="balance-add" type="text" class="balance-add__summ" placeholder="9 999">
+                        <p class="balance-add__text">рублей</p>
+                    </div>
+                </form>
+                <form class="balance-add__form balance-add__yandex" action="">
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Номер карты 3</p>
+                        <input name="balance-add" type="number" class="balance-add__cardnum" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Срок действия</p>
+                        <input name="balance-add" type="number" class="balance-add__time" placeholder="00 / 00">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Владелец</p>
+                        <input name="balance-add" type="text" class="balance-add__owner" placeholder="IVANOV  ALEKSANDR">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">CSV код</p>
+                        <input name="balance-add" type="text" class="balance-add__code" placeholder="000">
+                    </div>
+                    <div class="balance-add__item">
+                        <p class="balance-add__text">Пополнить на</p>
+                        <input name="balance-add" type="text" class="balance-add__summ" placeholder="9 999">
+                        <p class="balance-add__text">рублей</p>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" class="balance-add__submit">Пополнить баланс</button>
+        </div>
+    </section>
+    <section class="popup balance-withdraw js-popup">
+        <h3 class="popup__title">ВЫВОД СРЕДСТВ С БАЛАНСА</h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <div class="popup__content">
+            <p class="balance-withdraw__warn">
+                <span>Предупреждение!</span> Из средств выводимых на ваши карты или кошельки будет удержана комиссияв размере 10%. Это связано с законами налогооблажения юридических лиц + условиями обналичивания в банках.
+            </p>
+            <div class="balance-withdraw__forms">
+                <div class="balance-withdraw__tabs">
+                    <label for="" class="balance-withdraw__tab active">
+                        <input type="radio" name="balance-withdraw" value="card">
+                        <p>VISA или MasterCard</p>
+                    </label>
+                    <label for="" class="balance-withdraw__tab">
+                        <input type="radio" name="balance-withdraw" value="qiwi">
+                        <p>QIWI кошелек</p>
+                    </label>
+                    <label for="" class="balance-withdraw__tab">
+                        <input type="radio" name="balance-withdraw" value="yandex">
+                        <p>ЯНДЕКС кошелек</p>
+                    </label>
+                </div>
+                <form class="balance-withdraw__form active balance-withdraw__card" action="">
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Номер карты</p>
+                        <input name="balance-withdraw" type="number" class="balance-withdraw__cardnum" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Владелец</p>
+                        <input name="balance-withdraw" type="text" class="balance-withdraw__owner" placeholder="IVANOV  ALEKSANDR">
+                    </div>
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Сумма</p>
+                        <input name="balance-withdraw" type="text" class="balance-withdraw__summ" placeholder="9 999">
+                        <p class="balance-withdraw__text">рублей</p>
+                    </div>
+                </form>
+                <form class="balance-withdraw__form balance-withdraw__qiwi" action="">
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Номер карты 2</p>
+                        <input name="balance-withdraw" type="number" class="balance-withdraw__cardnum" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Владелец</p>
+                        <input name="balance-withdraw" type="text" class="balance-withdraw__owner" placeholder="IVANOV  ALEKSANDR">
+                    </div>
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Сумма</p>
+                        <input name="balance-withdraw" type="text" class="balance-withdraw__summ" placeholder="9 999">
+                        <p class="balance-withdraw__text">рублей</p>
+                    </div>
+                </form>
+                <form class="balance-withdraw__form balance-withdraw__yandex" action="">
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Номер карты 3</p>
+                        <input name="balance-withdraw" type="number" class="balance-withdraw__cardnum" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Владелец</p>
+                        <input name="balance-withdraw" type="text" class="balance-withdraw__owner" placeholder="IVANOV  ALEKSANDR">
+                    </div>
+                    <div class="balance-withdraw__item">
+                        <p class="balance-withdraw__text">Сумма</p>
+                        <input name="balance-withdraw" type="text" class="balance-withdraw__summ" placeholder="9 999">
+                        <p class="balance-withdraw__text">рублей</p>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" class="balance-add__submit">Вывести деньги</button>
+        </div>
+    </section>
     <div class="basket-table">
         <p class="basket-table__title">Корзина</p>
         <div class="basket-table__info">
