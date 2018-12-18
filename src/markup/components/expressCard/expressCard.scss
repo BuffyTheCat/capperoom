@@ -472,4 +472,161 @@
             }
         }
     }
+
+    &__result-match {
+        display: none;
+        flex-direction: column;
+        width: rem(185);
+        padding: rem(20);
+        padding-right: rem(10);
+        background-color: $white;
+        margin-right: rem(2);
+
+        span {
+            padding-left: rem(35);
+            font-family: $helvetica;
+            font-weight: 200;
+            color: $ashgrey;
+            font-size: rem(14);
+            font-style: italic;
+        }
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 190px;
+
+        font-family: $helvetica;
+        font-weight: 300;
+        color: rgba(79, 79, 79, 1);
+        font-size: rem(24);
+
+        svg {
+            margin-right: rem(10);
+        }
+    }
+
+    &__money {
+        display: none;
+        margin: 0;
+        font-style: italic;
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+
+    &__rating-change,
+    &__action {
+		display: none;
+	}
+
+    &__rating-change {
+        margin: 0;
+        margin-left: rem(35);
+        margin-top: rem(16);
+        color: #4f4f4f;
+        font-family: $helvetica;
+        font-size: rem(24);
+        font-weight: 300;
+    }
+
+    &__action {
+        margin: 0;
+        margin-left: rem(35);
+        margin-top: rem(16);
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+
+    &_opened {
+        .expressCard__more {
+            display: none;
+        }
+        .expressCard__result-match,
+        .expressCard__money,
+        .expressCard__rating-change {
+            display: flex;
+        }
+
+        .expressCard__like,
+        .expressCard__dislike,
+        .expressCard__comment {
+            dt {
+                display: none;
+            }
+        }
+
+        .expressCard__express {
+            width: rem(456);
+        }
+
+        .expressCard__coefficient {
+            width: rem(125);
+        }
+
+        .expressCard__content {
+            height: auto;
+        }
+
+        &_true {
+            .expressCard__result-match {
+                background-color: #ffba00;
+            }
+
+            .expressCard__like-icon,
+            .expressCard__dislike-icon {
+                fill: #969696;
+            }
+
+            .expressCard__like,
+            .expressCard__dislike,
+            .expressCard__comment {
+                dd {
+                    color: #969696;
+                }
+            }
+        }
+
+        &_false {
+            .expressCard__result-match {
+                background-color: #dcdcdc;
+            }
+
+            .expressCard__like-icon,
+            .expressCard__dislike-icon {
+                fill: #969696;
+            }
+
+            .expressCard__like,
+            .expressCard__dislike,
+            .expressCard__comment {
+                dd {
+                    color: #969696;
+                }
+            }
+        }
+    }
+
+    &_personal {
+        .expressCard__rating-change,
+        .expressCard__action {
+            display: block;
+        }
+
+
+        .expressCard__result-match {
+            flex-direction: column;
+        }
+
+		.expressCard__consonants {
+			padding: rem(25);
+		}
+    }
 }

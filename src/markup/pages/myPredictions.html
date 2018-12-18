@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="myPredictions page__myPredictions">
+                <div class="myPredictions__heading">
+                    <dl>
+                        <dt>
+                            <h1>Мои прогнозы  -</h1>
+                        </dt>
+                        <dd><span>172</span> шт</dd>
+                    </dl>
+                    <a href="javascript:void(0);" class="myPredictions__create">Создать новый прогноз</a>
+                </div>
+                <div class="myPredictions__content">
+                    <div class="myPredictions__content-heading">
+                        <p class="myPredictions__true">Верных - 102 шт на 472%</p>
+                        <p class="myPredictions__false">Ошибочных - 70 шт на 211%</p>
+                        <p class="myPredictions__content-sort">Сортировать</p>
+                        <select class="select" name="sorting" id="">
+                            <option value="">по дате публикации</option>
+                            <option value="">по алфавиту</option>
+                            <option value="">по интуиции</option>
+                        </select>
+                    </div>
+                    {{> forecastCard/forecastCard forecastCard.personalopened}}
+                    {{> expressCard/expressCard expressCard.opened}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> expressCard/expressCard expressCard.openedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedfalse}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedfalse}}
+                    {{> expressCard/expressCard expressCard.openedfalse}}
+                </div>
+                <button class="myPredictions__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
+            </section>
+        </main>
+        {{> footer/footer}}
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
