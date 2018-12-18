@@ -22,18 +22,39 @@ let data = {
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         },
-        paid: {
-            modifier: 'forecastCard_paid',
+        opened: {
+            modifier: 'forecastCard_opened',
+            status: 'Ожидаем',
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         },
-        paidtrue: {
-            modifier: 'forecastCard_paid forecastCard_paid_true',
+        openedtrue: {
+            modifier: 'forecastCard_opened forecastCard_opened_true',
+            status: 'Верно',
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         },
-        paidfalse: {
-            modifier: 'forecastCard_paid forecastCard_paid_false',
+        openedfalse: {
+            modifier: 'forecastCard_opened forecastCard_opened_false',
+            status: 'Ошибся ',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
+        personalopened: {
+            modifier: 'forecastCard_opened forecastCard_personal',
+            status: 'Ожидаем',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
+        personalopenedtrue: {
+            modifier: 'forecastCard_opened forecastCard_personal forecastCard_opened_true',
+            status: 'Верно',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
+        personalopenedfalse: {
+            modifier: 'forecastCard_opened forecastCard_personal forecastCard_opened_false',
+            status: 'Ошибся ',
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         }

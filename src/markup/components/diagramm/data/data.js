@@ -11,6 +11,9 @@ let data = {
         },
         orangebig: {
             modifier: 'diagramm_orange diagramm_big ',
+        },
+        blackbig: {
+            modifier: 'diagramm_black diagramm_big ',
         }
     }
 };

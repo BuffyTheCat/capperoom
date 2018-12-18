@@ -138,3 +138,40 @@ $('.personalData__changepass').on('click', function () {
     $(this).toggleClass('personalData__changepass_opened');
     $(this).next('.personalData__pass-form').toggleClass('opened');
 });
+
+function infographics() {
+    let correctPrediction = $('.personalRating__correct-prediction').find('.personalRating__infographics-percent').find('span').html();
+    let correctLike = $('.personalRating__correct-like').find('.personalRating__infographics-percent').find('span').html();
+    let incorrectPrediction = $('.personalRating__incorrect-prediction').find('.personalRating__infographics-percent').find('span').html();
+    let incorrectLike = $('.personalRating__incorrect-like').find('.personalRating__infographics-percent').find('span').html();
+    correctPrediction = Number(correctPrediction);
+    correctLike = Number(correctLike);
+    incorrectPrediction = Number(incorrectPrediction);
+    incorrectLike = Number(incorrectLike);
+
+    if (correctPrediction > correctLike ) {
+        $('.personalRating__correct-prediction').find('.personalRating__infographics-scale').css( 'height', '100px' );
+        let correctPercent = correctPrediction / correctLike;
+        console.log(correctPercent);
+        $('.personalRating__correct-like').find('.personalRating__infographics-scale').css( 'height', correctPercent + 'px' );
+    } else {
+        $('.personalRating__correct-like').find('.personalRating__infographics-scale').css( 'height', '100px' );
+        let correctPercent = correctLike / correctPrediction;
+        console.log(correctPercent);
+        $('.personalRating__correct-prediction').find('.personalRating__infographics-scale').css( 'height', correctPercent + 'px' );
+    }
+
+    if (incorrectPrediction > incorrectLike ) {
+        $('.personalRating__incorrect-prediction').find('.personalRating__infographics-scale').css( 'height', '100px' );
+        let incorrectPercent = incorrectPrediction / incorrectLike;
+        console.log(incorrectPercent);
+        $('.personalRating__incorrect-like').find('.personalRating__infographics-scale').css( 'height', incorrectPercent + 'px' );
+    } else {
+        $('.personalRating__incorrect-like').find('.personalRating__infographics-scale').css( 'height', '100px' );
+        let incorrectPercent = incorrectLike / incorrectPrediction;
+        console.log(incorrectPercent);
+        $('.personalRating__incorrect-prediction').find('.personalRating__infographics-scale').css( 'height', incorrectPercent + 'px' );
+    }
+}
+
+infographics();

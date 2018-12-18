@@ -23,47 +23,68 @@
                             <option value="">по видам спорта</option>
                             <option value="">по аналитикам</option>
                         </select>
-                        <a class="personalRating__button" href="javascript:void(0);">Как расчитывается рейтинг?</a>
+                        <a data-src=".rating" class="personalRating__button js-open" href="javascript:void(0);">Как расчитывается рейтинг?</a>
                         <a class="personalRating__button" href="javascript:void(0);">Зачем нужно колечко рейтинга?</a>
                         <a class="personalRating__button" href="javascript:void(0);">Зачем нужен средний коэффициент?</a>
                     </div>
                     <div class="personalRating__infographics">
-                        <div class="personalRating__correct-prediction">
-                            <p class="personalRating__infographics-percent">1942 <span>%</span></p>
-                            <div class="personalRating__infographics-scale"></div>
-                            <p class="personalRating__infographics-desc">добыли баллов за верные прогнозы</p>
+                        <div class="personalRating__infographics-content">
+                            <div class="personalRating__correct-prediction">
+                                <p class="personalRating__infographics-percent"><span>1942</span> %</p>
+                                <div class="personalRating__infographics-scale"></div>
+                                <p class="personalRating__infographics-desc">добыли баллов <br> за верные <br> прогнозы</p>
+                            </div>
+                            <div class="personalRating__correct-like">
+                                <p class="personalRating__infographics-percent"><span>205</span> %</p>
+                                <div class="personalRating__infographics-scale"></div>
+                                <p class="personalRating__infographics-desc">добыли баллов <br> за верные лайки и дизлайки</p>
+                            </div>
+                            <div class="personalRating__incorrect-prediction">
+                                <p class="personalRating__infographics-percent"><span>1374</span> %</p>
+                                <div class="personalRating__infographics-scale"></div>
+                                <p class="personalRating__infographics-desc">потеряли баллов <br> за ошибочные <br> прогнозы</p>
+                            </div>
+                            <div class="personalRating__incorrect-like">
+                                <p class="personalRating__infographics-percent"><span>96</span> %</p>
+                                <div class="personalRating__infographics-scale"></div>
+                                <p class="personalRating__infographics-desc">потеряли баллов <br> за ошибочные <br> лайки и дизлайки</p>
+                            </div>
+                            <div class="personalRating__total">
+                                <p class="personalRating__total-percent">380%</p>
+                                <p class="personalRating__infographics-desc">ваш рейтинг <br> аналитика <br> <span class="personalRating__currect">346</span>-ой из <span class="personalRating__all">15999</span></p>
+                            </div>
                         </div>
-                        <div class="personalRating__correct-like">
-                            <p class="personalRating__infographics-percent">205 <span>%</span></p>
-                            <div class="personalRating__infographics-scale"></div>
-                            <p class="personalRating__infographics-desc">добыли баллов за верные лайки и дизлайки</p>
-                        </div>
-                        <div class="personalRating__incorrect-prediction">
-                            <p class="personalRating__infographics-percent">- 1374 <span>%</span></p>
-                            <div class="personalRating__infographics-scale"></div>
-                            <p class="personalRating__infographics-desc">потеряли баллов за ошибочные прогнозы</p>
-                        </div>
-                        <div class="personalRating__incorrect-like">
-                            <p class="personalRating__infographics-percent">- 96 <span>%</span></p>
-                            <div class="personalRating__infographics-scale"></div>
-                            <p class="personalRating__infographics-desc">потеряли баллов за ошибочные лайки и дизлайки</p>
-                        </div>
-                        <div class="personalRating__total">
-                            <p class="personalRating__total-percent">380%</p>
-                            <p class="personalRating__infographics-desc">ваш рейтинг аналитика <span class="personalRating__currect">346</span>-ой из <span class="personalRating__all">15999</span></p>
+                        <div class="personalRating__infographics-info">
+                            <dl>
+                                <dt>Отношение количества верных прогнозов к ошибочным:</dt>
+                                <dd>{{> diagramm/diagramm diagramm.blackbig}} <span class="personalRating__true">183</span> к <span class="personalRating__false">117</span></dd>
+                            </dl>
+                            <dl>
+                                <dt>Средний коэффициент верных прогнозов и голосований:</dt>
+                                <dd>СрК  <span class="personalRating__coefficient">2.4</span></dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
                 <div class="personalRating__content">
-                    {{> forecastCard/forecastCard forecastCard.paid}}
-                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
-                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
-                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
-                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
-                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
-                    {{> forecastCard/forecastCard forecastCard.paidtrue}}
-                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
-                    {{> forecastCard/forecastCard forecastCard.paidfalse}}
+                    <div class="personalRating__content-heading">
+                        <h2 class="personalRating__content-title">История ваших прогнозов и голосований</h2>
+                        <p class="personalRating__content-sort">Сортировать</p>
+                        <select class="select" name="sorting" id="">
+                            <option value="">по дате публикации</option>
+                            <option value="">по алфавиту</option>
+                            <option value="">по интуиции</option>
+                        </select>
+                    </div>
+                    {{> forecastCard/forecastCard forecastCard.personalopened}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedfalse}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedtrue}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedfalse}}
+                    {{> forecastCard/forecastCard forecastCard.personalopenedfalse}}
                 </div>
                 <button class="personalRating__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
             </section>

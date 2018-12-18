@@ -490,7 +490,6 @@
         display: flex;
         align-items: center;
         margin: 0;
-        margin-bottom: rem(10);
         width: 190px;
 
         font-family: $helvetica;
@@ -514,7 +513,7 @@
         letter-spacing: 0.7px;
     }
 
-    &_paid {
+    &_opened {
         .forecastCard__more {
             display: none;
         }
@@ -571,6 +570,42 @@
                     color: #969696;
                 }
             }
+        }
+    }
+
+	&__rating-change,
+    &__action {
+		display: none;
+	}
+
+    &__rating-change {
+        margin: 0;
+        margin-left: rem(35);
+        color: #4f4f4f;
+        font-family: $helvetica;
+        font-size: rem(24);
+        font-weight: 300;
+    }
+
+    &__action {
+        margin: 0;
+        margin-left: rem(35);
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        letter-spacing: 0.7px;
+    }
+
+    &_personal {
+        .forecastCard__rating-change,
+        .forecastCard__action {
+            display: block;
+        }
+
+        .forecastCard__result-match {
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
 }
