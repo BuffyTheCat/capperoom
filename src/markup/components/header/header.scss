@@ -23,6 +23,14 @@
             width: rem(272);
             height: 100%;
         }
+
+        &:hover {
+            img {
+                transform: rotateY(360deg);
+
+                transition: .6s;
+            }
+        }
     }
 
     &__logo-name {
@@ -56,13 +64,12 @@
     }
 
     &__nav {
+        position: relative;
         display: flex;
         align-items: center;
         flex-grow: 3;
         margin-right: auto;
         height: 100%;
-
-
     }
 
     &__link {
@@ -208,6 +215,9 @@
     }
 
     &__search {
+        position: absolute;
+        right: rem(20);
+        top: 0;
         margin-bottom: rem(20);
     }
 }

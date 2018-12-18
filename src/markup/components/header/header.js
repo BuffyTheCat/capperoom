@@ -3,16 +3,14 @@ $('.header__sublinks').mCustomScrollbar({
 });
 
 $('.header__search .search__button').on('click', function () {
-    $('.header__link').hide();
-    $('.hamburger').show();
-    $('.search__input').show();
+    $('.header__link').fadeOut();
+    $('.hamburger').fadeIn();
     $('.search__input').addClass('active');
 });
 
 
 $('.hamburger').on('click', function () {
-    $('.search__input').hide();
     $('.search__input').removeClass('active');
-    $('.hamburger').hide();
-    $('.header__link').show();
+    $('.hamburger').fadeOut();
+    $('.header__link').fadeIn();
 });

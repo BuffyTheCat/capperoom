@@ -89,7 +89,10 @@
 }
 
 .hamburger {
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 
     display: none;
     width: rem(40);
@@ -211,6 +214,10 @@
 
     &_orange {
         background-image: linear-gradient(rgba(255, 204, 0, 1) 0%, rgba(252, 142, 0, 1) 100%);
+
+        &:hover {
+            background-image: linear-gradient(#ffbc00 0%, #fc8400 100%);
+        }
     }
 
     &_opacity {
@@ -3019,6 +3026,169 @@
             letter-spacing: 0.9px;
         }
     }
+}
 
+.balance {
+	@extend .container;
+	padding-top: rem(55);
+	padding-bottom: rem(150);
 
+	&__heading {
+		display: flex;
+        align-items: center;
+		padding: 0 rem(20);
+        margin-bottom: rem(65);
+
+		dl {
+			display: flex;
+			margin-right: auto;
+			dt {
+				color: #ffffff;
+				font-family: $helvetica;
+				font-style: italic;
+				font-size: rem(30);
+				font-weight: 400;
+				letter-spacing: 1.5px;
+
+                h1 {
+                    margin: 0;
+                    color: #ffffff;
+                    font-weight: 400;
+    				font-family: $helvetica;
+    				font-style: italic;
+    				font-size: rem(30);
+    				letter-spacing: 1.5px;
+                }
+			}
+
+			dd {
+				margin-left: rem(27);
+				color: #ffffff;
+				font-family: $helvetica;
+				font-size: 30px;
+				font-weight: 500;
+				// Text style for "5,  200 ру"
+				letter-spacing: 1.5px;
+			}
+		}
+	}
+
+    &__withdraw,
+    &__add {
+        @extend .button;
+        @extend .button_orange;
+        width: rem(252);
+        height: rem(45);
+    }
+
+    &__add {
+        margin-right: rem(10);
+    }
+
+    &__subtitle {
+        width: 100%;
+        margin: 0;
+        margin-bottom: rem(30);
+        padding: 0 rem(20);
+        color: #ffffff;
+        font-family: $helvetica;
+        font-style: italic;
+        font-size: rem(30);
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(20);
+    }
+
+    &__item {
+        height: rem(60);
+        display: flex;
+        align-items: center;
+        border-radius: rem(5);
+        overflow: hidden;
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
+        }
+
+        &-date,
+        &-action,
+        &-total,
+        &-desc,
+        &-detail {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            margin-right: rem(2);
+            padding: rem(15) rem(20);
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(16);
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &-total,
+        &-desc,
+        &-detail {
+            background-color: rgba(0, 0, 0, 0.3);
+
+            p {
+                color: #9ca5a8;
+            }
+        }
+
+        &-date {
+            width: rem(200);
+        }
+        &-action {
+            width: rem(137);
+
+            &_plus {
+                color: #ffc119;
+            }
+        }
+        &-total {
+            width: rem(195);
+        }
+        &-desc {
+            width: rem(220);
+        }
+        &-detail {
+            flex-grow: 5;
+
+            a {
+                margin-right: rem(10);
+                color: #27b0ff;
+                transition: color .3s;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    &__item-icon {
+        margin-right: rem(20);
+        fill: #9ca5a8;
+    }
+
+    &__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
 }
