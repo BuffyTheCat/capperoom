@@ -187,3 +187,9 @@ $('.balance-withdraw__tab').on('click', function () {
         .addClass('active').siblings().removeClass('active')
         .closest('.balance-withdraw__forms').find('.balance-withdraw__form').removeClass('active').eq($(this).index()).addClass('active');
 });
+
+$('.subscription__type').on('click', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('.subscription').find('.subscription__info').removeClass('active').eq($(this).index()).addClass('active');
+});

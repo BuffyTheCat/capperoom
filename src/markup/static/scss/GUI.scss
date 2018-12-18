@@ -163,7 +163,7 @@
     font-family: $helvetica;
     font-style: italic;
     font-size: rem(30);
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .text {
@@ -3558,5 +3558,293 @@
             display: none;
         }
     }
+}
 
+.subscription {
+	@extend .container;
+	padding-top: rem(65);
+	padding-bottom: rem(150);
+
+	&__title {
+		@extend .section-name;
+        margin-bottom: rem(65);
+		padding: 0 rem(20);
+	}
+
+    &__info {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: rem(42) rem(30);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: rem(5);
+        overflow: hidden;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__info-heading {
+        display: flex;
+        margin-bottom: rem(35);
+        align-items: center;
+    }
+
+    &__status {
+        display: flex;
+
+        margin: 0;
+        margin-right: rem(26);
+
+        dt {
+            margin: 0;
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(24);
+            font-weight: rem(200);
+        }
+
+        dd {
+            margin: 0;
+            margin-left: rem(20);
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(24);
+            font-weight: rem(200);
+            color: #ffbc09;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__duration {
+        margin: 0;
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(24);
+        font-weight: 200;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: rem(35);
+        color: #707a7d;
+        font-family: $helvetica;
+        font-size: rem(16);
+        font-weight: 200;
+        line-height: 24px;
+    }
+
+    &__options {
+        display: flex;
+        margin: 0;
+
+        dt,
+        dd {
+            margin: 0;
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(16);
+            font-weight: 300;
+
+            span {
+                color: #ffbc09;
+            }
+        }
+
+        dt {
+            width: rem(490);
+        }
+
+        dd {
+            margin-left: rem(25);
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
+        }
+
+        &:last-of-type {
+            margin-bottom: rem(35);
+        }
+    }
+
+    .checkbox__text {
+        padding-left: rem(35);
+        color: #707a7d;
+        font-family: $helvetica;
+        font-size: rem(16);
+        font-weight: 200;
+    }
+
+    &__time {
+        margin: 0;
+        margin-left: auto;
+        color: #707a7d;
+        font-family: $helvetica;
+        font-size: rem(24);
+        font-weight: 200;
+    }
+
+    &__types {
+        display: flex;
+        width: calc(100% + 54px);
+        margin-right: rem(-27);
+        margin-left: rem(-27);
+    }
+
+    &__subscribe {
+        @extend .button;
+        @extend .button_blue;
+
+        &_active {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: none;
+
+            &:hover {
+                background-image: none;
+            }
+        }
+    }
+
+    &__type {
+        width: calc(25% - 54px);
+        margin: 0 rem(27);
+
+
+        transition: border .3s;
+        cursor: pointer;
+
+        &:hover {
+            .subscription__type-content {
+                border: rem(3) solid #ffba00;
+            }
+
+            .subscription__type-title,
+            .subscription__type-subtitle {
+                display: none;
+            }
+
+            .subscription__type-desc {
+                margin-top: rem(23);
+                height: auto;
+            }
+
+            .subscription__img {
+                position: absolute;
+                top: rem(-30);
+            }
+        }
+
+        &-overlay {
+            padding-top: rem(50);
+            border-radius: 0 0 rem(5) rem(5);
+        }
+
+        &-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: rem(437);
+            padding: rem(28);
+            margin-bottom: rem(10);
+            background-color: $white;
+            box-shadow: 0 rem(5) rem(5) rgba(0, 6, 26, 0.1);
+            border-radius: rem(5);
+            border: rem(3) solid transparent;
+            transition: border .3s;
+        }
+
+        &-title {
+            margin: 0;
+            margin-bottom: rem(15);
+            color: #515151;
+            font-family: $helvetica;
+            font-size: rem(24);
+            font-weight: 200;
+            letter-spacing: 1.2px;
+            text-align: center;
+        }
+
+        &-subtitle {
+            margin: 0;
+            margin-bottom: rem(28);
+            color: #b4b4b4;
+            font-family: $helvetica;
+            font-size: rem(12);
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: 0.6px;
+        }
+
+        &-desc {
+            position: relative;
+            margin: 0;
+            padding-top: rem(27);
+            height: rem(97);
+            overflow: hidden;
+            color: #505050;
+            font-family: $helvetica;
+            font-size: rem(12);
+            font-weight: 300;
+            text-align: center;
+
+            transition: height .3s;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 50%;
+                width: rem(180);
+                height: rem(1);
+                background-color: #d5d5d5;
+                transform: translateX(-50%);
+            }
+        }
+
+        &.active {
+
+            .subscription__type-title,
+            .subscription__type-desc {
+                color: #ffffff;
+            }
+
+            .subscription__type-overlay {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .subscription__type-content {
+                background-color: transparent;
+            }
+
+            .subscription__type-content {
+                border: none;
+            }
+
+            &:hover {
+                .subscription__type-content {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    &__price {
+        margin: 0;
+        margin-top: rem(23);
+        color: #b3b3b3;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 300;
+
+        span {
+            color: #fc8e00;
+            font-size: rem(24);
+            font-weight: 400;
+        }
+    }
 }
