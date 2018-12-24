@@ -4118,3 +4118,130 @@
         }
     }
 }
+
+.category {
+	padding-top: rem(54);
+	@extend .container;
+
+	&__heading {
+		display: flex;
+		margin-bottom: rem(54);
+
+        .select2-container {
+            width: rem(280)!important;
+        }
+	}
+
+	&__title {
+        @extend .section-name;
+        padding-left: rem(20);
+        margin-right: auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% + 20px);
+        margin-left: rem(-10);
+        margin-right: rem(-10);
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: calc(14.28% - 20px);
+        height: rem(190);
+        padding: rem(10);
+        padding-top: rem(45);
+        padding-bottom: rem(42);
+        margin: 0 rem(10);
+        margin-bottom: rem(20);
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: rem(5);
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            z-index: 2;
+            background-color: #1e2933;
+            transform: scale(1.1);
+            border-radius: rem(5) rem(5) 0 0;
+
+            .category__name {
+                color: #ffba00;
+            }
+
+            .category__item-icon {
+                fill: #ffba00;
+            }
+
+            .category__dropdown {
+                display: flex;
+
+            }
+        }
+
+        &-icon {
+            margin-bottom: rem(29);
+            fill: $white;
+
+            transition: fill .3s;
+        }
+    }
+
+    &__name {
+        margin: 0;
+        color: $white;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 300;
+        letter-spacing: 0.9px;
+
+        transition: color .3s;
+    }
+
+    &__dropdown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        z-index: 2;
+        border-radius: 0 0 rem(5) rem(5);
+        overflow: hidden;
+
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: rem(50);
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(16);
+            font-weight: 200;
+            text-decoration: none;
+            transition: all.3s;
+            text-align: center;
+            background-color: #1e2933;
+
+            &:first-of-type {
+                border-top: rem(1) solid #374957;
+            }
+
+            &:not(:last-of-type) {
+                border-bottom: rem(1) solid #374957;
+            }
+
+            &:hover {
+                color: #ffba00;
+                background-color: #111d28;
+            }
+        }
+    }
+}

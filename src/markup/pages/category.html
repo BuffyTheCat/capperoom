@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="category page__category">
+                <div class="category__heading">
+                    <h1 class="category__title">Каталог матчей</h1>
+                    <select class="select_white" name="sorting" id="">
+                        <option value="">по Популярности</option>
+                        <option value="">по Количеству прогнозов</option>
+                        <option value="">по интуиции</option>
+                    </select>
+                </div>
+                <div class="category__list">
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                    <article class="category__item">
+                        {{Icon iconName='box' className='category__item-icon' iconWidth='57' iconHeight='59'}}
+                        <h2 class="category__name">Бокс</h2>
+                        <div class="category__dropdown">
+                            <a href="javascript:void(0);" class="category__dropdown-link">Прогнозы</a>
+                            <a href="javascript:void(0);" class="category__dropdown-link">Уточнить лигу</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
