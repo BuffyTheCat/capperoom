@@ -1,4 +1,5 @@
 .expressCard {
+    position: relative;
     transition: border .3s;
     border: rem(2) solid transparent;
     border-radius: rem(2);
@@ -20,6 +21,32 @@
 
     &:not(:last-of-type) {
         margin-bottom: rem(15);
+    }
+
+    &__basket {
+        display: none;
+        flex-direction: column;
+        padding: rem(20);
+        padding-bottom: rem(28);
+        background-color: $white;
+        margin-left: rem(2);
+
+        .expressCard__basket-buy {
+            margin-bottom: rem(18);
+        }
+    }
+
+    &__basket-buy {
+        @extend .button;
+        @extend .button_orange;
+    }
+
+    &__basket-remove {
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        text-decoration: underline;
     }
 
     &__inner-coefficient {
@@ -628,5 +655,49 @@
 		.expressCard__consonants {
 			padding: rem(25);
 		}
+    }
+
+    &_basket {
+        .expressCard__basket {
+            display: flex;
+        }
+
+        .expressCard__consonants {
+            flex-grow: 0;
+        }
+
+        .expressCard__coefficient {
+            display: flex;
+        }
+
+        .expressCard__express {
+            width: rem(443);
+        }
+
+        & .expressCard__like-icon,
+        & .expressCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .expressCard__like:hover .expressCard__like-icon,
+        & .expressCard__dislike:hover .expressCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .expressCard__comment:hover .expressCard__comment-icon {
+            fill: #c8c8c8;
+        }
+
+        & .expressCard__like,
+        & .expressCard__dislike,
+        & .expressCard__like:hover,
+        & .expressCard__dislike:hover,
+        & .expressCard__comment:hover,
+        & .expressCard__comment {
+            dt,
+            dd {
+                color: rgba(79, 79, 79, 1);
+            }
+        }
     }
 }

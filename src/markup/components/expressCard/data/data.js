@@ -10,9 +10,24 @@ let data = {
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         },
+        basketmini: {
+            mix: 'basket__item',
+            modifier: 'expressCard_mini expressCard_basket',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
+        basketminimultiple: {
+            mix: 'basket__item',
+            modifier: 'expressCard_mini expressCard_basket expressCard_multiple',
+            jsOpen: 'js-open',
+            popup: '.multiple',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
         minimultiple: {
             modifier: 'expressCard_mini expressCard_multiple',
             jsOpen: 'js-open',
+            popup: '.multiple',
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         },

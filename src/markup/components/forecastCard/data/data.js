@@ -10,6 +10,20 @@ let data = {
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         },
+        basketmini: {
+            mix: 'basket__item',
+            modifier: 'forecastCard_mini forecastCard_basket',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
+        basketminimultiple: {
+            popup: '.multiple',
+            jsOpen: 'js-open',
+            mix: 'basket__item',
+            modifier: 'forecastCard_mini forecastCard_multiple forecastCard_basket',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
         minimultiple: {
             modifier: 'forecastCard_mini forecastCard_multiple',
             jsOpen: 'js-open',

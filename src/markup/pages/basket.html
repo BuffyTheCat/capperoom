@@ -9,7 +9,32 @@
         %=symbols=%
         {{> header/header header.defaults}}
         <main class="page__wrapper">
-
+            <section class="basket page__basket">
+                <div class="basket__heading">
+                    <h1 class="basket__title">
+                        Корзина прогнозов на покупку
+                    </h1>
+                    <p class="basket__sort">Сортировать</p>
+                    <select class="select_white" name="sorting" id="">
+                        <option value="">по Времени добавления</option>
+                        <option value="">по белизне зубов</option>
+                        <option value="">по интуиции</option>
+                    </select>
+                </div>
+                <div class="basket__content">
+                    <div class="basket__list">
+                        {{> forecastCard/forecastCard forecastCard.basketmini}}
+                        {{> expressCard/expressCard expressCard.basketmini}}
+                        {{> expressCard/expressCard expressCard.basketminimultiple}}
+                        {{> forecastCard/forecastCard forecastCard.basketminimultiple}}
+                    </div>
+                    <dl class="basket__summ">
+                        <dt>Суммарная стоимость всех прогнозов:</dt>
+                        <dd><span>1650</span> руб</dd>
+                    </dl>
+                </div>
+                <a href="javascript:void(0);" data-src=".buy" class="basket__buy-all js-open">Купить все прогнозы в корзине</a>
+            </section>
         </main>
         {{> footer/footer}}
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>

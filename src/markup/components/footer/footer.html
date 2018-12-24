@@ -397,6 +397,43 @@
             <button type="submit" class="balance-add__submit">Вывести деньги</button>
         </div>
     </section>
+    <section class="popup buy buy_all js-popup">
+        <h3 class="popup__title">Подтвердите покупку прогноза</h3>
+        <button type="button" class="popup__close">Закрыть</button>
+        <form class="popup__content">
+            <div class="buy__list">
+                {{>expressCard/expressCard expressCard.mini}}
+                {{>forecastCard/forecastCard forecastCard.mini}}
+                {{>forecastCard/forecastCard forecastCard.mini}}
+                <p class="buy__text">
+                    <span>В корзине 3 прогноза.</span> Вы действительно хотите купить их все?
+                </p>
+
+            </div>
+            <dl class="buy__total">
+                <dt>Стоимость:</dt>
+                <dd><span>1</span> еденица</dd>
+            </dl>
+            <a href="javascript:void(0);" class="buy__subscribe"> <img src="%=static=%img/general/warn_blue.png" alt="">по подписке дешевле</a>
+        </form>
+        <div class="popup__footer">
+            <button class="buy__submit">Купить по подписке</button>
+            <div class="buy__info">
+                <dl class="buy__info-subscribe">
+                    <dt>Остаток едениц подписки:</dt>
+                    <dd><span>54</span> ед.</dd>
+                </dl>
+                <dl class="buy__info-balance">
+                    <dt>На вашем балансе:</dt>
+                    <dd><span>104</span> руб</dd>
+                </dl>
+                <dl class="buy__info-notEnough">
+                    <dt>Для покупки не хватает:  </dt>
+                    <dd><span>5895</span> руб</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
     <div class="basket-table">
         <p class="basket-table__title">Корзина</p>
         <div class="basket-table__info">

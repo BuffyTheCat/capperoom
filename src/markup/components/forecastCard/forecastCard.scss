@@ -1,4 +1,5 @@
 .forecastCard {
+    position: relative;
     transition: border .3s;
     border: rem(2) solid transparent;
     border-radius: rem(3);
@@ -25,6 +26,32 @@
         &.forecastCard_multiple {
             margin-bottom: rem(20);
         }
+    }
+
+    &__basket {
+        display: none;
+        flex-direction: column;
+        padding: rem(20);
+        padding-bottom: rem(28);
+        background-color: $white;
+        margin-left: rem(2);
+
+        .forecastCard__basket-buy {
+            margin-bottom: rem(18);
+        }
+    }
+
+    &__basket-buy {
+        @extend .button;
+        @extend .button_orange;
+    }
+
+    &__basket-remove {
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 400;
+        text-decoration: underline;
     }
 
     &__inner-coefficient {
@@ -614,5 +641,45 @@
 		.forecastCard__consonants {
 			padding: rem(25);
 		}
+    }
+
+    &_basket {
+        .forecastCard__basket {
+            display: flex;
+        }
+
+        .forecastCard__consonants {
+            flex-grow: 0;
+        }
+
+        .forecastCard__coefficient {
+            display: flex;
+        }
+
+        & .forecastCard__like-icon,
+        & .forecastCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .forecastCard__like:hover .forecastCard__like-icon,
+        & .forecastCard__dislike:hover .forecastCard__dislike-icon {
+            fill: #969696;
+        }
+
+        & .forecastCard__comment:hover .forecastCard__comment-icon {
+            fill: #c8c8c8;
+        }
+
+        & .forecastCard__like,
+        & .forecastCard__dislike,
+        & .forecastCard__like:hover,
+        & .forecastCard__dislike:hover,
+        & .forecastCard__comment:hover,
+        & .forecastCard__comment {
+            dt,
+            dd {
+                color: rgba(79, 79, 79, 1);
+            }
+        }
     }
 }

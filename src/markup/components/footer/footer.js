@@ -152,24 +152,20 @@ function infographics() {
     if (correctPrediction > correctLike ) {
         $('.personalRating__correct-prediction').find('.personalRating__infographics-scale').css( 'height', '100px' );
         let correctPercent = correctPrediction / correctLike;
-        console.log(correctPercent);
         $('.personalRating__correct-like').find('.personalRating__infographics-scale').css( 'height', correctPercent + 'px' );
     } else {
         $('.personalRating__correct-like').find('.personalRating__infographics-scale').css( 'height', '100px' );
         let correctPercent = correctLike / correctPrediction;
-        console.log(correctPercent);
         $('.personalRating__correct-prediction').find('.personalRating__infographics-scale').css( 'height', correctPercent + 'px' );
     }
 
     if (incorrectPrediction > incorrectLike ) {
         $('.personalRating__incorrect-prediction').find('.personalRating__infographics-scale').css( 'height', '100px' );
         let incorrectPercent = incorrectPrediction / incorrectLike;
-        console.log(incorrectPercent);
         $('.personalRating__incorrect-like').find('.personalRating__infographics-scale').css( 'height', incorrectPercent + 'px' );
     } else {
         $('.personalRating__incorrect-like').find('.personalRating__infographics-scale').css( 'height', '100px' );
         let incorrectPercent = incorrectLike / incorrectPrediction;
-        console.log(incorrectPercent);
         $('.personalRating__incorrect-prediction').find('.personalRating__infographics-scale').css( 'height', incorrectPercent + 'px' );
     }
 }
@@ -192,4 +188,11 @@ $('.subscription__type').on('click', function () {
     $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('.subscription').find('.subscription__info').removeClass('active').eq($(this).index()).addClass('active');
+    if ($('.subscription__type').first().is('.active')) {
+        $('.subscription__info.active').css('border-radius', '5px 5px 5px 0');
+    } else if ($('.subscription__type').last().is('.active')) {
+        $('.subscription__info.active').css('border-radius', '5px 5px 0 5px');
+    } else {
+        $('.subscription__info.active').css('border-radius', '5px 5px 5px 5px');
+    }
 });
