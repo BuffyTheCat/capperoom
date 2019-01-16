@@ -184,6 +184,27 @@ $('.balance-withdraw__tab').on('click', function () {
         .closest('.balance-withdraw__forms').find('.balance-withdraw__form').removeClass('active').eq($(this).index()).addClass('active');
 });
 
+$('.ligue').on('click', '.ligue__item', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+});
+
+$('.matches').on('click', '.matches__command-heading', function () {
+    $(this).closest('.matches__command').toggleClass('opened').siblings().removeClass('opened');
+    let parent = $(this).closest('.matches__command');
+    let list = $(parent).find('.matches__command-list');
+    let offset = $(parent).offset().top;
+    let outer = $(parent).outerHeight();
+    let offsetTop = offset + outer - 105;
+    console.log($(offset));
+    console.log($(outer));
+    console.log($(offsetTop));
+    $(list).css('top', offsetTop);
+});
+
+$('.matches__command-filter').on('click', function () {
+    $(this).toggleClass('matches__command-filter_filtred');
+});
+
 $('.subscription__type').on('click', function () {
     $(this)
         .addClass('active').siblings().removeClass('active')

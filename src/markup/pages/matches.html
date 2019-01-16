@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="matches page__matches">
+                <div class="matches__heading">
+                    <div class="pagination">
+                        <a href="javascript:void(0);" class="pagination__prev">
+                            {{Icon iconName='box' className='pagination__icon' iconWidth='30' iconHeight='30'}} Футбол
+                        </a>
+                        <h1 class="pagination__title matches__title">
+                            {{Icon iconName='box' className='pagination__icon' iconWidth='30' iconHeight='30'}} Английская примьер лига
+                        </h1>
+                    </div>
+                    <select class="select_white" name="sorting" id="">
+                        <option value="">по Датам</option>
+                        <option value="">по Командам</option>
+                    </select>
+                </div>
+                <div class="matches__list">
+                    <article class="matches__date">
+                        <h2 class="matches__date-val">
+                            28 августа 2018
+                        </h2>
+                        <div class="matches__date-list">
+                            {{> match/match match.past}}
+                            {{> match/match match.past}}
+                            {{> match/match match.life}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                        </div>
+                    </article>
+                    <article class="matches__date">
+                        <h2 class="matches__date-val">
+                            29 августа 2018
+                        </h2>
+                        <div class="matches__date-list">
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                        </div>
+                    </article>
+                    <article class="matches__date">
+                        <h2 class="matches__date-val">
+                            30 августа 2018
+                        </h2>
+                        <div class="matches__date-list">
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+
+                        </div>
+                    </article>
+                </div>
+                <div class="matches__list matches__list_command">
+                    <article class="matches__command">
+                        <p class="matches__command-heading">
+                            <img src="%=static=%img/general/flag.png" alt="">
+                            Чикаго Булс
+                        </p>
+                        <a href="javascript:void(0);" class="matches__command-filter">Только предстоящие матчи</a>
+                        <div class="matches__command-list">
+                            {{> match/match match.life}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.life}}
+                            {{> match/match match.past}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                        </div>
+                    </article>
+                    <article class="matches__command">
+                        <p class="matches__command-heading">
+                            <img src="%=static=%img/general/flag.png" alt="">
+                            Чикаго Булс
+                        </p>
+                        <a href="javascript:void(0);" class="matches__command-filter">Только предстоящие матчи</a>
+                        <div class="matches__command-list">
+                            {{> match/match match.past}}
+                            {{> match/match match.life}}
+                            {{> match/match match.life}}
+                            {{> match/match match.life}}
+                            {{> match/match match.past}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                        </div>
+                    </article>
+                    <article class="matches__command">
+                        <p class="matches__command-heading">
+                            <img src="%=static=%img/general/flag.png" alt="">
+                            Чикаго Булс
+                        </p>
+                        <a href="javascript:void(0);" class="matches__command-filter">Только предстоящие матчи</a>
+                        <div class="matches__command-list">
+                            {{> match/match match.past}}
+                            {{> match/match match.life}}
+                            {{> match/match match.life}}
+                            {{> match/match match.past}}
+                            {{> match/match match.past}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                        </div>
+                    </article>
+                    <article class="matches__command">
+                        <p class="matches__command-heading">
+                            <img src="%=static=%img/general/flag.png" alt="">
+                            Чикаго Булс
+                        </p>
+                        <a href="javascript:void(0);" class="matches__command-filter">Только предстоящие матчи</a>
+                        <div class="matches__command-list">
+                            {{> match/match match.past}}
+                            {{> match/match match.life}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                        </div>
+                    </article>
+                    <article class="matches__command">
+                        <p class="matches__command-heading">
+                            <img src="%=static=%img/general/flag.png" alt="">
+                            Чикаго Булс
+                        </p>
+                        <a href="javascript:void(0);" class="matches__command-filter">Только предстоящие матчи</a>
+                        <div class="matches__command-list">
+                            {{> match/match match.past}}
+                            {{> match/match match.life}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.life}}
+                            {{> match/match match.past}}
+                            {{> match/match match.normal}}
+                            {{> match/match match.normal}}
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

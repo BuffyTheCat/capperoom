@@ -1,0 +1,124 @@
+.match {
+
+    border-radius: rem(5);
+    border: rem(2) solid transparent;
+    transition: border .3s;
+    overflow: hidden;
+    text-decoration: none;
+
+    &:not(:last-of-type) {
+        margin-bottom: rem(10);
+    }
+
+    &:hover {
+        border: rem(2) solid $orangeDark;
+    }
+
+    &_past {
+        .match__content {
+            background-color: #c8c8c8;
+            box-shadow: none;
+
+            .match__commands {
+                img {
+                    filter: grayscale(100%);
+                }
+            }
+
+            .match__time,
+            .match__time-info {
+                display: none;
+            }
+        }
+    }
+
+    &_life {
+        .match__time {
+            color: #d71977;
+            font-family: $helvetica;
+            font-style: italic;
+            font-size: rem(18);
+            font-weight: 200;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: rem(10) rem(15);
+        padding-right: rem(25);
+        text-decoration: none;
+        background-color: $white;
+        box-shadow: 0 rem(3) rem(3) rgba(0, 6, 26, 0.1);
+    }
+
+    &__commands {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+
+    &__comand {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        color: #4f4f4f;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 300;
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
+        }
+
+        img {
+            width: rem(40);
+            height: auto;
+            flex-shrink: 0;
+            margin-right: rem(8);
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__result {
+        margin: 0;
+        color: #505050;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 300;
+    }
+
+    &__time {
+        margin: 0;
+        margin-bottom: rem(5);
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &__time-info {
+        margin: 0;
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(12);
+        font-weight: 200;
+        letter-spacing: 0.6px;
+        text-align: center;
+    }
+
+    &:not(.match_past) {
+        .match__result {
+            display: none;
+        }
+    }
+}
