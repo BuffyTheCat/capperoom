@@ -165,8 +165,12 @@
             text-decoration: none;
             transition: color .3s;
 
-            &:hover {
-                color: $orangeDark;
+            span {
+                transition: color .3s;
+
+                &:hover {
+                    color: $orangeDark;
+                }
             }
         }
 
@@ -218,6 +222,21 @@
                 font-size: rem(24);
                 font-weight: 100;
                 color: $ashgrey;
+                transition: color .3s;
+            }
+
+            .circle {
+                transition: stroke .3s;
+            }
+
+            &:hover {
+                p {
+                    color: $orangeDark;
+                }
+
+                .circle {
+                    stroke: $orangeDark;
+                }
             }
         }
     }

@@ -52,6 +52,11 @@
         font-size: rem(14);
         font-weight: 400;
         text-decoration: underline;
+        transition: color .3s;
+
+        &:hover {
+            color: $orangeDark
+        }
     }
 
     &__inner-coefficient {
@@ -278,8 +283,13 @@
 
         transition: color .3s;
 
-        &:hover {
-            color: $orangeDark;
+        span {
+            &.js-open {
+                transition: color .3s;
+                &:hover {
+                    color: $orangeDark;
+                }
+            }
         }
 
         .diagramm {
@@ -300,6 +310,13 @@
         font-style: italic;
         color: $manatee;
         text-align: left;
+        transition: color .3s;
+    }
+
+    &__more {
+        &:hover {
+            color: $orangeDark;
+        }
     }
 
     &__desc {
@@ -356,6 +373,10 @@
             display: block;
             margin-right: rem(10);
         }
+    }
+
+    &__comment {
+        font-style: italic;
     }
 
     &__like {
@@ -567,8 +588,11 @@
             }
 
             .forecastCard__like-icon,
-            .forecastCard__dislike-icon {
+            .forecastCard__dislike-icon,
+            .forecastCard__comment {
                 fill: #969696;
+
+
             }
 
             .forecastCard__like,
@@ -576,6 +600,23 @@
             .forecastCard__comment {
                 dd {
                     color: #969696;
+                }
+
+                &:hover {
+                    svg {
+                        fill: #969696;
+                    }
+                    dd {
+                        color: #969696;
+                    }
+                }
+            }
+
+            .forecastCard__comment {
+                &:hover {
+                    svg {
+                        fill: #c8c8c8;
+                    }
                 }
             }
         }
@@ -595,6 +636,23 @@
             .forecastCard__comment {
                 dd {
                     color: #969696;
+                }
+
+                &:hover {
+                    svg {
+                        fill: #969696;
+                    }
+                    dd {
+                        color: #969696;
+                    }
+                }
+            }
+
+            .forecastCard__comment {
+                &:hover {
+                    svg {
+                        fill: #c8c8c8;
+                    }
                 }
             }
         }

@@ -20,7 +20,7 @@
                     </p>
                 </div>
                 <div class="personalData__content">
-                    <div class="personalData__card">
+                    <form class="personalData__card">
                         <div class="personalData__avatar">
                             <img src="static/img/general/analist.jpg" alt="">
                             <label class="personalData__load load">
@@ -31,19 +31,19 @@
                         <div class="personalData__info">
                             <div class="personalData__info-item">
                                 <p class="personalData__text">Никнейм</p>
-                                <input type="text" class="personalData__input">
+                                <input type="text" class="personalData__input" placeholder="Введите ваш никнейм" required>
                                 <p class="personalData__tip">Обязательно для заполнения
                                     <br>Виден всем</p>
                             </div>
                             <div class="personalData__info-item">
                                 <p class="personalData__text">Телефон</p>
-                                <input type="number" class="personalData__input">
+                                <input id="phone" type="number" class="personalData__input" placeholder="Введите ваш телефон" required>
                                 <p class="personalData__tip">Обязательно для заполнения
                                     <br>Скрыт от всех</p>
                             </div>
                             <div class="personalData__info-item">
                                 <p class="personalData__text">E-mail</p>
-                                <input type="email" class="personalData__input">
+                                <input type="email" class="personalData__input" placeholder="Введите вашу почту" required>
                                 <p class="personalData__tip">Обязательно для заполнения
                                     <br>Скрыт от всех</p>
                             </div>
@@ -54,8 +54,8 @@
                                     <br>Скрыт от всех</p>
                             </div>
                         </div>
-                        <button class="personalData__save" type="button" name="button">Сохранить внесенные изменения</button>
-                    </div>
+                        <button class="personalData__save" type="submit" name="button">Сохранить внесенные изменения</button>
+                    </form>
                     <aside class="personalData__pass">
                         <a href="javascript:void(0);" class="personalData__changepass">Сменить пароль</a>
                         <form class="personalData__pass-form">

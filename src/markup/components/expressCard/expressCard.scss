@@ -47,6 +47,11 @@
         font-size: rem(14);
         font-weight: 400;
         text-decoration: underline;
+		transition: color .3s;
+
+		&:hover {
+			color: $orangeDark;
+		}
     }
 
     &__inner-coefficient {
@@ -284,8 +289,13 @@
 
         transition: color .3s;
 
-        &:hover {
-            color: $orangeDark;
+        span {
+            &.js-open {
+                transition: color .3s;
+                &:hover {
+                    color: $orangeDark;
+                }
+            }
         }
 
         .diagramm {
@@ -306,7 +316,14 @@
         font-style: italic;
         color: $manatee;
         text-align: left;
+		transition: color .3s;
     }
+
+	&__more {
+		&:hover {
+			color: $orangeDark;
+		}
+	}
 
     &__desc {
         display: none;
@@ -362,6 +379,10 @@
             display: block;
             margin-right: rem(10);
         }
+    }
+
+    &__comment {
+        font-style: italic;
     }
 
     &__like {

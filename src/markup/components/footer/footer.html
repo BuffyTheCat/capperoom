@@ -89,8 +89,13 @@
                         <h3>Лорд Воландеморт</h3>
                         <label class="favorites">
                             <input class="favorites__checkbox" name="favorites__checkbox"  type="checkbox">
-                            <span class="favorites__custom"></span>
+                            <span data-tooltip-content="#favorites" class="favorites__custom tooltip_favorites"></span>
                         </label>
+                        <div class="tooltip tooltip_favorites">
+                            <div id="favorites">
+                                <p>Добавить в избранное</p>
+                            </div>
+                        </div>
                         <dl>
                             <dt>ID:</dt>
                             <dd>0004456</dd>

@@ -45,16 +45,6 @@
             text-align: left;
         }
 
-        &:-moz-placeholderr {
-            font-family: 'Helvetica Neue';
-            font-size: rem(18);
-            color: $grey;
-            font-style: italic;
-            font-weight: 400;
-            text-decoration: none;
-            text-align: left;
-        }
-
         &:-ms-input-placeholde {
             font-family: 'Helvetica Neue';
             font-size: rem(18);
@@ -363,9 +353,14 @@
         font-family: $helvetica;
         font-size: rem(12);
         font-weight: 200;
+        transition: color .3s;
 
         &_big {
             font-size: rem(14);
+        }
+
+        &:hover {
+            color: $orangeDark;
         }
     }
 
@@ -1383,11 +1378,18 @@
 
             width: rem(113);
             height: rem(40);
+            padding: rem(10);
             padding-left: rem(51);
+            -moz-appearance: textfield;
 
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
                 -webkit-appearance: none;
+            }
+
+            &:hover,
+            &:focus {
+              -moz-appearance: number-input;
             }
         }
 
@@ -1734,6 +1736,11 @@
             font-size: rem(30);
             font-weight: 400;
             font-style: italic;
+            transition: color .3s;
+
+            &:hover {
+                color: $orange;
+            }
         }
 
         .diagramm {
@@ -1820,7 +1827,7 @@
             width: 100%;
 
             .forecastDetail__comand {
-                width: calc(50% - 20px);
+                width: auto;
                 color: #4f4f4f;
                 font-family: $helvetica;
                 font-size: rem(24);
@@ -2136,6 +2143,11 @@
             font-family: $helvetica;
             font-size: rem(14);
             font-weight: 300;
+            transition: color .3s;
+
+            &:hover {
+                color: $orangeDark;
+            }
         }
     }
 
@@ -2370,6 +2382,9 @@
             .personalArea__item-title svg .border {
                 stroke: #7f7f7f;
             }
+            .personalArea__item-title svg .circle {
+                stroke: #ffba00;
+            }
         }
 
         &-icon {
@@ -2542,6 +2557,8 @@
         width: rem(320);
         height: rem(45);
         margin-right: rem(15);
+
+
     }
 
     &__tip {
@@ -2578,6 +2595,7 @@
         padding-left: rem(30);
         padding-right: rem(15);
         margin-bottom: rem(22);
+		text-decoration: underline;
 
         &_opened {
             &.personalData__changepass_opened::after {
@@ -2629,6 +2647,18 @@
         &:last-of-type {
             margin-bottom: rem(20);
         }
+
+		&::-webkit-input-placeholder {
+            color: $white;
+        }
+
+        &::-moz-placeholder {
+            color: $white;
+        }
+
+        &:-ms-input-placeholde {
+            color: $white;
+        }
     }
 
     &__pass-btn {
@@ -2665,6 +2695,10 @@
 	&__title  {
         @extend .section-name;
         margin-bottom: rem(65);
+
+        span {
+            color: $orange;
+        }
     }
 
     .analistList__total,
@@ -2685,6 +2719,19 @@
 	@extend .container;
     padding-top: rem(56);
     padding-bottom: rem(150);
+
+    .expressCard_opened {
+        .expressCard__rating-change {
+            display: none;
+        }
+    }
+
+    .forecastCard_opened {
+        .forecastCard__rating-change {
+            display: none;
+        }
+    }
+
 
     &__heading {
         display: flex;
@@ -2861,10 +2908,12 @@
     &__correct-like,
     &__incorrect-prediction {
         margin-right: rem(40);
+        position: relative;
     }
 
     &__incorrect-like {
         margin-right: rem(47);
+        position: relative;
     }
 
     &__infographics-scale {
@@ -3694,6 +3743,7 @@
         width: calc(100% + 54px);
         margin-right: rem(-27);
         margin-left: rem(-27);
+		margin-bottom: rem(75);
     }
 
     &__subscribe {
@@ -3849,6 +3899,30 @@
             font-weight: 400;
         }
     }
+
+	&__warn {
+		display: flex;
+
+		img {
+			width: rem(42);
+			height: rem(35);
+			margin-right: rem(14);
+		}
+
+		p {
+			margin: 0;
+			display: inline-flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			opacity: 0.5;
+			color: #ffffff;
+			font-family: $helvetica;
+			font-size: rem(14);
+			font-weight: 300;
+			line-height: rem(18);
+		}
+	}
 }
 
 .basket {

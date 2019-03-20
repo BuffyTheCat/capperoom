@@ -35,7 +35,6 @@ function openPopUp() {
         $(popup).addClass('opened');
         $('.overlay').addClass('active');
     }
-    return false;
 }
 
 $('.js-open').on('click', openPopUp);
@@ -66,7 +65,6 @@ let development = {
 
 let разработка = development.name;
 let контакты = development.contacts;
-let александр = development.true;
 
 function getSrc() {
     let srcImage = $('.prize__gallery').find('.slick-current').find('img').attr('src');
@@ -195,9 +193,6 @@ $('.matches').on('click', '.matches__command-heading', function () {
     let offset = $(parent).offset().top;
     let outer = $(parent).outerHeight();
     let offsetTop = offset + outer - 105;
-    console.log($(offset));
-    console.log($(outer));
-    console.log($(offsetTop));
     $(list).css('top', offsetTop);
 });
 
@@ -217,3 +212,15 @@ $('.subscription__type').on('click', function () {
         $('.subscription__info.active').css('border-radius', '5px 5px 5px 5px');
     }
 });
+
+// var Inputmask = require('inputmask/dist/inputmask/jquery.inputmask.js');
+//
+// var selector = document.getElementById('phone');
+// var im = new Inputmask('99-9999999');
+// im.mask(selector);
+
+// $('input[type=number]').inputmask({
+//     'mask': '+7 999 999-99-99',
+//     showMaskOnHover: false,
+//     showMaskOnFocus: true
+// });

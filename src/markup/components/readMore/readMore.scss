@@ -5,6 +5,11 @@
     font-family: $helvetica;
     font-size: rem(14);
     font-weight: 300;
+    transition: color .3s;
+
+    &:hover {
+        color: #0393ff;
+    }
 
     &::after {
         position: absolute;
