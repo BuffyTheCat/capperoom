@@ -1,0 +1,264 @@
+.matchForecasts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @extend .container;
+    padding-bottom: rem(150);
+
+    &__heading {
+        width: 100%;
+        display: flex;
+        margin-top: rem(-10);
+        margin-bottom: rem(56);
+    }
+
+    &__sport-league {
+        display: flex;
+        align-items: center;
+        padding: rem(41) rem(25);
+        padding-bottom: rem(35);
+        margin-right: rem(2);
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 0 rem(4);
+    }
+
+    &__sport-icon,
+    &__league-icon {
+        fill: rgba(255, 255, 255, 0.5);
+        transition: fill .3s;
+
+        &:hover {
+            fill: rgba(255, 255, 255, 1);
+        }
+    }
+
+    &__sport-icon {
+        margin-right: rem(15);
+    }
+
+    &__commands {
+        display: flex;
+        align-items: center;
+        flex-grow: 9999;
+        display: flex;
+        padding: rem(41) rem(25);
+        padding-bottom: rem(35);
+        margin-right: rem(2);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &__command {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(24);
+        font-weight: 200;
+        line-height: rem(28);
+
+        img {
+            height: 100%;
+            width: auto;
+            margin-right: rem(14);
+        }
+
+        &:not(:last-of-type) {
+            position: relative;
+            margin-right: rem(43);
+
+            &::after {
+                position: absolute;
+                content: '-';
+                right: rem(-27);
+                top: 0;
+            }
+        }
+    }
+
+    &__match-info {
+        display: flex;
+        padding: rem(41) rem(25);
+        padding-bottom: rem(35);
+        margin-right: rem(2);
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 rem(4) 0;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    &__time {
+        margin: 0;
+        margin-bottom: rem(9);
+        font-family: $helvetica;
+        color: #ffffff;
+        font-size: rem(24);
+        font-weight: 200;
+        line-height: rem(28);
+
+        span {
+            color: #910048;
+        }
+    }
+
+    &__place {
+        margin: 0;
+        color: #272727;
+        font-family: $helvetica;
+        font-style: italic;
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(24);
+    }
+
+    &__title {
+        margin: 0;
+
+        font-family: $helvetica;
+        font-size: rem(30);
+        font-weight: 100;
+        font-style: italic;
+        color: $white;
+        text-align: left;
+
+        padding-left: rem(20);
+        padding-bottom: rem(65);
+	}
+
+    &__content {
+        width: rem(950);
+
+        .matchForecasts__title {
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            padding-bottom: rem(53);
+        }
+
+        .select2-container {
+            width: rem(280)!important;
+            height: rem(45)!important;
+            margin-left: auto;
+        }
+
+        .select2-container .select2-selection--single {
+            height: 100%;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            top: 0;
+        }
+    }
+
+    &__result {
+        display: flex;
+        flex-direction: column;
+        padding: rem(20);
+        margin-bottom: rem(20);
+
+        background-color: rgba(240, 240, 240, 1);
+        border-radius: rem(5);
+        box-shadow: 0 rem(3) rem(3) 0 rgba(0, 6, 26, 0.1);
+
+
+    }
+
+    &__list {
+        position: relative;
+        z-index: 2;
+
+        .forecastCard {
+            .forecastCard__sport-league,
+            .forecastCard__match-details {
+                display: none;
+            }
+
+            .forecastCard__info {
+                flex-grow: 9999;
+            }
+
+            .forecastCard__consonants {
+                width: rem(225);
+            }
+
+            .forecastCard__more {
+                font-family: $helvetica;
+                font-weight: 300;
+            }
+
+            .forecastCard__result {
+                font-family: $helvetica;
+                font-size: rem(24);
+                font-weight: 300;
+            }
+
+            &_commercial {
+                .forecastCard__buy {
+                    order: 1;
+                    margin-bottom: 0;
+                }
+
+                .forecastCard__desc {
+                    font-family: $helvetica;
+                    color: #959595;
+                    font-style: normal;
+                    font-size: rem(18);
+                    font-weight: 200;
+                    margin-bottom: rem(10);
+                }
+            }
+        }
+
+
+
+        .expressCard {
+            .expressCard__express {
+                display: none;
+            }
+
+            .expressCard__info {
+                flex-grow: 9999;
+            }
+
+            .expressCard__consonants {
+                width: rem(225);
+            }
+
+            .expressCard__more {
+                font-family: $helvetica;
+                font-weight: 300;
+            }
+
+            .expressCard__result {
+                font-family: $helvetica;
+                font-size: rem(24);
+                font-weight: 300;
+            }
+
+            &_commercial {
+                .expressCard__buy {
+                    order: 1;
+                    margin-bottom: 0;
+                }
+
+                .expressCard__desc {
+                    font-family: $helvetica;
+                    color: #959595;
+                    font-style: normal;
+                    font-size: rem(18);
+                    font-weight: 200;
+                    margin-bottom: rem(10);
+                }
+            }
+        }
+    }
+
+    &__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
+}

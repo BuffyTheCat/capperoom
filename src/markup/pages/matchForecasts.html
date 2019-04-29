@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+
+        <main class="page__wrapper">
+            <section class="page__matchForecasts matchForecasts">
+                <div class="matchForecasts__heading">
+                    <div class="matchForecasts__sport-league">
+                        <div class="matchForecasts__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                            {{Icon iconName='box' className='matchForecasts__sport-icon' iconWidth='30' iconHeight='30'}}
+                            {{> tooltip/tooltip tooltip.sport}}
+                        </div>
+                        <div class="matchForecasts__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                            {{Icon iconName='league' className='matchForecasts__league-icon' iconWidth='30' iconHeight='30'}}
+                            {{> tooltip/tooltip tooltip.league}}
+                        </div>
+                    </div>
+                    <div class="matchForecasts__commands">
+                        <p class="matchForecasts__command">
+                            <img src="%=static=%img/general/flag.png" alt="">Манчестер Юнайтед
+                        </p>
+                        <p class="matchForecasts__command">
+                            <img src="%=static=%img/general/flag.png" alt="">Спартак
+                        </p>
+                    </div>
+                    <div class="matchForecasts__match-info">
+                        <p class="matchForecasts__time">28 августа в 15:30 по Москве <span>- 72:50:23</span></p>
+                        <p class="matchForecasts__place">Ледовый дворец ВСК, Санкт-Петербург</p>
+                    </div>
+                </div>
+                <aside class="filter">
+                    <h3 class="matchForecasts__title">Фильтр</h3>
+                    <div class="filter__section">
+                        <label class="checkbox">
+                            <input name="pay" type="checkbox" checked/>
+                            <p class="checkbox__text">Платные</p>
+                        </label>
+                        <label class="checkbox">
+                            <input name="pay" type="checkbox" checked/>
+                            <p class="checkbox__text">Бесплатные</p>
+                        </label>
+                        <label class="checkbox">
+                            <input name="pay" type="checkbox" checked/>
+                            <p class="checkbox__text">Избранные аналитики</p>
+                        </label>
+                    </div>
+                    <div class="filter__section">
+                        <p class="filter__subtitle">Коэффициент</p>
+                        <div class="filter__ratio">
+                            <div class="filter__input">
+                                <input type="number">
+                            </div>
+                            <div class="filter__input">
+                                <input type="number">
+                            </div>
+                        </div>
+                        <div class="filter__section">
+                            <p class="filter__subtitle">Согласных больше, чем<br>не согласных:</p>
+                            <label class="radio">
+                                <input name="ratio" type="radio"/>
+                                <p class="radio__text">Неважно</p>
+                            </label>
+                            <label class="radio">
+                                <input name="ratio" type="radio" checked/>
+                                <p class="radio__text">> в 2 раза</p>
+                            </label>
+                            <label class="radio">
+                                <input name="ratio" type="radio"/>
+                                <p class="radio__text">> в 3 раза</p>
+                            </label>
+                            <label class="radio">
+                                <input name="ratio" type="radio"/>
+                                <p class="radio__text">> в 4 раза</p>
+                            </label>
+                            <label class="radio">
+                                <input name="ratio" type="radio"/>
+                                <p class="radio__text">> в 5 раза</p>
+                            </label>
+                            <label class="radio">
+                                <input name="ratio" type="radio"/>
+                                <p class="radio__text">> в 10 раз</p>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+                <div class="matchForecasts__content">
+                    <h3 class="matchForecasts__title">
+                        Прогнозы на этот матч
+                        <select class="select_white" name="sorting" id="">
+                            <option value="">по Аналитикам</option>
+                            <option value="">По чему-либо</option>
+                            <option value="">по Лепесткам Ромашки</option>
+                        </select>
+                    </h3>
+
+                    <div class="matchForecasts__result">
+                        <div class="matchForecasts__list">
+                            {{> forecastCard/forecastCard forecastCard.multiple}}
+                            {{> forecastCard/forecastCard forecastCard.commercial}}
+                            {{> expressCard/expressCard expressCard.commercial}}
+                            {{> forecastCard/forecastCard forecastCard.multiple}}
+                            {{> forecastCard/forecastCard}}
+                            {{> forecastCard/forecastCard}}
+                            {{> expressCard/expressCard}}
+                            {{> forecastCard/forecastCard}}
+                            {{> forecastCard/forecastCard}}
+                            {{> forecastCard/forecastCard}}
+                        </div>
+                    </div>
+                    <button class="matchForecasts__load" type="button" name="button">Показать еще <span>10</span> вариантов</button>
+                </div>
+            </section>
+
+        </main>
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

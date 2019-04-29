@@ -5,6 +5,11 @@ let data = {
             diagramm: fullData => fullData.diagramm,
             tooltip: fullData => fullData.tooltip
         },
+        multiple: {
+            modifier: ' forecastCard_multiple',
+            diagramm: fullData => fullData.diagramm,
+            tooltip: fullData => fullData.tooltip
+        },
         mini: {
             modifier: 'forecastCard_mini',
             diagramm: fullData => fullData.diagramm,

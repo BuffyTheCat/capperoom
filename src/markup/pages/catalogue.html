@@ -10,9 +10,9 @@
         {{> header/header header.defaults}}
         <main class="page__wrapper">
             <div class="page__catalogue catalogue">
-                <aside class="catalogue__filter">
+                <aside class="filter">
                     <h3 class="catalogue__title">Фильтр</h3>
-                    <div class="catalogue__section">
+                    <div class="filter__section">
                         <label class="radio">
                             <input name="time" type="radio" checked/>
                             <p class="radio__text">Предстоящие</p>
@@ -26,7 +26,7 @@
                             <p class="radio__text">Архив</p>
                         </label>
                     </div>
-                    <div class="catalogue__section">
+                    <div class="filter__section">
                         <label class="checkbox">
                             <input name="pay" type="checkbox" checked/>
                             <p class="checkbox__text">Платные</p>
@@ -40,23 +40,23 @@
                             <p class="checkbox__text">Избранные аналитики</p>
                         </label>
                     </div>
-                    <div class="catalogue__section">
-                        <p class="catalogue__subtitle">Коэффициент</p>
-                        <div class="catalogue__ratio">
-                            <div class="catalogue__input">
+                    <div class="filter__section">
+                        <p class="filter__subtitle">Коэффициент</p>
+                        <div class="filter__ratio">
+                            <div class="filter__input">
                                 <input type="number">
                             </div>
-                            <div class="catalogue__input">
+                            <div class="filter__input">
                                 <input type="number">
                             </div>
                         </div>
-                        <div class="catalogue__sport">
+                        <div class="filter__sport">
                             <label class="checkbox">
                                 <input name="volleyball" type="checkbox" checked/>
                                 <p class="checkbox__text">Волейбол</p>
                                 <button class="checkbox__button" type="button" name="button"></button>
                             </label>
-                            <div class="catalogue__sport-details">
+                            <div class="filter__sport-details">
                                 <label class="checkbox">
                                     <input name="" type="checkbox" checked/>
                                     <p class="checkbox__text">Волейбол 1</p>
@@ -71,7 +71,7 @@
                                 <p class="checkbox__text">Футбол</p>
                                 <button class="checkbox__button" type="button" name="button"></button>
                             </label>
-                            <div class="catalogue__sport-details">
+                            <div class="filter__sport-details">
                                 <label class="checkbox">
                                     <input name="" type="checkbox" checked/>
                                     <p class="checkbox__text">Лига Европы УЕФА</p>
@@ -126,7 +126,7 @@
                                 <p class="checkbox__text">Бокс</p>
                                 <button class="checkbox__button" type="button" name="button"></button>
                             </label>
-                            <div class="catalogue__sport-details">
+                            <div class="filter__sport-details">
                                 <label class="checkbox">
                                     <input name="" type="checkbox" checked/>
                                     <p class="checkbox__text">Бокс 1</p>
@@ -141,7 +141,7 @@
                                 <p class="checkbox__text">Хоккей</p>
                                 <button class="checkbox__button" type="button" name="button"></button>
                             </label>
-                            <div class="catalogue__sport-details">
+                            <div class="filter__sport-details">
                                 <label class="checkbox">
                                     <input name="" type="checkbox" checked/>
                                     <p class="checkbox__text">Хоккей 1</p>
@@ -156,7 +156,7 @@
                                 <p class="checkbox__text">ММА</p>
                                 <button class="checkbox__button" type="button" name="button"></button>
                             </label>
-                            <div class="catalogue__sport-details">
+                            <div class="filter__sport-details">
                                 <label class="checkbox">
                                     <input name="" type="checkbox" checked/>
                                     <p class="checkbox__text">ММА 1</p>
@@ -171,7 +171,7 @@
                                 <p class="checkbox__text">Гольф</p>
                                 <button class="checkbox__button" type="button" name="button"></button>
                             </label>
-                            <div class="catalogue__sport-details">
+                            <div class="filter__sport-details">
                                 <label class="checkbox">
                                     <input name="" type="checkbox" checked/>
                                     <p class="checkbox__text">Гольф 1</p>
@@ -181,12 +181,12 @@
                                     <p class="checkbox__text">Гольф 2</p>
                                 </label>
                             </div>
-                            <a href="javascript:void(0);" class="catalogue__all-sport">Показать все виды спорта</a>
-                            <a href="javascript:void(0);" class="catalogue__all-remove">Снять все галочки</a>
-                            <a href="javascript:void(0);" class="catalogue__all-add">Поставить все галочки</a>
+                            <a href="javascript:void(0);" class="filter__all-sport">Показать все виды спорта</a>
+                            <a href="javascript:void(0);" class="filter__all-remove">Снять все галочки</a>
+                            <a href="javascript:void(0);" class="filter__all-add">Поставить все галочки</a>
                         </div>
-                        <div class="catalogue__section">
-                            <p class="catalogue__subtitle">Согласных больше, чем<br>не согласных:</p>
+                        <div class="filter__section">
+                            <p class="filter__subtitle">Согласных больше, чем<br>не согласных:</p>
                             <label class="radio">
                                 <input name="ratio" type="radio"/>
                                 <p class="radio__text">Неважно</p>

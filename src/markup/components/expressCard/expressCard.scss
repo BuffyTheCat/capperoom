@@ -23,6 +23,7 @@
         margin-bottom: rem(15);
     }
 
+
     &__basket {
         display: none;
         flex-direction: column;
@@ -235,11 +236,23 @@
         background-color: $white;
 
         p {
-            font-family: 'Helvetica Neue';
+            margin: 0;
+            font-family: $helvetica;
             font-size: rem(40);
             font-weight: 100;
             color: $grey;
+
+            &.expressCard__coefficient-text {
+                margin: 0;
+        		margin-top: rem(36);
+        		color: #969696;
+        		font-family: $helvetica;
+        		font-size: rem(14);
+        		font-weight: 300;
+            }
         }
+
+
     }
 
     &__info {
@@ -386,11 +399,11 @@
     }
 
     &__like {
-        margin-bottom: rem(15);
+        margin-bottom: rem(10);
     }
 
     &__dislike {
-        margin-bottom: rem(17);
+        margin-bottom: rem(10);
     }
 
     &__like:hover,
