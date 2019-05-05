@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="create page__create">
+                <h1 class="subscription__title">Создание прогноза</h1>
+                <div class="create__content">
+                    <div class="create__list">
+                        <div class="create__item">
+                            <div class="create__sport-league">
+                                <div class="create__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                                    {{Icon iconName='box' className='create__sport-icon' iconWidth='30' iconHeight='30'}}
+                                    {{> tooltip/tooltip tooltip.sport}}
+                                </div>
+                                <div class="create__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                                    {{Icon iconName='league' className='create__league-icon' iconWidth='30' iconHeight='30'}}
+                                    {{> tooltip/tooltip tooltip.league}}
+                                </div>
+                            </div>
+                            <div class="create__commands">
+                                <p class="create__command">
+                                    <img src="%=static=%img/general/flag.png" alt="">Манчестер Юнайтед
+                                </p>
+                                <p class="create__command">
+                                    <img src="%=static=%img/general/flag.png" alt="">Спартак
+                                </p>
+                            </div>
+                            <div class="create__forecast">
+                                <dl>
+                                    <dt>Победит 1 и не пропустит:</dt>
+                                    <dd>Нет</dd>
+                                </dl>
+                                <p>2.1</p>
+                            </div>
+                            <div class="create__remove">
+                                <button type="button" name="button"></button>
+                            </div>
+                        </div>
+                        <div class="create__item error">
+                            <div class="create__sport-league">
+                                <div class="create__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                                    {{Icon iconName='box' className='create__sport-icon' iconWidth='30' iconHeight='30'}}
+                                    {{> tooltip/tooltip tooltip.sport}}
+                                </div>
+                                <div class="create__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                                    {{Icon iconName='league' className='create__league-icon' iconWidth='30' iconHeight='30'}}
+                                    {{> tooltip/tooltip tooltip.league}}
+                                </div>
+                            </div>
+                            <div class="create__commands">
+                                <p class="create__command">
+                                    <img src="%=static=%img/general/flag.png" alt="">Манчестер Юнайтед
+                                </p>
+                                <p class="create__command">
+                                    <img src="%=static=%img/general/flag.png" alt="">Хоффенхайм
+                                </p>
+                            </div>
+                            <div class="create__forecast">
+                                <dl>
+                                    <dt>Ничья хоть в 1ом из таймов:</dt>
+                                    <dd>Да</dd>
+                                </dl>
+                                <p>2.5</p>
+                            </div>
+                            <div class="create__remove">
+                                <button type="button" name="button"></button>
+                            </div>
+                        </div>
+                        <div class="create__item">
+                            <div class="create__sport-league">
+                                <div class="create__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+                                    {{Icon iconName='box' className='create__sport-icon' iconWidth='30' iconHeight='30'}}
+                                    {{> tooltip/tooltip tooltip.sport}}
+                                </div>
+                                <div class="create__tooltip tooltipstered" data-tooltip-content=".tooltip_league #tooltip_content">
+                                    {{Icon iconName='league' className='create__league-icon' iconWidth='30' iconHeight='30'}}
+                                    {{> tooltip/tooltip tooltip.league}}
+                                </div>
+                            </div>
+                            <div class="create__commands">
+                                <p class="create__command">
+                                    <img src="%=static=%img/general/flag.png" alt="">Манчестер Юнайтед
+                                </p>
+                                <p class="create__command">
+                                    <img src="%=static=%img/general/flag.png" alt="">Спартак
+                                </p>
+                            </div>
+                            <div class="create__forecast">
+                                <dl>
+                                    <dt>Фора 2:</dt>
+                                    <dd>+3.5</dd>
+                                </dl>
+                                <p>1.6</p>
+                            </div>
+                            <div class="create__remove">
+                                <button type="button" name="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-src=".createPopup" class="create__add js-open" href="javascript:void(0)">Добавить еще событие</a>
+                    <dl class="create__coefficient">
+                        <dt>Вы создали экспресс-прогноз из 3х событий, с итоговым коэфициентом:</dt>
+                        <dd>7.15</dd>
+                    </dl>
+                    <textarea class="create__comment" name="" placeholder="Ваш комментарий к прогнозу (не обязательно)"></textarea>
+                </div>
+                <div class="create__footer">
+                    <div class="create__warn">
+                        <img src="%=static=%img/general/warn_white.png" alt="">
+                        <p>
+                            Внимательно проверьте прогноз! После публикации его не изменить, <br> а его результаты скажутся на вашем рейтинге аналитика.
+                        </p>
+                    </div>
+                    <div class="create__price">
+                        <label>
+                            <input type="number" name="price" value="0">
+                            руб
+                        </label>
+                        <p>Стоимость прогноза?</p>
+                    </div>
+                    <button data-src=".createError" class="create__publicate js-open" type="button" name="publicate">Опубликовать прогноз</button>
+                </div>
+                <div class="create__error">
+                    <div class="create__warn">
+                        <img src="%=static=%img/general/warn_yellow.png" alt="">
+                        <p>
+                            Вы не можете сохранить данный прогноз. Так как нельзя выбирать более одного события на один матч.<br>Удалите лишние события из списка слева нажав на синий крестик справа от события и тогда кнопка сохранить выбор станет активной.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,27 @@
+.createError {
+    flex-direction: column;
+
+    .popup__content {
+        width: rem(368);
+        flex-direction: column;
+
+        p {
+            margin: 0;
+            color: #505050;
+            font-family: $helvetica;
+            font-size: rem(14);
+            font-weight: 200;
+            line-height: rem(24);
+            letter-spacing: rem(0.7);
+
+            span {
+                color: #ff0000;
+                font-weight: 300;
+            }
+
+            &:not(last-of-type) {
+                margin-bottom: rem(26);
+            }
+        }
+    }
+}

@@ -1,0 +1,387 @@
+.create {
+    @extend .container;
+	padding-top: rem(65);
+	padding-bottom: rem(150);
+
+    &__title {
+		@extend .section-name;
+        margin-bottom: rem(65);
+		padding: 0 rem(20);
+	}
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: rem(20);
+        margin-bottom: rem(20);
+        box-shadow: 0 rem(3) rem(3) rgba(0, 6, 26, 0.1);
+        border-radius: rem(5 );
+        background-color: #f0f0f0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 3px 3px rgba(0, 6, 26, 0.1);
+        width: 100%;
+        margin-bottom: rem(19);
+    }
+
+    &__item {
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+
+        &:first-of-type {
+            .create__sport-league {
+                border-top-left-radius: rem(5);
+            }
+
+            .create__remove {
+                border-top-right-radius: rem(5);
+            }
+
+            .create__commands,
+            .create__sport-league,
+            .create__forecast,
+            .create__remove {
+                padding-top: rem(30);
+            }
+        }
+
+        &:last-of-type {
+            .create__sport-league {
+                border-bottom-left-radius: rem(5);
+            }
+
+            .create__remove {
+                border-bottom-right-radius: rem(5);
+            }
+
+            .create__commands,
+            .create__sport-league,
+            .create__forecast,
+            .create__remove  {
+                padding-bottom: rem(30);
+            }
+        }
+
+        &:hover {
+            .create__league-icon,
+            .create__sport-icon {
+                fill: #fc8e00;
+            }
+
+            .create__command {
+                color: #fc8e00;
+            }
+
+            .create__forecast {
+                dt,
+                dd {
+                    color: #fc8e00;
+                }
+            }
+        }
+
+		&.error {
+			&,
+			&:hover {
+				.create__sport-icon,
+				.create__league-icon {
+					fill: #ec0000;
+				}
+
+				.create__command {
+					color: #ec0000;
+				}
+
+				.create__forecast {
+					dt,
+                    dd {
+						color: #ec0000;
+					}
+				}
+			}
+		}
+    }
+
+    &__sport-league,
+    &__commands,
+    &__forecast,
+    &__remove {
+        display: flex;
+        align-items: center;
+        margin-right: rem(2);
+        background-color: #ffffff;
+        padding: rem(6) rem(20);
+    }
+
+    &__remove {
+        margin-right: 0;
+    }
+
+    &__league-icon {
+        fill: #b4b4b4;
+        transition: fill .3s;
+    }
+
+    &__sport-icon {
+        fill: #b4b4b4;
+        margin-right: rem(10);
+        transition: fill .3s;
+    }
+
+    &__commands {
+        flex-grow: 999;
+    }
+
+    &__command {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        color: #4f4f4f;
+        font-family: $helvetica;
+        font-size: rem(24);
+        font-weight: 200;
+        line-height: normal;
+        transition: color .3s;
+
+        img {
+            height: 100%;
+            width: auto;
+            margin-right: rem(14);
+        }
+
+        &:not(:last-of-type) {
+            position: relative;
+            margin-right: rem(43);
+
+            &::after {
+                position: absolute;
+                content: '-';
+                right: rem(-27);
+                top: 0;
+            }
+        }
+    }
+
+    &__forecast {
+        width: rem(470);
+
+        dl {
+            display: flex;
+            margin: 0;
+
+            dt,
+            dd {
+                margin: 0;
+                color: #4f4f4f;
+                font-family: $helvetica;
+                font-size: rem(24);
+                font-weight: 200;
+                transition: color .3s;
+            }
+
+            dd {
+                margin-left: rem(9);
+            }
+        }
+
+        p {
+            margin: 0;
+            margin-left: rem(12);
+            color: #b4b4b4;
+            font-family: $helvetica;
+            font-size: rem(24);
+            font-weight: 200;
+        }
+    }
+
+    &__remove {
+        button {
+            position: relative;
+
+            width: rem(15);
+            height: rem(15);
+            padding: 0;
+
+            text-indent: -9999px;
+
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            transition: transform .5s, background-color .5s;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                top: rem(-2);
+                left: rem(7);
+
+                width: rem(1);
+                height: rem(19);
+                background-color: #505050;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                transform: scale(1.3);
+
+                &::before,
+                &::after {
+                    background-color: $orangeDark;
+                }
+            }
+        }
+    }
+
+    &__add {
+        @extend .button;
+        @extend .button_orange;
+        height: rem(45);
+        width: rem(305);
+        margin-right: auto;
+        margin-bottom: rem(20);
+    }
+
+    &__coefficient {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: rem(20);
+
+        dt {
+            margin: 0;
+            color: #505050;
+            font-family: $helvetica;
+            font-size: rem(18);
+            font-weight: 200;
+            letter-spacing: 0.9px;
+        }
+
+        dd {
+            margin: 0;
+            margin-left: rem(22);
+            color: #4f4f4f;
+            font-family: $helvetica;
+            font-size: rem(40);
+            font-weight: 200;
+        }
+    }
+
+    &__comment {
+        width: 100%;
+        height: rem(115);
+        padding: rem(16) rem(19);
+        border: 1px solid #c7c7c7;
+        background-color: transparent;
+        border-radius: rem(4);
+        outline: none;
+    }
+
+    &__footer,
+    &__error {
+        display: flex;
+        align-items: center;
+        padding-left: rem(20);
+    }
+
+    &__warn {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+
+        img {
+            width: rem(33);
+            height: rem(28);
+            margin-right: rem(16);
+        }
+
+        p {
+			margin: 0;
+			display: inline-flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			color: #ffffff;
+			font-family: $helvetica;
+			font-size: rem(14);
+			font-weight: 300;
+			line-height: rem(18);
+		}
+    }
+
+    &__error {
+        display: none;
+
+        .create__warn {
+            p {
+                color: #ffcc00;
+            }
+        }
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        margin-right: rem(55);
+
+        p {
+            margin: 0;
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(14);
+            font-weight: 200;
+            line-height: rem(18);
+
+            opacity: 0.5;
+        }
+
+        label {
+            margin-bottom: rem(12);
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(14);
+            font-weight: 300;
+            line-height: rem(18);
+
+            input {
+                @extend .input;
+                height: rem(42);
+                width: rem(110);
+                background-color: transparent;
+                color: #ffffff;
+
+                &::-webkit-input-placeholder {
+                    color: #ffffff;
+                }
+
+                &::-moz-placeholder {
+                    color: #ffffff;
+                }
+
+                &:-ms-input-placeholde {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    &__publicate {
+        @extend .button;
+        @extend .button_blue;
+        width: rem(383);
+        height: rem(70);
+    }
+}

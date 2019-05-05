@@ -45,9 +45,7 @@ $('.prize__desc').mCustomScrollbar({
     axis: 'y'
 });
 
-$('.analist__forecasts-list').mCustomScrollbar({
-    axis: 'y'
-});
+
 
 $('.multiple .popup__content').mCustomScrollbar({
     axis: 'y'
@@ -108,10 +106,6 @@ $('.prize__gallery').slick({
     variableWidth: true
 });
 
-$('.analist__select').select2({
-    minimumResultsForSearch: Infinity,
-    dropdownCssClass: 'dropdown_blue'
-});
 
 $('.select_white').select2({
     minimumResultsForSearch: Infinity,
