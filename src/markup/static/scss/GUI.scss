@@ -1045,6 +1045,23 @@
             opacity: 1;
         }
     }
+
+	&_blue {
+		.checkbox__text {
+			&::before {
+	            content: '';
+	            position: absolute;
+	            left: 0;
+	            top:0;
+
+	            width: rem(20);
+	            height: rem(20);
+	            border-radius: rem(2);
+	            background-color: #00c0ff;
+	        }
+		}
+
+	}
 }
 
 .filter {

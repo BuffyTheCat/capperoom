@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+        {{> header/header header.defaults}}
+        <main class="page__wrapper">
+            <section class="subscribe">
+                <h1 class="subscribe__title">Подписки: </h1>
+                <div class="subscribe__types">
+                    <article class="subscribe__type">
+                        <div class="subscribe__type-overlay">
+                            <div class="subscribe__type-content">
+                                <img class="subscribe__img" src="%=static=%img/general/premium.png" alt="">
+                                <h2 class="subscribe__type-title">Premium</h2>
+                                <p class="subscribe__type-subtitle">
+                                    подписка
+                                </p>
+                                <p class="subscribe__type-desc">
+                                    Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки.
+                                </p>
+                                <p class="subscribe__price"><span>2700 руб </span>/ мес</p>
+                            </div>
+                        </div>
+                        <a data-src=".subscribePopup" href="javascript:void(0);" class="subscribe__subscribe js-open">Подключить</a>
+                    </article>
+                    <article class="subscribe__type">
+                        <div class="subscribe__type-overlay">
+                            <div class="subscribe__type-content">
+                                <img class="subscribe__img" src="%=static=%img/general/gold.png" alt="">
+                                <h2 class="subscribe__type-title">gold</h2>
+                                <p class="subscribe__type-subtitle">
+                                    подписка
+                                </p>
+                                <p class="subscribe__type-desc">
+                                    Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки.
+                                </p>
+                                <p class="subscribe__price"><span>900 руб </span>/ мес</p>
+                            </div>
+                        </div>
+                        <a data-src=".subscribePopup" href="javascript:void(0);" class="subscribe__subscribe js-open">Подключить</a>
+                    </article>
+                    <article class="subscribe__type active">
+                        <div class="subscribe__type-overlay">
+                            <div class="subscribe__type-content">
+                                <img class="subscribe__img" src="%=static=%img/general/silver.png" alt="">
+                                <h2 class="subscribe__type-title">Silver</h2>
+                                <p class="subscribe__type-subtitle">
+                                    подписка
+                                </p>
+                                <p class="subscribe__type-desc">
+                                    Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки.
+                                </p>
+                                <p class="subscribe__price"><span>300 руб </span>/ мес</p>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="subscribe__subscribe subscribe__subscribe_active">Ваша подписка</a>
+                    </article>
+                    <article class="subscribe__type">
+                        <div class="subscribe__type-overlay">
+                            <div class="subscribe__type-content">
+                                <img class="subscribe__img" src="%=static=%img/general/free.png" alt="">
+                                <h2 class="subscribe__type-title">Free</h2>
+                                <p class="subscribe__type-subtitle">
+                                    подписка
+                                </p>
+                                <p class="subscribe__type-desc">
+                                    Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки. Ее характеристики и прочая лабуда. Тут будет краткое описание данной подписки.
+                                </p>
+                                <p class="subscribe__price"><span>Бесплатно</span></p>
+                            </div>
+                        </div>
+                        <a data-src=".subscribePopup" href="javascript:void(0);" class="subscribe__subscribe js-open">Подключить</a>
+                    </article>
+                </div>
+                <div class="subscribe__warn">
+                    <img src="%=static=%img/general/warn_white.png" alt="">
+                    <p>
+                        <span>При переходе на другую подписку все не использованные бонусы по предыдущей подписке будут потеряны! </span>
+                        <span>Рекомендуем сначала истратить все бонусы по текущей подписке.</span>
+                    </p>
+                </div>
+            </section>
+        </main>
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
