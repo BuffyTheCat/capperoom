@@ -42,10 +42,122 @@
             .personalArea__item-title svg .circle {
                 stroke: #ffba00;
             }
+
+            &:nth-of-type(1) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/pocent_.png');
+                }
+            }
+            &:nth-of-type(2) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/glass_.png');
+                }
+            }
+            &:nth-of-type(3) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/money_.png');
+                }
+            }
+            &:nth-of-type(4) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/cart_.png');
+                }
+            }
+            &:nth-of-type(5) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/docs_.png');
+                }
+            }
+            &:nth-of-type(6) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/paket_.png');
+                }
+            }
+            &:nth-of-type(7) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/stars_.png');
+                }
+            }
+            &:nth-of-type(8) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/lampa_.png');
+                }
+            }
+            &:nth-of-type(9) {
+                .personalArea__item-icon {
+                    background-image: url('%=static=%general/rules_.png');
+                }
+            }
         }
 
         &-icon {
-            margin-right: rem(30);
+            margin-right: rem(32);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-of-type(1) {
+            .personalArea__item-icon {
+                width: rem(50);
+                height: rem(50);
+                background-image: url('%=static=%general/pocent.png');
+            }
+        }
+        &:nth-of-type(2) {
+            .personalArea__item-icon {
+                width: rem(55);
+                height: rem(46);
+                background-image: url('%=static=%general/glass.png');
+            }
+        }
+        &:nth-of-type(3) {
+            .personalArea__item-icon {
+                width: rem(50);
+                height: rem(51);
+                background-image: url('%=static=%general/money.png');
+            }
+        }
+        &:nth-of-type(4) {
+            .personalArea__item-icon {
+                width: rem(54);
+                height: rem(50);
+                background-image: url('%=static=%general/cart.png');
+            }
+        }
+        &:nth-of-type(5) {
+            .personalArea__item-icon {
+                width: rem(42);
+                height: rem(50);
+                background-image: url('%=static=%general/docs.png');
+            }
+        }
+        &:nth-of-type(6) {
+            .personalArea__item-icon {
+                width: rem(54);
+                height: rem(56);
+                background-image: url('%=static=%general/paket.png');
+            }
+        }
+        &:nth-of-type(7) {
+            .personalArea__item-icon {
+                width: rem(56);
+                height: rem(51);
+                background-image: url('%=static=%general/stars.png');
+            }
+        }
+        &:nth-of-type(8) {
+            .personalArea__item-icon {
+                width: rem(60);
+                height: rem(64);
+                background-image: url('%=static=%general/lampa.png');
+            }
+        }
+        &:nth-of-type(9) {
+            .personalArea__item-icon {
+                width: rem(50);
+                height: rem(50);
+                background-image: url('%=static=%general/rules.png');
+            }
         }
 
         &-content {
