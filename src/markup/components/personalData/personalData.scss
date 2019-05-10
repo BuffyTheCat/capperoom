@@ -1,0 +1,220 @@
+.personalData {
+    @extend .container;
+    padding-top: rem(65);
+    padding-bottom: rem(210);
+
+    &__heading {
+        display: flex;
+        margin-bottom: rem(65);
+        padding: 0 rem(20);
+    }
+
+    &__title,
+    &__date,
+    &__id {
+        margin: 0;
+        color: #fff;
+        font-family: $helvetica;
+        font-style: italic;
+        font-size: rem(30);
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+
+    &__title {
+        margin-right: rem(50);
+    }
+
+    &__id,
+    &__date {
+        opacity: .5;
+    }
+
+    &__id {
+        margin-right: rem(50);
+    }
+
+    &__avatar,
+    &__card,
+    &__content {
+        display: flex;
+    }
+
+    &__card {
+        flex-wrap: wrap;
+        padding: 1.875rem;
+        box-shadow: 0 rem(3) rem(3) rgba(0,6,26,.1);
+        border-radius: rem(5);
+        background-color: #f0f0f0;
+    }
+
+    &__avatar,
+    &__card,
+    &__content {
+        display: flex;
+    }
+
+    &__avatar {
+        flex-direction: column;
+        margin-right: rem(30);
+        margin-bottom: rem(30);
+
+        img {
+            width: rem(215);
+            height: rem(215);
+            object-fit: cover;
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__load {
+        width: rem(215);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: rem(30);
+        margin-bottom: rem(30);
+        box-shadow: 0 rem(3) rem(3) rgba(0,6,26,.1);
+        border-radius: rem(2);
+        background-color: #fff;
+    }
+
+    &__info-item:not(:last-of-type),
+    &__pass-input:not(:last-of-type) {
+        margin-bottom: rem(10);
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        width: rem(75);
+        margin: 0;
+        margin-right: rem(25);
+        color: #505050;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 400;
+        letter-spacing: .9px;
+    }
+
+    &__input {
+        @extend .input;
+        width: rem(320);
+        height: rem(45);
+        margin-right: rem(15);
+
+
+    }
+
+    &__tip {
+        margin: 0;
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(12);
+        font-weight: 300;
+        letter-spacing: .6px;
+    }
+
+    &__save {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+    }
+
+    &__pass {
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        margin-left: rem(30);
+        width: rem(207);;
+        padding-top: rem(15);
+    }
+
+    &__changepass {
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 400;
+        padding-left: rem(30);
+        padding-right: rem(15);
+        margin-bottom: rem(22);
+		text-decoration: underline;
+
+        &_opened {
+            &.personalData__changepass_opened::after {
+                transform: translateY(-50%) rotate(0);
+            }
+        }
+    }
+
+    &__changepass::after,
+    &__changepass::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__changepass::before {
+        left: 0;
+        transform: translateY(-50%);
+        width: rem(16);
+        height: rem(20);
+        background-image: url('%=static=%general/lock.png');
+    }
+
+    &__changepass::after {
+        right: 0;
+        width: rem(13);
+        height: rem(10);
+        background-image: url('%=static=%general/triangle_white.png');
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    &__pass-form {
+        display: none;
+
+        &.opened {
+            display: block;
+        }
+    }
+
+    &__pass-input {
+        width: 100%;
+
+        @extend .input;
+        @extend .input_opacity;
+        @extend .input_transparent;
+
+        &:last-of-type {
+            margin-bottom: rem(20);
+        }
+
+		&::-webkit-input-placeholder {
+            color: $white;
+        }
+
+        &::-moz-placeholder {
+            color: $white;
+        }
+
+        &:-ms-input-placeholde {
+            color: $white;
+        }
+    }
+
+    &__pass-btn {
+        @extend .button;
+        @extend .button_opacity;
+        width: 100%;
+        padding: rem(15) rem(25);
+    }
+}

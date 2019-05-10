@@ -1,0 +1,306 @@
+.personalRating {
+	@extend .container;
+    padding-top: rem(66);
+    padding-bottom: rem(150);
+
+    &__heading {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: rem(58);
+		padding: 0 rem(20);
+    }
+
+	&__title  {
+        @extend .section-name;
+        width: 100%;
+        margin-bottom: rem(5);
+    }
+
+    &__sort {
+        margin: 0;
+        margin-right: rem(20);
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 400;
+        letter-spacing: 0.9px;
+    }
+
+    .select2-container {
+        width: 100%!important;
+        height: rem(45)!important;
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10)
+        }
+
+        &:last-of-type {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+		margin-bottom: rem(20);
+        padding: rem(20);
+        box-shadow: 0 rem(3) rem(3) rgba(0, 6, 26, 0.1);
+        border-radius: rem(5);
+        background-color: #f0f0f0;
+    }
+
+	&__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
+
+    &__heading-controls {
+        width: rem(353);
+        display: flex;
+        flex-direction: column;
+        padding-top: rem(31);
+        margin-right: rem(100);
+    }
+
+    &__button {
+        @extend .button;
+        @extend .button_opacity;
+        width: 100%;
+        padding: rem(15) rem(25);
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__infographics {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 453px);
+
+        &-content,
+        &-info {
+            display: flex;
+        }
+
+        &-content {
+            padding-bottom: rem(35);
+            border-bottom: rem(1) solid #8ca0a5;
+            align-items: flex-end;
+        }
+    }
+
+    &__correct-prediction,
+    &__correct-like,
+    &__incorrect-prediction,
+    &__incorrect-like,
+    &__total {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__correct-prediction,
+    &__correct-like,
+    &__incorrect-prediction,
+    &__incorrect-like {
+        width: rem(105);
+        flex-shrink: 0;
+
+        &::after {
+            position: absolute;
+            content: '+';
+            right: rem(-30);
+            bottom: rem(70);
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(30);
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    &__correct-prediction,
+    &__correct-like,
+    &__incorrect-prediction {
+        margin-right: rem(40);
+        position: relative;
+    }
+
+    &__incorrect-like {
+        margin-right: rem(47);
+        position: relative;
+    }
+
+    &__infographics-scale {
+        width: rem(100);
+        max-height: rem(100);
+        margin-bottom: rem(18);
+        background-color: #ffba00;
+        transition: height .3s;
+    }
+
+    &__infographics-percent {
+        width: 100%;
+        margin: 0;
+        margin-bottom: rem(14);
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 300;
+        letter-spacing: 0.9px;
+        text-align: center;
+    }
+
+    &__infographics-desc {
+        margin: 0;
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(12);
+        font-weight: 300;
+        letter-spacing: 0.6px;
+        text-align: center;
+    }
+
+    &__incorrect-prediction,
+    &__incorrect-like {
+        .personalRating__infographics-percent,
+        .personalRating__infographics-desc {
+            color: #1e2126;
+        }
+
+        .personalRating__infographics-scale {
+            background-color: #1e2126;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            position: absolute;
+            content: '-';
+            left: rem(-30);
+            bottom: rem(70);
+            color: #1e2126;
+            font-family: $helvetica;
+            font-size: rem(30);
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    &__correct-like {
+        &::after {
+            display: none;
+        }
+    }
+
+    &__total {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '=';
+            left: rem(-30);
+            bottom: rem(70);
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(30);
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    &__total-percent {
+        margin: 0;
+        margin-bottom: rem(16);
+        color: #ffc11a;
+        font-family: $helvetica;
+        font-size: rem(60);
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    &__infographics-info {
+        flex-direction: column;
+
+        dl {
+            display: flex;
+            margin: 0;
+
+            dt,
+            dd {
+                display: inline-flex;
+                align-items: center;
+                color: #ffffff;
+                font-family: $helvetica;
+                font-size: rem(18);
+                font-weight: 400;
+                letter-spacing: 0.9px;
+                white-space: pre;
+            }
+
+            dd {
+                color: #9fb6bd;
+                margin-left: rem(10);
+
+
+                span {
+                    color: #ffffff;
+                    font-size: rem(18);
+                }
+            }
+        }
+
+        .diagramm {
+            p {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        &-heading {
+            display: flex;
+            align-items: center;
+            margin-bottom: rem(20);
+
+            .select2-container {
+                width: rem(280)!important;
+                height: rem(45)!important;
+                margin: 0!important;
+            }
+        }
+
+        &-title {
+            margin: 0;
+            margin-right: auto;
+            padding-left: rem(20);
+            color: #505050;
+            font-family: $helvetica;
+            font-style: italic;
+            font-size: rem(30);
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+
+        &-sort {
+            margin: 0;
+            margin-right: rem(18);
+            color: #979797;
+            font-family: $helvetica;
+            font-size: rem(18);
+            font-weight: 400;
+            line-height: rem(28);
+            letter-spacing: 0.9px;
+        }
+    }
+}

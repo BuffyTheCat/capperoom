@@ -1,0 +1,62 @@
+.purchasedForecasts {
+	@extend .container;
+    padding-top: rem(56);
+    padding-bottom: rem(150);
+
+    .expressCard_opened {
+        .expressCard__rating-change {
+            display: none;
+        }
+    }
+
+    .forecastCard_opened {
+        .forecastCard__rating-change {
+            display: none;
+        }
+    }
+
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(58);
+		padding: 0 rem(20);
+    }
+
+	&__title  {
+        @extend .section-name;
+        margin-right: auto;
+    }
+
+    &__sort {
+        margin: 0;
+        margin-right: rem(20);
+        color: #ffffff;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 400;
+        letter-spacing: 0.9px;
+    }
+
+    .select2-container {
+        width: rem(280)!important;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+		margin-bottom: rem(20);
+        padding: rem(20);
+        box-shadow: 0 rem(3) rem(3) rgba(0, 6, 26, 0.1);
+        border-radius: rem(5);
+        background-color: #f0f0f0;
+    }
+
+	&__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
+}

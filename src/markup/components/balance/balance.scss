@@ -1,0 +1,410 @@
+.balance {
+	@extend .container;
+	padding-top: rem(55);
+	padding-bottom: rem(150);
+
+	&__heading {
+		display: flex;
+        align-items: center;
+		padding: 0 rem(20);
+        margin-bottom: rem(65);
+
+		dl {
+			display: flex;
+			margin-right: auto;
+			dt {
+				color: #ffffff;
+				font-family: $helvetica;
+				font-style: italic;
+				font-size: rem(30);
+				font-weight: 400;
+				letter-spacing: 1.5px;
+
+                h1 {
+                    margin: 0;
+                    color: #ffffff;
+                    font-weight: 400;
+    				font-family: $helvetica;
+    				font-style: italic;
+    				font-size: rem(30);
+    				letter-spacing: 1.5px;
+                }
+			}
+
+			dd {
+				margin-left: rem(27);
+				color: #ffffff;
+				font-family: $helvetica;
+				font-size: 30px;
+				font-weight: 500;
+				// Text style for "5,  200 ру"
+				letter-spacing: 1.5px;
+			}
+		}
+	}
+
+    &__withdraw,
+    &__add {
+        @extend .button;
+        @extend .button_orange;
+        width: rem(252);
+        height: rem(45);
+    }
+
+    &__add {
+        margin-right: rem(10);
+    }
+
+    &__subtitle {
+        width: 100%;
+        margin: 0;
+        margin-bottom: rem(30);
+        padding: 0 rem(20);
+        color: #ffffff;
+        font-family: $helvetica;
+        font-style: italic;
+        font-size: rem(30);
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(20);
+    }
+
+    &__item {
+        height: rem(60);
+        display: flex;
+        align-items: center;
+        border-radius: rem(5);
+        overflow: hidden;
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(10);
+        }
+
+        &-date,
+        &-action,
+        &-total,
+        &-desc,
+        &-detail {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            margin-right: rem(2);
+            padding: rem(15) rem(20);
+            color: #ffffff;
+            font-family: $helvetica;
+            font-size: rem(16);
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &-total,
+        &-desc,
+        &-detail {
+            background-color: rgba(0, 0, 0, 0.3);
+
+            p {
+                color: #9ca5a8;
+            }
+        }
+
+        &-date {
+            width: rem(200);
+        }
+        &-action {
+            width: rem(137);
+
+            &_plus {
+                color: #ffc119;
+            }
+        }
+        &-total {
+            width: rem(195);
+        }
+        &-desc {
+            width: rem(220);
+        }
+        &-detail {
+            flex-grow: 5;
+
+            a {
+                margin-right: rem(10);
+                color: #27b0ff;
+                transition: color .3s;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    &__item-icon {
+        margin-right: rem(20);
+        fill: #9ca5a8;
+    }
+
+    &__load {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(85);
+        font-size: rem(24);
+    }
+}
+
+.balance-add {
+    flex-direction: column;
+
+    .popup__content {
+        display: flex;
+        flex-direction: column;
+        width: rem(980);
+        padding: rem(20);
+        background-color: #f0f0f0;
+    }
+
+    &__forms {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(20);
+    }
+
+    form.balance-add__form {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: rem(30);
+        background-color: $white;
+        box-shadow: 0 3px 3px rgba(0, 6, 26, 0.1);
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+    }
+
+    &__tab {
+        display: flex;
+        padding: rem(20) rem(30);
+        cursor: pointer;
+
+        p {
+            margin: 0;
+
+            color: #969696;
+            font-family: $helvetica;
+            font-size: rem(24);
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        &.active {
+            background-color: $white;
+            box-shadow: 0 3px 3px rgba(0, 6, 26, 0.1);
+
+            p {
+                color: #505050;
+            }
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(10);
+
+        input {
+            @extend .input;
+            height: rem(45);
+        }
+    }
+
+    &__cardnum {
+        width: rem(280);
+    }
+
+    &__time {
+        width: rem(98);
+    }
+
+    &__owner {
+        width: rem(280);
+    }
+
+    &__code {
+        width: rem(98);
+    }
+
+    &__summ {
+        width: rem(110);
+        margin-right: rem(10);
+    }
+
+    &__text {
+        width: rem(135);
+        margin: 0;
+        margin-right: rem(16);
+        color: #505050;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 200;
+        letter-spacing: 0.9px;
+    }
+
+    &__submit {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(65);
+        font-size: rem(24);
+    }
+}
+
+
+.balance-withdraw {
+    flex-direction: column;
+
+    .popup__content {
+        display: flex;
+        flex-direction: column;
+        width: rem(980);
+        padding: rem(20);
+        background-color: #f0f0f0;
+    }
+
+    &__forms {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(20);
+    }
+
+    form.balance-withdraw__form {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: rem(30);
+        background-color: $white;
+        box-shadow: 0 3px 3px rgba(0, 6, 26, 0.1);
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+    }
+
+    &__tab {
+        display: flex;
+        padding: rem(20) rem(30);
+        cursor: pointer;
+
+        p {
+            margin: 0;
+
+            color: #969696;
+            font-family: $helvetica;
+            font-size: rem(24);
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        &.active {
+            background-color: $white;
+            box-shadow: 0 3px 3px rgba(0, 6, 26, 0.1);
+
+            p {
+                color: #505050;
+            }
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(10);
+
+        input {
+            @extend .input;
+            height: rem(45);
+        }
+    }
+
+    &__cardnum {
+        width: rem(280);
+    }
+
+    &__time {
+        width: rem(98);
+    }
+
+    &__owner {
+        width: rem(280);
+    }
+
+    &__code {
+        width: rem(98);
+    }
+
+    &__summ {
+        width: rem(110);
+        margin-right: rem(10);
+    }
+
+    &__text {
+        width: rem(135);
+        margin: 0;
+        margin-right: rem(16);
+        color: #505050;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 200;
+        letter-spacing: 0.9px;
+    }
+
+    &__submit {
+        @extend .button;
+        @extend .button_blue;
+        width: 100%;
+        height: rem(65);
+        font-size: rem(24);
+    }
+
+    &__warn {
+        width: 100%;
+        margin: 0;
+        margin-bottom: rem(35);
+        color: #969696;
+        font-family: $helvetica;
+        font-size: rem(16);
+        font-weight: 200;
+
+        span {
+            color: #e10000;
+        }
+
+    }
+}

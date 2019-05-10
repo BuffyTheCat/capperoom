@@ -1,0 +1,54 @@
+.developer {
+    display: flex;
+
+    &__avatar {
+        width: rem(140);
+        height: rem(140);
+        margin-right: rem(32);
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p.developer__name {
+        margin: 0;
+        margin-bottom: rem(8);
+        color: #505050;
+        font-family: $helvetica;
+        font-size: rem(24);
+        line-height: normal;
+        font-weight: 700;
+    }
+
+    p.developer__position {
+        margin: 0;
+        margin-bottom: rem(8);
+        color: #505050;
+        font-family: $helvetica;
+        font-size: rem(18);
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    p.developer__desc {
+        font-family: $helvetica;
+        font-weight: 100;
+        margin: 0;
+        margin-bottom: rem(8);
+        line-height: normal;
+    }
+
+    &__more {
+        color: #0a5c9a;
+        font-family: $helvetica;
+        font-size: rem(14);
+        font-weight: 300;
+        line-height: rem(20);
+    }
+}
