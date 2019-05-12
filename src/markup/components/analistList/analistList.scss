@@ -106,6 +106,23 @@
             background-color: #e5e5e6;
         }
 
+        &-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: rem(82);
+            margin-right: rem(2);
+            padding: rem(20);
+            background-color: #fff;
+
+            p {
+                color: #4f4f4f;
+                font-family: $helvetica;
+                font-size: rem(24);
+                font-weight: 200;
+            }
+        }
+
         &-analist {
             width: rem(385);
             margin-right: rem(2);
@@ -234,7 +251,7 @@
             color: #4f4f4f;
             font-family: $helvetica;
             font-size: rem(24);
-            font-weight: 400;
+            font-weight: 200;
         }
     }
 

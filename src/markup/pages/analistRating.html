@@ -29,7 +29,817 @@
                         <p>по неделям</p>
                     </label>
                 </div>
-                {{> analistList/analistList}}
+                <div class="analistList">
+                    <div class="analistList__heading active">
+                        <div class="analistList__search search">
+                            <input type="text" class="search__input" placeholder="Поиск по никнеймам аналитиков">
+                            <button type="button" class="search__button"></button>
+                        </div>
+                        <select class="select" name="sortingSport" id="">
+                            <option value="">Все виды спорта</option>
+                            <option value="">Футбол</option>
+                            <option value="">Крекет</option>
+                        </select>
+                        <p class="analistList__total">Всего <span>1599</span> аналитиков</p>
+                        <p class="analistList__sort">Сортировать</p>
+                        <select class="select" name="sortingRate" id="">
+                            <option value="">по Рейтингу</option>
+                            <option value="">по чему-то другому</option>
+                            <option value="">по по мозгам</option>
+                        </select>
+                    </div>
+                    <div class="analistList__heading analistList__heading_year">
+                        <div class="analistList__search search">
+                            <input type="text" class="search__input" placeholder="Поиск по никнеймам аналитиков">
+                            <button type="button" class="search__button"></button>
+                        </div>
+                        <select class="select" name="sortingYear" id="">
+                            <option value="">2019</option>
+                            <option value="">2018</option>
+                            <option value="">2017</option>
+                        </select>
+                        <select class="select" name="sortingSport" id="">
+                            <option value="">Все виды спорта</option>
+                            <option value="">Футбол</option>
+                            <option value="">Крекет</option>
+                        </select>
+                        <p class="analistList__sort">Сортировать</p>
+                        <select class="select" name="sortingRate" id="">
+                            <option value="">по Рейтингу</option>
+                            <option value="">по чему-то другому</option>
+                            <option value="">по по мозгам</option>
+                        </select>
+                    </div>
+                    <div class="analistList__heading analistList__heading_month">
+                        <div class="analistList__search search">
+                            <input type="text" class="search__input" placeholder="Поиск по никнеймам аналитиков">
+                            <button type="button" class="search__button"></button>
+                        </div>
+                        <select class="select" name="sortingMonth" id="">
+                            <option value="">Февраль 2018</option>
+                            <option value="">Январь 2018</option>
+                            <option value="">Декабрь 2017</option>
+                            <option value="">Ноябрь 2017</option>
+                            <option value="">Октябрь 2017</option>
+                            <option value="">Сентябрь 2017</option>
+                        </select>
+                        <select class="select" name="sortingSport" id="">
+                            <option value="">Все виды спорта</option>
+                            <option value="">Футбол</option>
+                            <option value="">Крекет</option>
+                        </select>
+                        <p class="analistList__sort">Сортировать</p>
+                        <select class="select" name="sortingRate" id="">
+                            <option value="">по Рейтингу</option>
+                            <option value="">по чему-то другому</option>
+                            <option value="">по по мозгам</option>
+                        </select>
+                    </div>
+                    <div class="analistList__heading analistList__heading_week">
+                        <div class="analistList__search search">
+                            <input type="text" class="search__input" placeholder="Поиск по никнеймам аналитиков">
+                            <button type="button" class="search__button"></button>
+                        </div>
+                        <select class="select" name="sortingSport" id="">
+                            <option value="">C 08.02.2016 по 15.02.2016</option>
+                            <option value="">C 08.02.2016 по 15.02.2016</option>
+                            <option value="">C 08.02.2016 по 15.02.2016</option>
+                        </select>
+                        <select class="select" name="sortingSport" id="">
+                            <option value="">Все виды спорта</option>
+                            <option value="">Футбол</option>
+                            <option value="">Крекет</option>
+                        </select>
+                        <p class="analistList__sort">Сортировать</p>
+                        <select class="select" name="sortingRate" id="">
+                            <option value="">по Рейтингу</option>
+                            <option value="">по чему-то другому</option>
+                            <option value="">по по мозгам</option>
+                        </select>
+                    </div>
+                    <div class="analistList__list">
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№1</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№2</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№3</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№4</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№5</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№6</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№7</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№8</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№9</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="analistList__card">
+                            <div class="analistList__card-content">
+                                <div class="analistList__card-number">
+                                    <p>№10</p>
+                                </div>
+                                <div class="analistList__card-analist">
+                                    <img src="static/img/general/analist.jpg" alt="">
+                                    <div class="analistList__card-info">
+                                        <a data-src=".analist" href="javascript:void(0);" class="analistList__card-name js-open">Роман Самборский</a>
+                                        <p class="analistList__card-date">от <span>23.06.2017</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-rate">
+                                    <div class="analistList__card-rating">
+                                        <p>Ra =</p>
+                                        {{> diagramm/diagramm diagramm.orangebig}}
+                                    </div>
+                                    <p class="analistList__card-ratio">СрК = 2.3</p>
+                                </div>
+                                <div class="analistList__card-forecasts">
+                                    <p>Делает прогнозы в:</p>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">7301</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">540</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">31</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="analistList__tooltip tooltipstered" data-tooltip-content=".tooltip_sport #tooltip_content">
+
+                                        {{Icon iconName='box' className='analistList__sport-icon' iconWidth='30' iconHeight='30'}}
+
+                                        <p class="analistList__tooltip-count">2</p>
+                                        <div class="tooltip tooltip_sport">
+                                            <div id="tooltip_content">
+                                                <p>Футбол</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analistList__card-remove">
+                                    <button type="button" class="analistList__card-close">Закрыть</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
                 <button class="analistRating__load" type="button" name="button">Показать еще <span>10</span> аналитиков</button>
             </div>
         </main>

@@ -157,6 +157,10 @@ body {
 			margin-top: 1.25rem;
 		}
 
+        .analistList {
+            margin-top: rem(-4);
+        }
+
         .analistList .select2-container:nth-of-type(1) {
             margin-right: rem(30);
         }
@@ -168,10 +172,45 @@ body {
         .analistList__card-remove {
             display: none;
         }
+
+        .analistList__heading  {
+            &:not(.active) {
+                display: none;
+            }
+
+            &_year {
+                .select2-container:nth-of-type(2) {
+                    margin-right: auto;
+                }
+                .select2-container:nth-of-type(1) {
+                    width: rem(125)!important;
+                }
+            }
+
+            &_month {
+                .select2-container:nth-of-type(2) {
+                    margin-right: auto;
+                }
+                .select2-container:nth-of-type(1) {
+                    width: rem(186)!important;
+                }
+            }
+
+            &_week {
+                .select2-container:nth-of-type(2) {
+                    margin-right: auto;
+                }
+                .select2-container:nth-of-type(1) {
+                    width: rem(356)!important;
+                }
+            }
+        }
 	}
 
-    &__personalData {
-
+    &__analistfavorites {
+		.analistList__card-number {
+			display: none;
+		}
     }
 }
 

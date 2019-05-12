@@ -121,10 +121,7 @@ $('.catalogue__sport .checkbox__button').on('click', function () {
     $(this).closest('.checkbox').toggleClass('opened');
 });
 
-$('.analistRating__filter-item').on('click', function () {
-    $(this).siblings().removeClass('active');
-    $(this).addClass('active');
-});
+
 
 $('.personalData__changepass').on('click', function () {
     $(this).toggleClass('personalData__changepass_opened');
