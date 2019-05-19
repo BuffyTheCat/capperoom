@@ -76,7 +76,7 @@ $('.createPopup__prev').on('click', function () {
     }
 });
 
-$('.popup__content').mCustomScrollbar({
+$('.createPopup .popup__content').mCustomScrollbar({
     axis: 'y'
 });
 

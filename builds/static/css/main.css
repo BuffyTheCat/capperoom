@@ -597,7 +597,7 @@ blockquote {
   font-size: 1.875rem;
 }
 
-.section-name, .pagination__prev, .pagination__prev::after, .ligue__title, .about__title, .analistfavorites__title, .analistRating__title, .basket__title, .category__title, .create__title, .matchCard__title, .matches__title, .purchasedForecasts__title, .personalRating__title, .subscribe__title, .subscription__title {
+.section-name, .ligue__title, .about__title, .analistfavorites__title, .analistRating__title, .basket__title, .category__title, .create__title, .matchCard__title, .matches__title, .pagination__prev, .pagination__prev::after, .personalRating__title, .purchasedForecasts__title, .subscribe__title, .subscription__title {
   margin: 0;
   color: #ffff;
   font-family: "Helvetica Neue";
@@ -616,7 +616,7 @@ blockquote {
   letter-spacing: 0.04em;
 }
 
-.button, .popup__button, .basket-table__link, .filter__all-sport, .catalogue__load, .load__button, .buy__submit, .about__form-button, .analistfavorites__load, .analistRating__load, .balance__withdraw, .balance__add, .balance__load, .balance-add__submit, .balance-withdraw__submit, .basket__buy-all, .competition__button, .create__add, .create__publicate, .createPopup__submit, .expressCard__basket-buy, .expressCard__buy, .forecastCard__basket-buy, .forecastCard__buy, .forecastDetail__track, .forecastDetail__bet, .forecastDetail__agree, .forecastDetail__disagree, .forecastDetail__comments-sort, .forecastDetail__load, .forecastDetail__buy, .matchCard__create, .matchCard__show, .matchCard__comments-sort, .matchCard__load, .matchForecasts__load, .myPredictions__create, .myPredictions__load, .personalData__save, .personalData__pass-btn, .purchasedForecasts__load, .personalRating__load, .personalRating__button, .subscribe__subscribe, .subscribePopup__buy-button, .subscription__subscribe, .top__button {
+.button, .popup__button, .basket-table__link, .filter__all-sport, .catalogue__load, .load__button, .buy__submit, .about__form-button, .analistfavorites__load, .analistRating__load, .balance__withdraw, .balance__add, .balance__load, .balance-add__submit, .balance-withdraw__submit, .basket__buy-all, .competition__button, .create__add, .create__publicate, .createPopup__submit, .expressCard__basket-buy, .expressCard__buy, .forecastCard__basket-buy, .forecastCard__buy, .forecastDetail__track, .forecastDetail__bet, .forecastDetail__agree, .forecastDetail__disagree, .forecastDetail__comments-sort, .forecastDetail__load, .forecastDetail__buy, .matchCard__create, .matchCard__show, .matchCard__comments-sort, .matchCard__load, .matchForecasts__load, .myPredictions__create, .myPredictions__load, .personalData__save, .personalData__pass-btn, .personalRating__load, .personalRating__button, .purchasedForecasts__load, .subscribe__subscribe, .subscribePopup__buy-button, .subscription__subscribe, .top__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,22 +643,22 @@ blockquote {
   transition: background .3s;
 }
 
-.button:not(a), .popup__button:not(a), .basket-table__link:not(a), .filter__all-sport:not(a), .catalogue__load:not(a), .load__button:not(a), .buy__submit:not(a), .about__form-button:not(a), .analistfavorites__load:not(a), .analistRating__load:not(a), .balance__withdraw:not(a), .balance__add:not(a), .balance__load:not(a), .balance-add__submit:not(a), .balance-withdraw__submit:not(a), .basket__buy-all:not(a), .competition__button:not(a), .create__add:not(a), .create__publicate:not(a), .createPopup__submit:not(a), .expressCard__basket-buy:not(a), .expressCard__buy:not(a), .forecastCard__basket-buy:not(a), .forecastCard__buy:not(a), .forecastDetail__track:not(a), .forecastDetail__bet:not(a), .forecastDetail__agree:not(a), .forecastDetail__disagree:not(a), .forecastDetail__comments-sort:not(a), .forecastDetail__load:not(a), .forecastDetail__buy:not(a), .matchCard__create:not(a), .matchCard__show:not(a), .matchCard__comments-sort:not(a), .matchCard__load:not(a), .matchForecasts__load:not(a), .myPredictions__create:not(a), .myPredictions__load:not(a), .personalData__save:not(a), .personalData__pass-btn:not(a), .purchasedForecasts__load:not(a), .personalRating__load:not(a), .personalRating__button:not(a), .subscribe__subscribe:not(a), .subscribePopup__buy-button:not(a), .subscription__subscribe:not(a), .top__button:not(a) {
+.button:not(a), .popup__button:not(a), .basket-table__link:not(a), .filter__all-sport:not(a), .catalogue__load:not(a), .load__button:not(a), .buy__submit:not(a), .about__form-button:not(a), .analistfavorites__load:not(a), .analistRating__load:not(a), .balance__withdraw:not(a), .balance__add:not(a), .balance__load:not(a), .balance-add__submit:not(a), .balance-withdraw__submit:not(a), .basket__buy-all:not(a), .competition__button:not(a), .create__add:not(a), .create__publicate:not(a), .createPopup__submit:not(a), .expressCard__basket-buy:not(a), .expressCard__buy:not(a), .forecastCard__basket-buy:not(a), .forecastCard__buy:not(a), .forecastDetail__track:not(a), .forecastDetail__bet:not(a), .forecastDetail__agree:not(a), .forecastDetail__disagree:not(a), .forecastDetail__comments-sort:not(a), .forecastDetail__load:not(a), .forecastDetail__buy:not(a), .matchCard__create:not(a), .matchCard__show:not(a), .matchCard__comments-sort:not(a), .matchCard__load:not(a), .matchForecasts__load:not(a), .myPredictions__create:not(a), .myPredictions__load:not(a), .personalData__save:not(a), .personalData__pass-btn:not(a), .personalRating__load:not(a), .personalRating__button:not(a), .purchasedForecasts__load:not(a), .subscribe__subscribe:not(a), .subscribePopup__buy-button:not(a), .subscription__subscribe:not(a), .top__button:not(a) {
   display: block;
 }
 
-.button:active, .popup__button:active, .basket-table__link:active, .filter__all-sport:active, .catalogue__load:active, .load__button:active, .buy__submit:active, .about__form-button:active, .analistfavorites__load:active, .analistRating__load:active, .balance__withdraw:active, .balance__add:active, .balance__load:active, .balance-add__submit:active, .balance-withdraw__submit:active, .basket__buy-all:active, .competition__button:active, .create__add:active, .create__publicate:active, .createPopup__submit:active, .expressCard__basket-buy:active, .expressCard__buy:active, .forecastCard__basket-buy:active, .forecastCard__buy:active, .forecastDetail__track:active, .forecastDetail__bet:active, .forecastDetail__agree:active, .forecastDetail__disagree:active, .forecastDetail__comments-sort:active, .forecastDetail__load:active, .forecastDetail__buy:active, .matchCard__create:active, .matchCard__show:active, .matchCard__comments-sort:active, .matchCard__load:active, .matchForecasts__load:active, .myPredictions__create:active, .myPredictions__load:active, .personalData__save:active, .personalData__pass-btn:active, .purchasedForecasts__load:active, .personalRating__load:active, .personalRating__button:active, .subscribe__subscribe:active, .subscribePopup__buy-button:active, .subscription__subscribe:active, .top__button:active {
+.button:active, .popup__button:active, .basket-table__link:active, .filter__all-sport:active, .catalogue__load:active, .load__button:active, .buy__submit:active, .about__form-button:active, .analistfavorites__load:active, .analistRating__load:active, .balance__withdraw:active, .balance__add:active, .balance__load:active, .balance-add__submit:active, .balance-withdraw__submit:active, .basket__buy-all:active, .competition__button:active, .create__add:active, .create__publicate:active, .createPopup__submit:active, .expressCard__basket-buy:active, .expressCard__buy:active, .forecastCard__basket-buy:active, .forecastCard__buy:active, .forecastDetail__track:active, .forecastDetail__bet:active, .forecastDetail__agree:active, .forecastDetail__disagree:active, .forecastDetail__comments-sort:active, .forecastDetail__load:active, .forecastDetail__buy:active, .matchCard__create:active, .matchCard__show:active, .matchCard__comments-sort:active, .matchCard__load:active, .matchForecasts__load:active, .myPredictions__create:active, .myPredictions__load:active, .personalData__save:active, .personalData__pass-btn:active, .personalRating__load:active, .personalRating__button:active, .purchasedForecasts__load:active, .subscribe__subscribe:active, .subscribePopup__buy-button:active, .subscription__subscribe:active, .top__button:active {
   position: relative;
   top: 0.0625rem;
 }
 
-.button_blue, .popup__button, .catalogue__load, .buy__submit, .about__form-button, .analistfavorites__load, .analistRating__load, .balance__load, .balance-add__submit, .balance-withdraw__submit, .basket__buy-all, .competition__button, .create__publicate, .forecastDetail__agree, .forecastDetail__disagree, .forecastDetail__load, .matchCard__create, .matchCard__load, .matchForecasts__load, .myPredictions__load, .personalData__save, .purchasedForecasts__load, .personalRating__load, .subscribe__subscribe, .subscribePopup__buy-button, .subscription__subscribe, .top__button {
+.button_blue, .popup__button, .catalogue__load, .buy__submit, .about__form-button, .analistfavorites__load, .analistRating__load, .balance__load, .balance-add__submit, .balance-withdraw__submit, .basket__buy-all, .competition__button, .create__publicate, .forecastDetail__agree, .forecastDetail__disagree, .forecastDetail__load, .matchCard__create, .matchCard__load, .matchForecasts__load, .myPredictions__load, .personalData__save, .personalRating__load, .purchasedForecasts__load, .subscribe__subscribe, .subscribePopup__buy-button, .subscription__subscribe, .top__button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00c0ff), to(#16aaff));
   background-image: -webkit-linear-gradient(#00c0ff 0%, #16aaff 100%);
   background-image: linear-gradient(#00c0ff 0%, #16aaff 100%);
 }
 
-.button_blue:hover, .popup__button:hover, .catalogue__load:hover, .buy__submit:hover, .about__form-button:hover, .analistfavorites__load:hover, .analistRating__load:hover, .balance__load:hover, .balance-add__submit:hover, .balance-withdraw__submit:hover, .basket__buy-all:hover, .competition__button:hover, .create__publicate:hover, .forecastDetail__agree:hover, .forecastDetail__disagree:hover, .forecastDetail__load:hover, .matchCard__create:hover, .matchCard__load:hover, .matchForecasts__load:hover, .myPredictions__load:hover, .personalData__save:hover, .purchasedForecasts__load:hover, .personalRating__load:hover, .subscribe__subscribe:hover, .subscribePopup__buy-button:hover, .subscription__subscribe:hover, .top__button:hover {
+.button_blue:hover, .popup__button:hover, .catalogue__load:hover, .buy__submit:hover, .about__form-button:hover, .analistfavorites__load:hover, .analistRating__load:hover, .balance__load:hover, .balance-add__submit:hover, .balance-withdraw__submit:hover, .basket__buy-all:hover, .competition__button:hover, .create__publicate:hover, .forecastDetail__agree:hover, .forecastDetail__disagree:hover, .forecastDetail__load:hover, .matchCard__create:hover, .matchCard__load:hover, .matchForecasts__load:hover, .myPredictions__load:hover, .personalData__save:hover, .personalRating__load:hover, .purchasedForecasts__load:hover, .subscribe__subscribe:hover, .subscribePopup__buy-button:hover, .subscription__subscribe:hover, .top__button:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffcc00), to(#fc8e00));
   background-image: -webkit-linear-gradient(#ffcc00 0%, #fc8e00 100%);
   background-image: linear-gradient(#ffcc00 0%, #fc8e00 100%);
@@ -867,7 +867,7 @@ blockquote {
   height: 100% !important;
   font-family: "Helvetica Neue" !important;
   font-size: 1.125rem !important;
-  font-weight: 100 !important;
+  font-weight: 300 !important;
   color: #979797 !important;
 }
 
@@ -1648,12 +1648,22 @@ blockquote {
           transform: translateY(-50%);
 }
 
+.filter__sport .checkbox.opened {
+  color: red;
+}
+
 .filter__sport .checkbox.opened .checkbox__button {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 .filter__sport .checkbox.opened + .catalogue__sport-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__sport .checkbox.opened + .filter__sport-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1877,7 +1887,7 @@ blockquote {
       -ms-flex-direction: column;
           flex-direction: column;
   width: auto;
-  height: 35rem;
+  height: 33.75rem;
   background-color: #f0f0f0;
 }
 
@@ -1981,7 +1991,7 @@ blockquote {
   margin-bottom: 2.5625rem;
 }
 
-.buy__subscribe {
+.buy__subscribePopup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1997,7 +2007,7 @@ blockquote {
   font-weight: 300;
 }
 
-.buy__subscribe img {
+.buy__subscribePopup img {
   width: 2.0625rem;
   height: 1.75rem;
   margin-right: 0.625rem;
@@ -2100,52 +2110,6 @@ blockquote {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.pagination__prev {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 3.75rem;
-  color: #000f47;
-}
-
-.pagination__prev::after {
-  position: absolute;
-  content: '>';
-  top: 50%;
-  right: 1.625rem;
-  color: #000f47;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.pagination__prev .pagination__icon {
-  fill: #000f47;
-}
-
-.pagination__icon {
-  fill: #ffffff;
-  margin-right: 0.9375rem;
-}
-
-.pagination__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2330,7 +2294,7 @@ html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
           box-sizing: inherit;
 }
 
-.container, .ligue, .page__catalogue, .page__forecastDetail, .page__bunner, .page__top-content, .about, .analistfavorites, .analistRating, .balance, .basket, .category, .create, .footer__content, .matchCard, .matches, .matchForecasts, .myPredictions, .personalArea, .personalData, .purchasedForecasts, .personalRating, .subscribe, .subscription {
+.container, .ligue, .page__catalogue, .page__forecastDetail, .page__bunner, .page__top-content, .about, .analistfavorites, .analistRating, .balance, .basket, .category, .create, .footer__content, .matchCard, .matches, .matchForecasts, .myPredictions, .personalArea, .personalData, .personalRating, .purchasedForecasts, .subscribe, .subscription {
   width: 77.5rem;
   margin: 0 auto;
 }
@@ -2424,7 +2388,7 @@ body {
   content: '';
   bottom: -27.1875rem;
   left: 0;
-  height: 33.375rem;
+  height: 37.5rem;
   width: 100%;
   background-color: #233037;
 }
@@ -18960,306 +18924,6 @@ corresponds to the arrow we want to display */
   left: -10px;
 }
 
-.analist {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.analist .popup__content {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 59.375rem;
-  height: 31.25rem;
-  padding: 0;
-}
-
-.analist__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.875rem;
-}
-
-.analist__avatar {
-  width: 6.25rem;
-  height: 6.25rem;
-  margin-right: 1.875rem;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.analist__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
-}
-
-.analist__name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.9375rem;
-}
-
-.analist__name h3 {
-  margin: 0;
-  margin-right: 0.9375rem;
-  font-family: "Helvetica Neue";
-  font-weight: 300;
-  color: #4f4f4f;
-  font-size: 1.5rem;
-}
-
-.analist__name .favorites {
-  margin-right: 1.25rem;
-}
-
-.analist__name dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  padding-top: 0.1875rem;
-}
-
-.analist__name dl dt,
-.analist__name dl dd {
-  margin: 0;
-  font-family: "Helvetica Neue";
-  font-weight: 200;
-  color: #969696;
-  font-size: 1.125rem;
-}
-
-.analist__name dl dd {
-  padding-left: 0.3125rem;
-}
-
-.analist__rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.9375rem;
-}
-
-.analist__rating .analist__text:first-of-type {
-  margin-right: 1rem;
-}
-
-.analist__rating .analist__text:nth-of-type(2) {
-  margin-right: 0.9375rem;
-}
-
-.analist__rating .diagramm {
-  margin-right: 1.25rem;
-}
-
-.analist__text {
-  margin: 0;
-  font-family: "Helvetica Neue";
-  font-weight: 300;
-  color: #4f4f4f;
-  font-size: 1.125rem;
-}
-
-.analist__sort {
-  position: relative;
-  margin-right: 1.5625rem;
-  border-radius: 0.3125rem;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-}
-
-.analist__sort select {
-  padding-right: 1.5625rem;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.analist__sort:hover {
-  background-color: #ecf7ff !important;
-}
-
-.analist__sort .select2-selection__rendered {
-  font-family: "Helvetica Neue" !important;
-  font-weight: 200 !important;
-  color: #1a67a1 !important;
-  font-size: 1.125rem !important;
-  padding-left: 0 !important;
-}
-
-.analist__sort .select2-selection {
-  height: 2.1875rem !important;
-  width: 13.25rem !important;
-  padding-top: 0.625rem !important;
-  padding-bottom: 0.625rem !important;
-  border: none !important;
-}
-
-.analist__sort .select2-container {
-  width: 13.25rem !important;
-}
-
-.analist__sort .select2-selection__arrow {
-  right: 0.625rem !important;
-  top: 0.125rem !important;
-  height: 2.1875rem !important;
-}
-
-.analist__sort .select2-selection__arrow::after {
-  right: 0;
-  width: 0.9375rem;
-  height: 0.625rem;
-  background-image: url("../img/general/arrow_blue.png");
-}
-
-.analist__sort .select2-container--open {
-  background-color: #ecf7ff !important;
-}
-
-.analist__date {
-  margin: 0;
-  font-family: "Helvetica Neue";
-  font-weight: 200;
-  color: #969696;
-  font-size: 1.125rem;
-}
-
-.analist__date span {
-  margin-left: 0.9375rem;
-}
-
-.analist__average {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin: 0;
-  font-family: "Helvetica Neue";
-  font-weight: 200;
-  color: #969696;
-  font-size: 1.125rem;
-}
-
-.analist__average span {
-  margin-left: 0.625rem;
-}
-
-.analist__average a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 1.5625rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  font-family: "Helvetica Neue";
-  color: #ffffff;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 50%;
-  background-color: #b4b4b4;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-}
-
-.analist__average a:hover {
-  background-color: #fc8e00;
-}
-
-.analist__forecasts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #f0f0f0;
-}
-
-.analist__forecasts-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.625rem;
-}
-
-.analist__forecasts-heading p {
-  margin: 0;
-  padding-left: 1.25rem;
-  font-family: "Helvetica Neue";
-  color: #747474;
-  font-size: 1.125rem;
-  text-decoration: none;
-  font-weight: 200;
-}
-
-.analist__forecasts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow-y: auto;
-  height: 17.8125rem;
-  padding: 0.625rem;
-  padding-top: 0;
-}
-
-.analist .select2-container {
-  height: 2.5rem !important;
-}
-
-.analist .select2-selection,
-.analist .select2-selection__arrow {
-  height: 100% !important;
-}
-
-.analist .analist__forecasts-heading .select2-selection {
-  width: 18.75rem !important;
-}
-
 .about {
   padding-top: 4.0625rem;
   padding-bottom: 9.375rem;
@@ -19658,6 +19322,306 @@ corresponds to the arrow we want to display */
   font-size: 1.5rem;
 }
 
+.analist {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.analist .popup__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 59.375rem;
+  height: 31.25rem;
+  padding: 0;
+}
+
+.analist__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.875rem;
+}
+
+.analist__avatar {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: 1.875rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.analist__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.analist__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.analist__name h3 {
+  margin: 0;
+  margin-right: 0.9375rem;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  color: #4f4f4f;
+  font-size: 1.5rem;
+}
+
+.analist__name .favorites {
+  margin-right: 1.25rem;
+}
+
+.analist__name dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-top: 0.1875rem;
+}
+
+.analist__name dl dt,
+.analist__name dl dd {
+  margin: 0;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  color: #969696;
+  font-size: 1.125rem;
+}
+
+.analist__name dl dd {
+  padding-left: 0.3125rem;
+}
+
+.analist__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.analist__rating .analist__text:first-of-type {
+  margin-right: 1rem;
+}
+
+.analist__rating .analist__text:nth-of-type(2) {
+  margin-right: 0.9375rem;
+}
+
+.analist__rating .diagramm {
+  margin-right: 1.25rem;
+}
+
+.analist__text {
+  margin: 0;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  color: #4f4f4f;
+  font-size: 1.125rem;
+}
+
+.analist__sort {
+  position: relative;
+  margin-right: 1.5625rem;
+  border-radius: 0.3125rem;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.analist__sort select {
+  padding-right: 1.5625rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.analist__sort:hover {
+  background-color: #ecf7ff !important;
+}
+
+.analist__sort .select2-selection__rendered {
+  font-family: "Helvetica Neue" !important;
+  font-weight: 200 !important;
+  color: #1a67a1 !important;
+  font-size: 1.125rem !important;
+  padding-left: 0 !important;
+}
+
+.analist__sort .select2-selection {
+  height: 2.1875rem !important;
+  width: 13.25rem !important;
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+  border: none !important;
+}
+
+.analist__sort .select2-container {
+  width: 13.25rem !important;
+}
+
+.analist__sort .select2-selection__arrow {
+  right: 0.625rem !important;
+  top: 0.125rem !important;
+  height: 2.1875rem !important;
+}
+
+.analist__sort .select2-selection__arrow::after {
+  right: 0;
+  width: 0.9375rem;
+  height: 0.625rem;
+  background-image: url("../img/general/arrow_blue.png");
+}
+
+.analist__sort .select2-container--open {
+  background-color: #ecf7ff !important;
+}
+
+.analist__date {
+  margin: 0;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  color: #969696;
+  font-size: 1.125rem;
+}
+
+.analist__date span {
+  margin-left: 0.9375rem;
+}
+
+.analist__average {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  color: #969696;
+  font-size: 1.125rem;
+}
+
+.analist__average span {
+  margin-left: 0.625rem;
+}
+
+.analist__average a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1.5625rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-family: "Helvetica Neue";
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #b4b4b4;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.analist__average a:hover {
+  background-color: #fc8e00;
+}
+
+.analist__forecasts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f0f0f0;
+}
+
+.analist__forecasts-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.625rem;
+}
+
+.analist__forecasts-heading p {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-family: "Helvetica Neue";
+  color: #747474;
+  font-size: 1.125rem;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.analist__forecasts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  height: 17.1875rem;
+  padding: 0.625rem;
+  padding-top: 0;
+}
+
+.analist .select2-container {
+  height: 2.5rem !important;
+}
+
+.analist .select2-selection,
+.analist .select2-selection__arrow {
+  height: 100% !important;
+}
+
+.analist .analist__forecasts-heading .select2-selection {
+  width: 18.75rem !important;
+}
+
 .analistList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19808,6 +19772,7 @@ corresponds to the arrow we want to display */
   font-family: "Helvetica Neue";
   font-size: 1.5rem;
   font-weight: 200;
+  margin: 0;
 }
 
 .analistList__card-analist {
@@ -20036,7 +20001,8 @@ corresponds to the arrow we want to display */
   width: 15rem !important;
 }
 
-.analistList .select2-container:nth-of-type(2) {
+.analistList .select2-container:nth-of-type(2),
+.analistList .select2-container:nth-of-type(3) {
   width: 17.5rem !important;
 }
 
@@ -20133,14 +20099,14 @@ corresponds to the arrow we want to display */
   font-family: "Helvetica Neue";
   font-style: italic;
   font-size: 1.875rem;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 1.5px;
 }
 
 .balance__heading dl dt h1 {
   margin: 0;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 200;
   font-family: "Helvetica Neue";
   font-style: italic;
   font-size: 1.875rem;
@@ -20174,7 +20140,7 @@ corresponds to the arrow we want to display */
   font-family: "Helvetica Neue";
   font-style: italic;
   font-size: 1.875rem;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 1.5px;
 }
 
@@ -20413,7 +20379,7 @@ corresponds to the arrow we want to display */
   color: #505050;
   font-family: "Helvetica Neue";
   font-size: 1.125rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.9px;
 }
 
@@ -20554,7 +20520,7 @@ corresponds to the arrow we want to display */
   color: #505050;
   font-family: "Helvetica Neue";
   font-size: 1.125rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.9px;
 }
 
@@ -20667,7 +20633,7 @@ corresponds to the arrow we want to display */
   color: #505050;
   font-family: "Helvetica Neue";
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .basket__summ dt span,
@@ -21681,7 +21647,7 @@ corresponds to the arrow we want to display */
   color: #505050;
   font-family: "Helvetica Neue";
   font-size: 1.125rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.9px;
 }
 
@@ -21792,6 +21758,7 @@ corresponds to the arrow we want to display */
   width: 6.875rem;
   background-color: transparent;
   color: #ffffff;
+  margin-right: 0.375rem;
 }
 
 .create__price label input::-webkit-input-placeholder {
@@ -21809,6 +21776,7 @@ corresponds to the arrow we want to display */
 .create__publicate {
   width: 23.9375rem;
   height: 4.375rem;
+  font-size: 1.5rem;
 }
 
 .createError {
@@ -22548,6 +22516,7 @@ corresponds to the arrow we want to display */
   transition: border .3s;
   border: 0.125rem solid transparent;
   border-radius: 0.125rem;
+  cursor: pointer;
 }
 
 .expressCard__content {
@@ -22586,6 +22555,10 @@ corresponds to the arrow we want to display */
   margin-bottom: 1.125rem;
 }
 
+.expressCard__basket-buy {
+  font-weight: 300;
+}
+
 .expressCard__basket-remove {
   color: #969696;
   font-family: "Helvetica Neue";
@@ -22594,6 +22567,7 @@ corresponds to the arrow we want to display */
   text-decoration: underline;
   -webkit-transition: color .3s;
   transition: color .3s;
+  font-style: italic;
 }
 
 .expressCard__basket-remove:hover {
@@ -22606,7 +22580,7 @@ corresponds to the arrow we want to display */
   color: #4f4f4f;
   font-family: "Helvetica Neue";
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .expressCard_commercial .expressCard__desc {
@@ -22840,8 +22814,8 @@ corresponds to the arrow we want to display */
   margin: 0;
   font-family: "Helvetica Neue";
   font-size: 1.125rem;
-  font-weight: 100;
-  color: #747474;
+  font-weight: 300;
+  color: #4f4f4f;
   text-align: left;
 }
 
@@ -22966,7 +22940,9 @@ corresponds to the arrow we want to display */
 }
 
 .expressCard__like a, .expressCard__dislike a, .expressCard__comment a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 0.625rem;
 }
 
@@ -23658,6 +23634,7 @@ corresponds to the arrow we want to display */
   transition: border .3s;
   border: 0.125rem solid transparent;
   border-radius: 0.1875rem;
+  cursor: pointer;
 }
 
 .forecastCard__content {
@@ -23700,6 +23677,10 @@ corresponds to the arrow we want to display */
   margin-bottom: 1.125rem;
 }
 
+.forecastCard__basket-buy {
+  font-weight: 300;
+}
+
 .forecastCard__basket-remove {
   color: #969696;
   font-family: "Helvetica Neue";
@@ -23708,6 +23689,7 @@ corresponds to the arrow we want to display */
   text-decoration: underline;
   -webkit-transition: color .3s;
   transition: color .3s;
+  font-style: italic;
 }
 
 .forecastCard__basket-remove:hover {
@@ -23720,7 +23702,7 @@ corresponds to the arrow we want to display */
   color: #4f4f4f;
   font-family: "Helvetica Neue";
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .forecastCard_commercial .forecastCard__desc {
@@ -23811,6 +23793,7 @@ corresponds to the arrow we want to display */
 }
 
 .forecastCard__match-details {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23825,7 +23808,36 @@ corresponds to the arrow we want to display */
   padding: 1.5625rem 1.875rem;
   margin-right: 0.125rem;
   padding-right: 0.3125rem;
+  text-decoration: none;
   background-color: #ffffff;
+}
+
+.forecastCard__match-details:hover .forecastCard__comand {
+  color: #fc8e00;
+}
+
+.forecastCard__match-details:hover::before {
+  opacity: 0.8;
+}
+
+.forecastCard__match-details::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  content: 'Перейти к матчу';
+  padding: 0.125rem 0.5rem;
+  color: #505050;
+  font-family: "Helvetica Neue";
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.05625rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 0 0 0.375rem 0.375rem;
+  background-color: #ffba00;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
 }
 
 .forecastCard__comand {
@@ -23844,6 +23856,8 @@ corresponds to the arrow we want to display */
   font-weight: 300;
   color: #4f4f4f;
   text-align: left;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 .forecastCard__comand img {
@@ -23854,7 +23868,7 @@ corresponds to the arrow we want to display */
 }
 
 .forecastCard__comand:last-of-type {
-  margin-bottom: auto;
+  margin-bottom: 1.125rem;
 }
 
 .forecastCard__time {
@@ -23907,6 +23921,7 @@ corresponds to the arrow we want to display */
 }
 
 .forecastCard__coefficient p {
+  margin: 0;
   font-family: 'Helvetica Neue';
   font-size: 2.5rem;
   font-weight: 100;
@@ -23934,8 +23949,8 @@ corresponds to the arrow we want to display */
   margin: 0;
   font-family: "Helvetica Neue";
   font-size: 1.125rem;
-  font-weight: 100;
-  color: #747474;
+  font-weight: 300;
+  color: #4f4f4f;
   text-align: left;
 }
 
@@ -24060,7 +24075,9 @@ corresponds to the arrow we want to display */
 }
 
 .forecastCard__like a, .forecastCard__dislike a, .forecastCard__comment a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 0.625rem;
 }
 
@@ -24349,11 +24366,12 @@ corresponds to the arrow we want to display */
   margin: 0;
   margin-top: 1rem;
   margin-left: 2.1875rem;
-  color: #969696;
+  color: #4f4f4f;
   font-family: "Helvetica Neue";
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.7px;
+  font-style: italic;
 }
 
 .forecastCard_personal .forecastCard__rating-change,
@@ -25631,7 +25649,7 @@ corresponds to the arrow we want to display */
   font-style: italic;
   font-size: 1.125rem;
   font-weight: 300;
-  line-height: 1.75rem;
+  line-height: 1;
   background-color: #e5e5e5;
 }
 
@@ -25750,7 +25768,7 @@ corresponds to the arrow we want to display */
   font-family: "Helvetica Neue";
   font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.25rem;
+  line-height: 1;
   border-radius: 0.3125rem;
 }
 
@@ -25766,11 +25784,13 @@ corresponds to the arrow we want to display */
   width: calc(35% - 10px);
   height: 5.3125rem;
   margin-right: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .matchCard__show {
   width: calc(65% - 10px);
   height: 5.3125rem;
+  font-size: 1.5rem;
 }
 
 .matchCard__comments {
@@ -25849,6 +25869,10 @@ corresponds to the arrow we want to display */
 
 .matchCard__comments-list .comment:not(:last-of-type) {
   margin-bottom: 0.625rem;
+}
+
+.matchCard__comments-list_standart .comment:nth-of-type(1), .matchCard__comments-list_standart .comment:nth-of-type(2), .matchCard__comments-list_standart .comment:nth-of-type(3) {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .matchCard__load {
@@ -26119,8 +26143,8 @@ corresponds to the arrow we want to display */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5625rem 1.5625rem;
-  padding-bottom: 2.1875rem;
+  padding: 2rem 1.5625rem;
+  padding-bottom: 1.375rem;
   margin-right: 0.125rem;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0 0 0 0.25rem;
@@ -26151,8 +26175,8 @@ corresponds to the arrow we want to display */
       -ms-flex-positive: 9999;
           flex-grow: 9999;
   display: flex;
-  padding: 2.5625rem 1.5625rem;
-  padding-bottom: 2.1875rem;
+  padding: 2rem 1.5625rem;
+  padding-bottom: 1.375rem;
   margin-right: 0.125rem;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -26173,7 +26197,7 @@ corresponds to the arrow we want to display */
 }
 
 .matchForecasts__command img {
-  height: 100%;
+  height: 3.75rem;
   width: auto;
   margin-right: 0.875rem;
 }
@@ -26187,15 +26211,17 @@ corresponds to the arrow we want to display */
   position: absolute;
   content: '-';
   right: -1.6875rem;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .matchForecasts__match-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.5625rem 1.5625rem;
-  padding-bottom: 2.1875rem;
+  padding: 2rem 1.5625rem;
+  padding-bottom: 1.375rem;
   margin-right: 0.125rem;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0 0 0.25rem 0;
@@ -26221,11 +26247,11 @@ corresponds to the arrow we want to display */
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 200;
-  line-height: 1.75rem;
 }
 
 .matchForecasts__time span {
   color: #910048;
+  font-weight: 300;
 }
 
 .matchForecasts__place {
@@ -26235,7 +26261,6 @@ corresponds to the arrow we want to display */
   font-style: italic;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.5rem;
 }
 
 .matchForecasts__title {
@@ -26389,6 +26414,13 @@ corresponds to the arrow we want to display */
   font-size: 1.5rem;
 }
 
+.matchForecasts .forecastCard__comment dt,
+.matchForecasts .forecastCard__comment dd,
+.matchForecasts .expressCard__comment dt,
+.matchForecasts .expressCard__comment dd {
+  color: #969696;
+}
+
 .myPredictions {
   padding-top: 3.4375rem;
   padding-bottom: 9.375rem;
@@ -26511,6 +26543,177 @@ corresponds to the arrow we want to display */
 
 .myPredictions .forecastCard_personal .forecastCard__action {
   display: none;
+}
+
+.myPredictions .forecastCard__coefficient,
+.myPredictions .expressCard__coefficient,
+.myPredictions .forecastCard__name,
+.myPredictions .expressCard__name {
+  display: none;
+}
+
+.myPredictions .forecastCard__inner-coefficient,
+.myPredictions .expressCard__inner-coefficient {
+  display: block;
+}
+
+.myPredictions .expressCard__express {
+  width: 27.25rem;
+}
+
+.myPredictions .forecastCard__info,
+.myPredictions .expressCard__info {
+  width: 20.125rem;
+}
+
+.myPredictions .forecastCard__like dt,
+.myPredictions .forecastCard__dislike dt,
+.myPredictions .forecastCard__comment dt,
+.myPredictions .expressCard__like dt,
+.myPredictions .expressCard__dislike dt,
+.myPredictions .expressCard__comment dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myPredictions .forecastCard__like-icon,
+.myPredictions .forecastCard__dislike-icon,
+.myPredictions .forecastCard__comment-icon,
+.myPredictions .expressCard__like-icon,
+.myPredictions .expressCard__dislike-icon,
+.myPredictions .expressCard__comment-icon {
+  fill: #969696;
+}
+
+.myPredictions .forecastCard__like dt,
+.myPredictions .forecastCard__like dd,
+.myPredictions .forecastCard__dislike dt,
+.myPredictions .forecastCard__dislike dd,
+.myPredictions .forecastCard__comment dt,
+.myPredictions .forecastCard__comment dd,
+.myPredictions .expressCard__like dt,
+.myPredictions .expressCard__like dd,
+.myPredictions .expressCard__dislike dt,
+.myPredictions .expressCard__dislike dd,
+.myPredictions .expressCard__comment dt,
+.myPredictions .expressCard__comment dd {
+  color: #969696;
+}
+
+.myPredictions .forecastCard__like:hover svg,
+.myPredictions .forecastCard__dislike:hover svg,
+.myPredictions .forecastCard__comment:hover svg,
+.myPredictions .expressCard__like:hover svg,
+.myPredictions .expressCard__dislike:hover svg,
+.myPredictions .expressCard__comment:hover svg {
+  fill: #969696;
+}
+
+.myPredictions .forecastCard__like:hover dt,
+.myPredictions .forecastCard__like:hover dd,
+.myPredictions .forecastCard__dislike:hover dt,
+.myPredictions .forecastCard__dislike:hover dd,
+.myPredictions .forecastCard__comment:hover dt,
+.myPredictions .forecastCard__comment:hover dd,
+.myPredictions .expressCard__like:hover dt,
+.myPredictions .expressCard__like:hover dd,
+.myPredictions .expressCard__dislike:hover dt,
+.myPredictions .expressCard__dislike:hover dd,
+.myPredictions .expressCard__comment:hover dt,
+.myPredictions .expressCard__comment:hover dd {
+  color: #969696;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination__prev {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 3.75rem;
+  color: #000f47;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.pagination__prev:hover {
+  color: #fc8e00;
+}
+
+.pagination__prev:hover::before {
+  background-color: #fc8e00;
+}
+
+.pagination__prev:hover::after {
+  color: #fc8e00;
+}
+
+.pagination__prev:hover .pagination__icon {
+  fill: #fc8e00;
+}
+
+.pagination__prev:active::before {
+  bottom: -0.25rem;
+}
+
+.pagination__prev:active::after {
+  right: 1.375rem;
+}
+
+.pagination__prev::before {
+  position: absolute;
+  content: '';
+  width: calc(100% - 105px);
+  height: 0.0625rem;
+  left: 2.8125rem;
+  bottom: -0.125rem;
+  background-color: #000f47;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  will-change: transform;
+}
+
+.pagination__prev::after {
+  position: absolute;
+  content: '>';
+  top: 50%;
+  right: 1.625rem;
+  color: #000f47;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  will-change: transform;
+}
+
+.pagination__prev .pagination__icon {
+  fill: #000f47;
+  -webkit-transition: fill .3s;
+  transition: fill .3s;
+}
+
+.pagination__icon {
+  fill: #ffffff;
+  margin-right: 0.9375rem;
+}
+
+.pagination__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .personalArea {
@@ -26708,6 +26911,12 @@ corresponds to the arrow we want to display */
   transition: color .3s;
 }
 
+.personalArea__item .diagramm {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .personalArea__item .diagramm p {
   color: #afccc8;
   font-family: "Helvetica Neue";
@@ -26715,6 +26924,11 @@ corresponds to the arrow we want to display */
   font-weight: 300;
   -webkit-transition: color .3s;
   transition: color .3s;
+}
+
+.personalArea__item .diagramm__circle {
+  width: 2.125rem;
+  height: 2.125rem;
 }
 
 .personalArea__item-desc {
@@ -26826,6 +27040,9 @@ corresponds to the arrow we want to display */
           box-shadow: 0 0.1875rem 0.1875rem rgba(0, 6, 26, 0.1);
   border-radius: 0.125rem;
   background-color: #fff;
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
 }
 
 .personalData__info-item:not(:last-of-type), .personalData__pass-input:not(:last-of-type) {
@@ -26869,6 +27086,7 @@ corresponds to the arrow we want to display */
 
 .personalData__save {
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .personalData__pass {
@@ -26961,172 +27179,6 @@ corresponds to the arrow we want to display */
 .personalData__pass-btn {
   width: 100%;
   padding: 0.9375rem 1.5625rem;
-}
-
-.purchasedForecasts {
-  padding-top: 3.5rem;
-  padding-bottom: 9.375rem;
-}
-
-.purchasedForecasts .expressCard_opened .expressCard__rating-change {
-  display: none;
-}
-
-.purchasedForecasts .forecastCard_opened .forecastCard__rating-change {
-  display: none;
-}
-
-.purchasedForecasts__heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 3.625rem;
-  padding: 0 1.25rem;
-}
-
-.purchasedForecasts__title {
-  margin-right: auto;
-}
-
-.purchasedForecasts__sort {
-  margin: 0;
-  margin-right: 1.25rem;
-  color: #ffffff;
-  font-family: "Helvetica Neue";
-  font-size: 1.125rem;
-  font-weight: 400;
-  letter-spacing: 0.9px;
-}
-
-.purchasedForecasts .select2-container {
-  width: 17.5rem !important;
-}
-
-.purchasedForecasts__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 1.25rem;
-  padding: 1.25rem;
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem rgba(0, 6, 26, 0.1);
-          box-shadow: 0 0.1875rem 0.1875rem rgba(0, 6, 26, 0.1);
-  border-radius: 0.3125rem;
-  background-color: #f0f0f0;
-}
-
-.purchasedForecasts__load {
-  width: 100%;
-  height: 5.3125rem;
-  font-size: 1.5rem;
-}
-
-.rating {
-  width: 61.0625rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.rating .popup__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1.875rem;
-  background-color: #fff;
-  border-radius: 0.3125rem;
-  overflow: hidden;
-  max-height: 28.125rem;
-  border-radius: 0.3125rem 0.3125rem 0 0;
-}
-
-.rating .popup__content p {
-  margin: 0;
-  color: #515151;
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4375rem;
-}
-
-.rating .popup__footer {
-  background-color: #f0f0f0;
-  padding: 2.5rem 1.875rem;
-  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 0.3125rem 0.3125rem;
-}
-
-.rating .popup__footer p, .rating .rating p.rating__formula {
-  margin: 0;
-  font-family: "Helvetica Neue";
-  font-weight: 400;
-}
-
-.rating p.rating__formula {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2.1875rem;
-  font-style: italic;
-  color: #b4b4b4;
-  font-size: 1rem;
-  white-space: pre;
-}
-
-.rating p.rating__formula span {
-  font-style: normal;
-}
-
-.rating .rating__formula img {
-  margin-right: 3.125rem;
-}
-
-.rating .popup__content p:not(:last-of-type) {
-  margin-bottom: 1.5625rem;
-}
-
-.readMore {
-  position: relative;
-  padding-right: 1.5625rem;
-  color: #0a5c9a;
-  font-family: "Helvetica Neue";
-  font-size: 0.875rem;
-  font-weight: 300;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-}
-
-.readMore:hover {
-  color: #0393ff;
-}
-
-.readMore::after {
-  position: absolute;
-  content: '';
-  right: 0;
-  top: calc(50% + 2px);
-  width: 0.8125rem;
-  height: 0.625rem;
-  background-image: url("../img/general/arrow_blue.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .personalRating {
@@ -27450,7 +27502,7 @@ corresponds to the arrow we want to display */
   font-family: "Helvetica Neue";
   font-style: italic;
   font-size: 1.875rem;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 1.5px;
 }
 
@@ -27460,9 +27512,175 @@ corresponds to the arrow we want to display */
   color: #979797;
   font-family: "Helvetica Neue";
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.75rem;
   letter-spacing: 0.9px;
+}
+
+.purchasedForecasts {
+  padding-top: 3.5rem;
+  padding-bottom: 9.375rem;
+}
+
+.purchasedForecasts .expressCard_opened .expressCard__rating-change {
+  display: none;
+}
+
+.purchasedForecasts .forecastCard_opened .forecastCard__rating-change {
+  display: none;
+}
+
+.purchasedForecasts__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.625rem;
+  padding: 0 1.25rem;
+}
+
+.purchasedForecasts__title {
+  margin-right: auto;
+}
+
+.purchasedForecasts__sort {
+  margin: 0;
+  margin-right: 1.25rem;
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+}
+
+.purchasedForecasts .select2-container {
+  width: 17.5rem !important;
+}
+
+.purchasedForecasts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem rgba(0, 6, 26, 0.1);
+          box-shadow: 0 0.1875rem 0.1875rem rgba(0, 6, 26, 0.1);
+  border-radius: 0.3125rem;
+  background-color: #f0f0f0;
+}
+
+.purchasedForecasts__load {
+  width: 100%;
+  height: 5.3125rem;
+  font-size: 1.5rem;
+}
+
+.rating {
+  width: 61.0625rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rating .popup__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.875rem;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  max-height: 28.125rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.rating .popup__content p {
+  margin: 0;
+  color: #515151;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+}
+
+.rating .popup__footer {
+  background-color: #f0f0f0;
+  padding: 2.5rem 1.875rem;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 0.3125rem 0.3125rem;
+}
+
+.rating .popup__footer p, .rating .rating p.rating__formula {
+  margin: 0;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+}
+
+.rating p.rating__formula {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.1875rem;
+  font-style: italic;
+  color: #b4b4b4;
+  font-size: 1rem;
+  white-space: pre;
+}
+
+.rating p.rating__formula span {
+  font-style: normal;
+}
+
+.rating .rating__formula img {
+  margin-right: 3.125rem;
+}
+
+.rating .popup__content p:not(:last-of-type) {
+  margin-bottom: 1.5625rem;
+}
+
+.readMore {
+  position: relative;
+  padding-right: 1.5625rem;
+  color: #0a5c9a;
+  font-family: "Helvetica Neue";
+  font-size: 0.875rem;
+  font-weight: 300;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.readMore:hover {
+  color: #0393ff;
+}
+
+.readMore::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: calc(50% + 2px);
+  width: 0.8125rem;
+  height: 0.625rem;
+  background-image: url("../img/general/arrow_blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .subscribe {
@@ -27687,7 +27905,7 @@ corresponds to the arrow we want to display */
   color: #515151;
   font-family: "Helvetica Neue";
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1.2px;
   text-align: center;
 }
@@ -27990,7 +28208,7 @@ corresponds to the arrow we want to display */
 .subscription__desc {
   margin: 0;
   margin-bottom: 2.1875rem;
-  color: #707a7d;
+  color: #ffffff;
   font-family: "Helvetica Neue";
   font-size: 1rem;
   font-weight: 200;

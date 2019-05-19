@@ -18061,7 +18061,7 @@ $('.createPopup__prev').on('click', function () {
     $('.createPopup__submit').hide();
   }
 });
-$('.popup__content').mCustomScrollbar({
+$('.createPopup .popup__content').mCustomScrollbar({
   axis: 'y'
 });
 $('.createPopup__events-heading').on('click', function () {
@@ -18077,6 +18077,15 @@ $('.diagramm_grey').find('.diagramm__circle').circliful({
   backgroundBorderWidth: 22,
   percent: diagrammValue,
   pointSize: 0,
+  foregroundColor: '#c5c5c5',
+  backgroundColor: '#7f7f7f'
+});
+$('.diagramm_bigGrey').find('.diagramm__circle').circliful({
+  animationStep: 5,
+  foregroundBorderWidth: 22,
+  backgroundBorderWidth: 22,
+  pointSize: 10,
+  percent: diagrammValue,
   foregroundColor: '#c5c5c5',
   backgroundColor: '#7f7f7f'
 });
@@ -18113,7 +18122,7 @@ $('.forecastDetail__disagree').on('click', function () {
 
 function initScrollHandler() {
   var position = $(window).scrollTop();
-  $('.js-popup').css('top', position + 50 + 'px');
+  $('.js-popup').css('top', position + 40 + 'px');
   $(document).on('scroll', function () {
     position = $(window).scrollTop();
     $('.js-popup').css('top', position + 50 + 'px');
@@ -18209,7 +18218,14 @@ $('.catalogue__sport-details').mCustomScrollbar({
   axis: 'y',
   setLeft: 0
 });
+$('.filter__sport-details').mCustomScrollbar({
+  axis: 'y',
+  setLeft: 0
+});
 $('.catalogue__sport .checkbox__button').on('click', function () {
+  $(this).closest('.checkbox').toggleClass('opened');
+});
+$('.filter__sport .checkbox__button').on('click', function () {
   $(this).closest('.checkbox').toggleClass('opened');
 });
 $('.personalData__changepass').on('click', function () {
@@ -18317,6 +18333,7 @@ $('.hamburger').on('click', function () {
 $('.like').on('click', function () {
   $(this).toggleClass('active');
 });
+"use strict";
 "use strict";
 "use strict";
 "use strict";

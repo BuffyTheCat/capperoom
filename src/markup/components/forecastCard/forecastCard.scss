@@ -3,6 +3,7 @@
     transition: border .3s;
     border: rem(2) solid transparent;
     border-radius: rem(3);
+    cursor: pointer;
 
     &__content {
         display: flex;
@@ -44,6 +45,7 @@
     &__basket-buy {
         @extend .button;
         @extend .button_orange;
+		font-weight: 300;
     }
 
     &__basket-remove {
@@ -53,6 +55,7 @@
         font-weight: 400;
         text-decoration: underline;
         transition: color .3s;
+		font-style: italic;
 
         &:hover {
             color: $orangeDark
@@ -65,7 +68,7 @@
         color: #4f4f4f;
         font-family: $helvetica;
         font-size: rem(24);
-        font-weight: 400;
+        font-weight: 200;
     }
 
     &_commercial {
@@ -155,6 +158,7 @@
     }
 
     &__match-details {
+		position: relative;
         display: flex;
         width: rem(364);
         flex-direction: column;
@@ -162,8 +166,37 @@
         padding: rem(25) rem(30);
         margin-right: rem(2);
         padding-right: rem(5);
+        text-decoration: none;
 
         background-color: $white;
+
+        &:hover {
+            .forecastCard__comand {
+                color: #fc8e00;
+            }
+
+			&::before {
+				opacity: 0.8;
+			}
+        }
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			content: 'Перейти к матчу';
+			padding: rem(2) rem(8);
+			color: #505050;
+			font-family: $helvetica;
+			font-size: rem(16);
+			font-weight: 300;
+			letter-spacing: rem(0.9);
+			transform: translateX(-50%);
+			border-radius: 0 0 rem(6) rem(6);
+			background-color: #ffba00;
+			opacity: 0;
+			transition: opacity .3s;
+		}
     }
 
     &__comand {
@@ -178,6 +211,7 @@
         font-weight: 300;
         color: rgba(79, 79, 79, 1);
         text-align: left;
+        transition: color .3s;
 
         img {
             display: block;
@@ -187,7 +221,7 @@
         }
 
         &:last-of-type {
-            margin-bottom: auto;
+            margin-bottom: rem(18);
         }
     }
 
@@ -230,6 +264,7 @@
         background-color: $white;
 
         p {
+            margin: 0;
             font-family: 'Helvetica Neue';
             font-size: rem(40);
             font-weight: 100;
@@ -252,8 +287,8 @@
         margin: 0;
         font-family: $helvetica;
         font-size: rem(18);
-        font-weight: 100;
-        color: $grey;
+        font-weight: 300;
+        color: #4f4f4f;
         text-align: left;
     }
 
@@ -370,7 +405,7 @@
         cursor: pointer;
 
         a {
-            display: block;
+            display: flex;
             margin-right: rem(10);
         }
     }
@@ -678,11 +713,12 @@
         margin: 0;
         margin-top: rem(16);
         margin-left: rem(35);
-        color: #969696;
+        color: #4f4f4f;
         font-family: $helvetica;
         font-size: rem(14);
         font-weight: 400;
         letter-spacing: 0.7px;
+        font-style: italic;
     }
 
     &_personal {

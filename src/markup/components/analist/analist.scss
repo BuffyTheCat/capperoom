@@ -31,7 +31,7 @@
     &__name {
         display: flex;
         align-items: center;
-        margin-bottom: rem(15);
+        margin-bottom: rem(8);
 
         h3 {
             margin: 0;
@@ -71,7 +71,7 @@
     &__rating {
         display: flex;
         align-items: center;
-        margin-bottom: rem(15);
+        margin-bottom: rem(8);
 
         .analist__text {
             &:first-of-type {
@@ -243,7 +243,7 @@
         display: flex;
         flex-direction: column;
         overflow-y: auto;
-        height: rem(285);
+        height: rem(275);
         padding: rem(10);
         padding-top: 0;
     }

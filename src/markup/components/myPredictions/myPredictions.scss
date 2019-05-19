@@ -111,4 +111,68 @@
             display: none;
         }
     }
+
+    .forecastCard__coefficient,
+    .expressCard__coefficient,
+    .forecastCard__name,
+    .expressCard__name {
+        display: none;
+    }
+
+    .forecastCard__inner-coefficient,
+    .expressCard__inner-coefficient {
+        display: block;
+    }
+
+    .expressCard__express {
+        width: rem(436);
+    }
+
+    .forecastCard__info,
+    .expressCard__info {
+        width: rem(322);
+    }
+
+    .forecastCard__like,
+    .forecastCard__dislike,
+    .forecastCard__comment,
+    .expressCard__like,
+    .expressCard__dislike,
+    .expressCard__comment {
+        dt {
+            display: flex;
+        }
+    }
+
+    .forecastCard__like-icon,
+    .forecastCard__dislike-icon,
+    .forecastCard__comment-icon,
+    .expressCard__like-icon,
+    .expressCard__dislike-icon,
+    .expressCard__comment-icon {
+        fill: #969696;
+    }
+
+    .forecastCard__like,
+    .forecastCard__dislike,
+    .forecastCard__comment,
+    .expressCard__like,
+    .expressCard__dislike,
+    .expressCard__comment {
+        dt,
+        dd {
+            color: #969696;
+        }
+
+        &:hover {
+            svg {
+                fill: #969696;
+            }
+
+            dt,
+            dd {
+                color: #969696;
+            }
+        }
+    }
 }

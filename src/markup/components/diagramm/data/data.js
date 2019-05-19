@@ -3,6 +3,9 @@ let data = {
         grey: {
             modifier: 'diagramm_grey',
         },
+        biggrey: {
+            modifier: 'diagramm_bigGrey',
+        },
         orange: {
             modifier: 'diagramm_orange',
         },

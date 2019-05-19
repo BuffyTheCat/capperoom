@@ -192,12 +192,21 @@
             }
         }
 
-        .diagramm p {
-            color: #afccc8;
-            font-family: $helvetica;
-            font-size: rem(30);
-            font-weight: 300;
-            transition: color .3s;
+        .diagramm {
+            align-items: center;
+
+            p {
+                color: #afccc8;
+                font-family: $helvetica;
+                font-size: rem(30);
+                font-weight: 300;
+                transition: color .3s;
+            }
+
+            &__circle {
+                width: rem(34);
+                height: rem(34);
+            }
         }
 
         &-desc {

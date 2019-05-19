@@ -133,12 +133,13 @@
                     <div class="matchCard__comments-header">
                         <p class="matchCard__comments-title">Комментарии к прогнозу <span>(422)</span>:</p>
                         <select class="select" name="sorting" id="">
+                            <option value="">Стандартная сортировка</option>
                             <option value="">По согласным</option>
                             <option value="">По рейтингу</option>
                         </select>
                         <a href="javascript:void(0);" class="matchCard__comments-sort">Написать коммментарий</a>
                     </div>
-                    <div class="matchCard__comments-list">
+                    <div class="matchCard__comments-list matchCard__comments-list_standart">
                         {{> comment/comment comment.agree}}
                         {{> comment/comment comment.disagree}}
                         {{> comment/comment comment.nostatus}}

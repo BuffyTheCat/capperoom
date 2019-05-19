@@ -3,6 +3,7 @@
     transition: border .3s;
     border: rem(2) solid transparent;
     border-radius: rem(2);
+    cursor: pointer;
 
     &__content {
         display: flex;
@@ -40,6 +41,7 @@
     &__basket-buy {
         @extend .button;
         @extend .button_orange;
+		font-weight: 300;
     }
 
     &__basket-remove {
@@ -49,6 +51,7 @@
         font-weight: 400;
         text-decoration: underline;
 		transition: color .3s;
+		font-style: italic;
 
 		&:hover {
 			color: $orangeDark;
@@ -61,7 +64,7 @@
         color: #4f4f4f;
         font-family: $helvetica;
         font-size: rem(24);
-        font-weight: 400;
+        font-weight: 200;
     }
 
     &_commercial {
@@ -271,8 +274,8 @@
 
         font-family: $helvetica;
         font-size: rem(18);
-        font-weight: 100;
-        color: $grey;
+        font-weight: 300;
+        color: #4f4f4f;
         text-align: left;
     }
 
@@ -389,7 +392,7 @@
         cursor: pointer;
 
         a {
-            display: block;
+            display: flex;
             margin-right: rem(10);
         }
     }

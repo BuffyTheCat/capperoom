@@ -404,7 +404,7 @@
     height: 100%!important;
     font-family: $helvetica!important;
     font-size: rem(18)!important;
-    font-weight: 100!important;
+    font-weight: 300!important;
     color: rgba(151, 151, 151, 1)!important;
 }
 
@@ -1195,11 +1195,16 @@
 			}
 
 			&.opened {
+				color: red;
 				.checkbox__button {
 					transform: rotate(180deg);
 				}
 
 				& + .catalogue__sport-details {
+					display: flex;
+				}
+
+				& + .filter__sport-details {
 					display: flex;
 				}
 
@@ -1418,7 +1423,7 @@
     .popup__content {
         flex-direction: column;
         width: auto;
-        height: rem(560);
+        height: rem(540);
         background-color: $greybg;
     }
 }
@@ -1516,7 +1521,7 @@
         margin-bottom: rem(41);
     }
 
-    &__subscribe {
+    &__subscribePopup {
         display: flex;
         align-items: center;
         margin: 0;
@@ -1620,43 +1625,6 @@
             justify-content: center;
             align-items: center;
         }
-    }
-}
-
-.pagination {
-    display: flex;
-
-    &__prev {
-        position: relative;
-        @extend .section-name;
-        display: flex;
-        align-items: center;
-        padding-right: rem(60);
-        color: #000f47;
-
-        &::after {
-            position: absolute;
-            content: '>';
-            top: 50%;
-            right: rem(26);
-            @extend .section-name;
-            color: #000f47;
-            transform: translateY(-50%);
-        }
-
-        .pagination__icon {
-            fill: #000f47;
-        }
-    }
-
-    &__icon {
-        fill: $white;
-        margin-right: rem(15);
-    }
-
-    &__title {
-        display: flex;
-        align-items: center;
     }
 }
 

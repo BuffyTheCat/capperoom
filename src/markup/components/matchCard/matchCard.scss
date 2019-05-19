@@ -133,7 +133,7 @@
         font-style: italic;
         font-size: rem(18);
         font-weight: 300;
-        line-height: rem(28);
+        line-height: 1;
         background-color: #e5e5e5;
     }
 
@@ -237,7 +237,7 @@
             font-family: $helvetica;
             font-size: rem(14);
             font-weight: 500;
-            line-height: rem(20);
+            line-height: 1;
             border-radius: rem(5);
         }
     }
@@ -255,6 +255,7 @@
         width: calc(35% - 10px);
         height: rem(85);
         margin-right: rem(20);
+        font-size: rem(24);
     }
 
     &__show {
@@ -262,6 +263,7 @@
         @extend .button_orange;
         width: calc(65% - 10px);
         height: rem(85);
+        font-size: rem(24);
     }
 
     &__comments {
@@ -333,6 +335,16 @@
 		.comment:not(:last-of-type) {
 			margin-bottom: rem(10);
 		}
+
+        &_standart {
+            .comment {
+                &:nth-of-type(1),
+                &:nth-of-type(2),
+                &:nth-of-type(3) {
+                    background-color: rgba(0, 0, 0, .15);
+                }
+            }
+        }
     }
 
     &__load {

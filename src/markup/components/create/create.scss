@@ -266,7 +266,7 @@
             color: #505050;
             font-family: $helvetica;
             font-size: rem(18);
-            font-weight: 200;
+            font-weight: 300;
             letter-spacing: 0.9px;
         }
 
@@ -362,6 +362,7 @@
                 width: rem(110);
                 background-color: transparent;
                 color: #ffffff;
+				margin-right: rem(6);
 
                 &::-webkit-input-placeholder {
                     color: #ffffff;
@@ -383,5 +384,6 @@
         @extend .button_blue;
         width: rem(383);
         height: rem(70);
+		font-size: rem(24);
     }
 }
