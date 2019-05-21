@@ -27,14 +27,13 @@ function closePopUp() {
     $('.overlay').removeClass('active');
 }
 
-function openPopUp() {
+function openPopUp(Event) {
     initScrollHandler();
-    if (!$(this).parent().hasClass('js-open')) {
-        let popup = $(this).data('src');
-        $('.popup').removeClass('opened');
-        $(popup).addClass('opened');
-        $('.overlay').addClass('active');
-    }
+    Event.stopPropagation();
+    let popup = $(this).data('src');
+    $('.popup').removeClass('opened');
+    $(popup).addClass('opened');
+    $('.overlay').addClass('active');
 }
 
 $('.js-open').on('click', openPopUp);

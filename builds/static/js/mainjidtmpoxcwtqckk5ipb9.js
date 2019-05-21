@@ -17947,6 +17947,7 @@ $('.about__item-heading').on('click', function () {
   }, 500);
 });
 "use strict";
+"use strict";
 
 $('.analist__forecasts-list').mCustomScrollbar({
   axis: 'y'
@@ -17955,7 +17956,6 @@ $('.analist__select').select2({
   minimumResultsForSearch: Infinity,
   dropdownCssClass: 'dropdown_blue'
 });
-"use strict";
 "use strict";
 "use strict";
 
@@ -17982,6 +17982,46 @@ $('.comment__read-next').on('click', function () {
 });
 "use strict";
 "use strict";
+"use strict";
+"use strict";
+
+var diagrammValue = $('.diagramm__value').html();
+$('.diagramm_grey').find('.diagramm__circle').circliful({
+  animationStep: 5,
+  foregroundBorderWidth: 22,
+  backgroundBorderWidth: 22,
+  percent: diagrammValue,
+  pointSize: 0,
+  foregroundColor: '#c5c5c5',
+  backgroundColor: '#7f7f7f'
+});
+$('.diagramm_bigGrey').find('.diagramm__circle').circliful({
+  animationStep: 5,
+  foregroundBorderWidth: 22,
+  backgroundBorderWidth: 22,
+  pointSize: 10,
+  percent: diagrammValue,
+  foregroundColor: '#c5c5c5',
+  backgroundColor: '#7f7f7f'
+});
+$('.diagramm_orange').find('.diagramm__circle').circliful({
+  animationStep: 5,
+  foregroundBorderWidth: 22,
+  backgroundBorderWidth: 22,
+  percent: diagrammValue,
+  pointSize: 0,
+  foregroundColor: '#ffba00',
+  backgroundColor: '#7f7f7f'
+});
+$('.diagramm_black').find('.diagramm__circle').circliful({
+  animationStep: 5,
+  foregroundBorderWidth: 22,
+  backgroundBorderWidth: 22,
+  percent: diagrammValue,
+  pointSize: 0,
+  foregroundColor: '#ffba00',
+  backgroundColor: '#1e2126'
+});
 "use strict";
 "use strict";
 
@@ -18068,47 +18108,6 @@ $('.createPopup__events-heading').on('click', function () {
   $(this).closest('.createPopup__events').toggleClass('active');
 });
 "use strict";
-"use strict";
-
-var diagrammValue = $('.diagramm__value').html();
-$('.diagramm_grey').find('.diagramm__circle').circliful({
-  animationStep: 5,
-  foregroundBorderWidth: 22,
-  backgroundBorderWidth: 22,
-  percent: diagrammValue,
-  pointSize: 0,
-  foregroundColor: '#c5c5c5',
-  backgroundColor: '#7f7f7f'
-});
-$('.diagramm_bigGrey').find('.diagramm__circle').circliful({
-  animationStep: 5,
-  foregroundBorderWidth: 22,
-  backgroundBorderWidth: 22,
-  pointSize: 10,
-  percent: diagrammValue,
-  foregroundColor: '#c5c5c5',
-  backgroundColor: '#7f7f7f'
-});
-$('.diagramm_orange').find('.diagramm__circle').circliful({
-  animationStep: 5,
-  foregroundBorderWidth: 22,
-  backgroundBorderWidth: 22,
-  percent: diagrammValue,
-  pointSize: 0,
-  foregroundColor: '#ffba00',
-  backgroundColor: '#7f7f7f'
-});
-$('.diagramm_black').find('.diagramm__circle').circliful({
-  animationStep: 5,
-  foregroundBorderWidth: 22,
-  backgroundBorderWidth: 22,
-  percent: diagrammValue,
-  pointSize: 0,
-  foregroundColor: '#ffba00',
-  backgroundColor: '#1e2126'
-});
-"use strict";
-"use strict";
 
 $('.forecastDetail__track').on('click', function () {
   $(this).toggleClass('active');
@@ -18139,15 +18138,13 @@ function closePopUp() {
   $('.overlay').removeClass('active');
 }
 
-function openPopUp() {
+function openPopUp(Event) {
   initScrollHandler();
-
-  if (!$(this).parent().hasClass('js-open')) {
-    var popup = $(this).data('src');
-    $('.popup').removeClass('opened');
-    $(popup).addClass('opened');
-    $('.overlay').addClass('active');
-  }
+  Event.stopPropagation();
+  var popup = $(this).data('src');
+  $('.popup').removeClass('opened');
+  $(popup).addClass('opened');
+  $('.overlay').addClass('active');
 }
 
 $('.js-open').on('click', openPopUp);
@@ -18314,6 +18311,7 @@ $('.subscription__type').on('click', function () {
 "use strict";
 "use strict";
 "use strict";
+"use strict";
 
 $('.header__sublinks').mCustomScrollbar({
   axis: 'y'
@@ -18329,15 +18327,15 @@ $('.hamburger').on('click', function () {
   $('.header__link').fadeIn();
 });
 "use strict";
+"use strict";
+"use strict";
+"use strict";
+"use strict";
+"use strict";
 
 $('.like').on('click', function () {
   $(this).toggleClass('active');
 });
-"use strict";
-"use strict";
-"use strict";
-"use strict";
-"use strict";
 "use strict";
 "use strict";
 "use strict";
@@ -18358,7 +18356,6 @@ $('.readMore').on('click', function () {
     $this.text('Читать далее');
   }
 });
-"use strict";
 "use strict";
 "use strict";
 "use strict";
@@ -18387,6 +18384,7 @@ $('.tooltip_favorites').tooltipster({
   side: 'top',
   trigger: 'hover'
 });
+"use strict";
 "use strict";
 
 $('.select').select2({
